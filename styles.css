@@ -4,7 +4,7 @@
    Colors: #FDF0D5 (Tan), #003049 (Blue), #C1121F (Red), #780000 (Dark Red)
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700;800&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@500;600;700&display=swap');
 
 :root {
   /* Nuvero Brand Tokens */
@@ -36,6 +36,8 @@
   --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'IBM Plex Mono', 'JetBrains Mono', monospace;
+  --font-pixel: 'Silkscreen', monospace;
+  --font-arcade: 'Press Start 2P', monospace;
 
   /* Transitions */
   --transition-fast: 0.15s cubic-bezier(0.16, 1, 0.3, 1);
@@ -1345,3 +1347,3053 @@ body {
     border-bottom: 1px solid var(--studio-border);
   }
 }
+
+/* ==========================================================================
+   NEW STRATEGIC BRAND POSTS - EXTENDED VISUAL ARTIFACTS
+   Post 01: Operational Day Timeline Ledger & Monumental Stat
+   Post 02: Lead Pipeline Map, Human Friction Audit & Execution Console
+   Post 03: Cross-Tool Slashed Workflow Graphic
+   Post 04: Before / After Split Comparative Ledgers
+   Post 05: Engineering Commissioning Sheet & Telemetry Panel
+   ========================================================================== */
+
+/* ARTIFACT 5: EDITORIAL COVER & PUNCHLINE SLIDES */
+.editorial-statement-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 30px 10px;
+}
+
+.editorial-rule {
+  width: 100%;
+  height: 2px;
+  background-color: var(--nuvero-blue);
+  margin: 28px 0;
+  position: relative;
+}
+
+.insta-slide.theme-dark .editorial-rule {
+  background-color: var(--nuvero-tan);
+}
+
+.editorial-rule.thin {
+  height: 1.5px;
+  opacity: 0.5;
+  margin: 20px 0;
+}
+
+.editorial-label-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--nuvero-blue);
+  background: rgba(0, 48, 73, 0.06);
+  border: 1.5px solid rgba(0, 48, 73, 0.25);
+  padding: 6px 14px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+.insta-slide.theme-dark .editorial-label-badge {
+  color: var(--nuvero-tan);
+  background: rgba(253, 240, 213, 0.08);
+  border-color: rgba(253, 240, 213, 0.3);
+}
+
+.editorial-huge-title {
+  font-family: var(--font-display);
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  color: var(--nuvero-blue);
+  margin: 16px 0;
+}
+
+.insta-slide.ratio-1-1 .editorial-huge-title {
+  font-size: 48px;
+  line-height: 1.1;
+  margin: 10px 0;
+}
+
+.insta-slide.theme-dark .editorial-huge-title {
+  color: var(--nuvero-tan);
+}
+
+.editorial-lead-quote {
+  font-family: var(--font-body);
+  font-size: 26px;
+  line-height: 1.4;
+  color: var(--nuvero-blue-muted);
+  font-weight: 400;
+}
+
+.insta-slide.ratio-1-1 .editorial-lead-quote {
+  font-size: 20px;
+}
+
+.insta-slide.theme-dark .editorial-lead-quote {
+  color: rgba(253, 240, 213, 0.85);
+}
+
+/* ARTIFACT 6: OPERATIONAL TIMELINE LEDGER */
+.timeline-ledger-wrapper {
+  background: #ffffff;
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 10px;
+  box-shadow: 8px 8px 0px var(--nuvero-blue);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.insta-slide.ratio-1-1 .timeline-ledger-wrapper {
+  padding: 16px 20px;
+  gap: 10px;
+}
+
+.insta-slide.theme-dark .timeline-ledger-wrapper {
+  background: #002236;
+  border-color: var(--nuvero-tan);
+  box-shadow: 8px 8px 0px var(--nuvero-red);
+}
+
+.timeline-track-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  position: relative;
+}
+
+.insta-slide.ratio-1-1 .timeline-track-container {
+  gap: 10px;
+}
+
+.timeline-entry-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  background: var(--nuvero-tan-elevated);
+  border: 1.5px solid var(--nuvero-blue);
+  border-radius: 8px;
+  padding: 14px 20px;
+  transition: all var(--transition-fast);
+}
+
+.insta-slide.ratio-1-1 .timeline-entry-row {
+  padding: 10px 14px;
+  gap: 12px;
+}
+
+.insta-slide.theme-dark .timeline-entry-row {
+  background: #001928;
+  border-color: rgba(253, 240, 213, 0.3);
+}
+
+.timestamp-badge-red {
+  font-family: var(--font-mono);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nuvero-red);
+  padding: 8px 16px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(193, 18, 31, 0.3);
+  letter-spacing: 0.04em;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.insta-slide.ratio-1-1 .timestamp-badge-red {
+  font-size: 13px;
+  padding: 6px 12px;
+}
+
+.timeline-entry-text {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--nuvero-blue);
+  flex: 1;
+}
+
+.insta-slide.ratio-1-1 .timeline-entry-text {
+  font-size: 16px;
+}
+
+.insta-slide.theme-dark .timeline-entry-text {
+  color: var(--nuvero-tan);
+}
+
+.timeline-entry-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #22c55e;
+  background: rgba(34, 197, 94, 0.12);
+  border: 1px solid rgba(34, 197, 94, 0.3);
+  padding: 4px 10px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.nocturnal-banner-tag {
+  background: rgba(193, 18, 31, 0.08);
+  border: 1.5px solid var(--nuvero-red);
+  border-radius: 6px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--nuvero-blue);
+}
+
+.insta-slide.theme-dark .nocturnal-banner-tag {
+  background: rgba(193, 18, 31, 0.15);
+  color: var(--nuvero-tan);
+}
+
+/* ARTIFACT 7: MONUMENTAL STAT BLOCK */
+.monumental-stat-card {
+  background: var(--nuvero-tan-elevated);
+  border: 2.5px solid var(--nuvero-blue);
+  border-radius: 12px;
+  padding: 48px 36px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 10px 10px 0px var(--nuvero-blue);
+  position: relative;
+  overflow: hidden;
+}
+
+.insta-slide.ratio-1-1 .monumental-stat-card {
+  padding: 30px 24px;
+}
+
+.insta-slide.theme-dark .monumental-stat-card {
+  background: #002236;
+  border-color: var(--nuvero-tan);
+  box-shadow: 10px 10px 0px var(--nuvero-red);
+}
+
+.monumental-number-huge {
+  font-family: var(--font-display);
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--nuvero-red);
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 0px rgba(0, 48, 73, 0.15);
+}
+
+.insta-slide.ratio-1-1 .monumental-number-huge {
+  font-size: 72px;
+  margin-bottom: 10px;
+}
+
+.monumental-label-caps {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--nuvero-blue);
+  padding: 8px 24px;
+  background: #ffffff;
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.insta-slide.ratio-1-1 .monumental-label-caps {
+  font-size: 16px;
+  padding: 6px 18px;
+  margin-bottom: 10px;
+}
+
+.insta-slide.theme-dark .monumental-label-caps {
+  background: #001928;
+  color: var(--nuvero-tan);
+  border-color: var(--nuvero-tan);
+}
+
+.monumental-sub-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--nuvero-blue-subtle);
+  max-width: 80%;
+  line-height: 1.4;
+}
+
+.insta-slide.theme-dark .monumental-sub-desc {
+  color: rgba(253, 240, 213, 0.7);
+}
+
+/* ARTIFACT 8: PIPELINE CONNECTED NODES */
+.pipeline-flow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.insta-slide.ratio-1-1 .pipeline-flow-container {
+  gap: 5px;
+}
+
+.pipeline-node-pill {
+  width: 100%;
+  background: #ffffff;
+  border: 1.5px solid var(--nuvero-blue);
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 3px 3px 0px var(--nuvero-blue);
+}
+
+.insta-slide.ratio-1-1 .pipeline-node-pill {
+  padding: 8px 16px;
+}
+
+.insta-slide.theme-dark .pipeline-node-pill {
+  background: #002236;
+  border-color: var(--nuvero-tan);
+  box-shadow: 3px 3px 0px var(--nuvero-red);
+}
+
+.pipeline-node-pill.focal-node {
+  border-color: var(--nuvero-red);
+  border-width: 2px;
+  background: #FFF8F8;
+}
+
+.insta-slide.theme-dark .pipeline-node-pill.focal-node {
+  background: #1a0808;
+}
+
+.pipeline-node-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.node-number-index {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nuvero-blue);
+  padding: 3px 7px;
+  border-radius: 4px;
+}
+
+.pipeline-node-pill.focal-node .node-number-index {
+  background: var(--nuvero-red);
+}
+
+.node-title-text {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--nuvero-blue);
+}
+
+.insta-slide.ratio-1-1 .node-title-text {
+  font-size: 14px;
+}
+
+.insta-slide.theme-dark .node-title-text {
+  color: var(--nuvero-tan);
+}
+
+.node-status-check {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+.pipeline-connector-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--nuvero-red);
+  line-height: 1;
+}
+
+.pipeline-connector-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* ARTIFACT 9: HUMAN RELAY FRICTION LIST */
+.friction-audit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.insta-slide.ratio-1-1 .friction-audit-container {
+  gap: 7px;
+}
+
+.friction-step-card {
+  background: #FFF5F5;
+  border: 1.5px solid var(--nuvero-red);
+  border-left: 6px solid var(--nuvero-red);
+  border-radius: 6px;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insta-slide.ratio-1-1 .friction-step-card {
+  padding: 8px 14px;
+}
+
+.insta-slide.theme-dark .friction-step-card {
+  background: #1a0808;
+  border-color: var(--nuvero-red);
+}
+
+.friction-step-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--nuvero-dark-red);
+}
+
+.insta-slide.ratio-1-1 .friction-step-title {
+  font-size: 14px;
+}
+
+.insta-slide.theme-dark .friction-step-title {
+  color: #ff8a8a;
+}
+
+.friction-step-pill {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: var(--nuvero-red);
+  background: rgba(193, 18, 31, 0.12);
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+/* ARTIFACT 10: TELEMETRY EXECUTION CONSOLE */
+.telemetry-console-card {
+  background: #001928;
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 10px;
+  box-shadow: 8px 8px 0px var(--nuvero-red);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.insta-slide.ratio-1-1 .telemetry-console-card {
+  padding: 14px 18px;
+  gap: 10px;
+}
+
+.console-header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid rgba(253, 240, 213, 0.15);
+  padding-bottom: 10px;
+}
+
+.console-title-mono {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--nuvero-tan);
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.console-title-mono .pulse-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+}
+
+.console-runtime-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--nuvero-red);
+  background: rgba(193, 18, 31, 0.25);
+  padding: 3px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(193, 18, 31, 0.4);
+}
+
+.console-log-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+}
+
+.insta-slide.ratio-1-1 .console-log-row {
+  padding: 7px 10px;
+}
+
+.log-timestamp-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--nuvero-red);
+  letter-spacing: 0.04em;
+  background: rgba(193, 18, 31, 0.15);
+  padding: 2px 6px;
+  border-radius: 3px;
+}
+
+.log-label-text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ffffff;
+  flex: 1;
+  margin-left: 14px;
+}
+
+.insta-slide.ratio-1-1 .log-label-text {
+  font-size: 12.5px;
+}
+
+.log-delta-pill {
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #22c55e;
+}
+
+/* ARTIFACT 11: CROSS-TOOL RED SLASH WORKFLOW */
+.cross-tool-stage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 20px;
+}
+
+.tool-workflow-canvas {
+  position: relative;
+  background: #ffffff;
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 12px;
+  box-shadow: 8px 8px 0px var(--nuvero-blue);
+  padding: 28px 24px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.insta-slide.ratio-1-1 .tool-workflow-canvas {
+  padding: 18px 20px;
+  gap: 10px;
+}
+
+.insta-slide.theme-dark .tool-workflow-canvas {
+  background: #002236;
+  border-color: var(--nuvero-tan);
+  box-shadow: 8px 8px 0px var(--nuvero-red);
+}
+
+.tools-grid-flow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  position: relative;
+  z-index: 2;
+}
+
+.insta-slide.ratio-1-1 .tools-grid-flow {
+  gap: 10px;
+}
+
+.tool-node-card {
+  background: var(--nuvero-blue);
+  color: var(--nuvero-tan);
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 8px;
+  padding: 14px 12px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+.insta-slide.ratio-1-1 .tool-node-card {
+  padding: 10px 8px;
+  gap: 4px;
+}
+
+.tool-node-icon {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0.75;
+  letter-spacing: 0.05em;
+}
+
+.tool-node-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.insta-slide.ratio-1-1 .tool-node-name {
+  font-size: 14px;
+}
+
+.tool-connector-seq {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--nuvero-steel);
+}
+
+/* Dynamic Red Slash cutting through */
+.red-slash-overlay {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  right: -20px;
+  height: 6px;
+  background: var(--nuvero-red);
+  transform: translateY(-50%) rotate(-12deg);
+  box-shadow: 0 0 16px rgba(193, 18, 31, 0.7);
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slash-cut-banner {
+  background: var(--nuvero-red);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 5px 18px;
+  border-radius: 4px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1.5px solid #ffffff;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.4);
+  transform: rotate(12deg);
+  white-space: nowrap;
+}
+
+.nuvero-layer-solution-box {
+  background: var(--nuvero-tan-elevated);
+  border: 2px solid var(--nuvero-blue);
+  border-radius: 10px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.insta-slide.ratio-1-1 .nuvero-layer-solution-box {
+  padding: 14px 18px;
+}
+
+.insta-slide.theme-dark .nuvero-layer-solution-box {
+  background: #001928;
+  border-color: var(--nuvero-tan);
+}
+
+.solution-headline-text {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--nuvero-blue);
+  line-height: 1.2;
+}
+
+.insta-slide.ratio-1-1 .solution-headline-text {
+  font-size: 20px;
+}
+
+.insta-slide.theme-dark .solution-headline-text {
+  color: var(--nuvero-tan);
+}
+
+.stack-compatibility-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.stack-pill-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--nuvero-blue);
+  background: rgba(0, 48, 73, 0.08);
+  border: 1px solid rgba(0, 48, 73, 0.2);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+
+.insta-slide.theme-dark .stack-pill-tag {
+  color: var(--nuvero-tan);
+  background: rgba(253, 240, 213, 0.08);
+  border-color: rgba(253, 240, 213, 0.2);
+}
+
+/* ARTIFACT 12: BEFORE / AFTER SPLIT COMPARATIVE LEDGERS */
+.before-after-split-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  height: 100%;
+}
+
+.insta-slide.ratio-1-1 .before-after-split-container {
+  gap: 12px;
+}
+
+.split-side-card {
+  border-radius: 10px;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.insta-slide.ratio-1-1 .split-side-card {
+  padding: 16px 14px;
+}
+
+.split-side-card.without-side {
+  background: #FFF5F5;
+  border: 2px dashed var(--nuvero-red);
+}
+
+.insta-slide.theme-dark .split-side-card.without-side {
+  background: #180808;
+  border-color: #ff5555;
+}
+
+.split-side-card.with-side {
+  background: var(--nuvero-blue);
+  color: var(--nuvero-tan);
+  border: 2px solid var(--nuvero-blue);
+  box-shadow: 6px 6px 0px var(--nuvero-red);
+}
+
+.insta-slide.theme-dark .split-side-card.with-side {
+  border-color: var(--nuvero-tan);
+}
+
+.split-state-badge {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 4px 10px;
+  border-radius: 4px;
+  width: fit-content;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.split-side-card.without-side .split-state-badge {
+  color: var(--nuvero-red);
+  background: rgba(193, 18, 31, 0.15);
+  border: 1px solid rgba(193, 18, 31, 0.3);
+}
+
+.split-side-card.with-side .split-state-badge {
+  color: #ffffff;
+  background: var(--nuvero-red);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.split-metric-figure {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.insta-slide.ratio-1-1 .split-metric-figure {
+  font-size: 40px;
+}
+
+.split-side-card.without-side .split-metric-figure {
+  color: var(--nuvero-dark-red);
+}
+
+.insta-slide.theme-dark .split-side-card.without-side .split-metric-figure {
+  color: #ff7b7b;
+}
+
+.split-side-card.with-side .split-metric-figure {
+  color: #ffffff;
+}
+
+.split-metric-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.insta-slide.ratio-1-1 .split-metric-desc {
+  font-size: 13.5px;
+}
+
+.split-side-card.without-side .split-metric-desc {
+  color: var(--nuvero-dark-red);
+}
+
+.insta-slide.theme-dark .split-side-card.without-side .split-metric-desc {
+  color: rgba(255, 200, 200, 0.85);
+}
+
+.split-side-card.with-side .split-metric-desc {
+  color: var(--nuvero-tan);
+}
+
+.split-footer-status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.split-side-card.with-side .split-footer-status {
+  border-top-color: rgba(253, 240, 213, 0.2);
+  color: #22c55e;
+}
+
+/* ARTIFACT 13: ENGINEERING COMMISSIONING SHEET & TELEMETRY */
+.commissioning-sheet-panel {
+  background: var(--nuvero-tan-elevated);
+  border: 2.5px solid var(--nuvero-blue);
+  border-radius: 12px;
+  box-shadow: 10px 10px 0px var(--nuvero-blue);
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.insta-slide.ratio-1-1 .commissioning-sheet-panel {
+  padding: 18px 20px;
+  gap: 12px;
+}
+
+.insta-slide.theme-dark .commissioning-sheet-panel {
+  background: #001928;
+  border-color: var(--nuvero-tan);
+  box-shadow: 10px 10px 0px var(--nuvero-red);
+}
+
+.commissioning-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--nuvero-blue);
+  padding-bottom: 12px;
+}
+
+.insta-slide.theme-dark .commissioning-header-row {
+  border-bottom-color: var(--nuvero-tan);
+}
+
+.deployment-code-stamp {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--nuvero-red);
+  background: rgba(193, 18, 31, 0.12);
+  padding: 5px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(193, 18, 31, 0.3);
+}
+
+.system-title-centre {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  color: var(--nuvero-blue);
+  letter-spacing: 0.02em;
+  margin: 6px 0;
+}
+
+.insta-slide.ratio-1-1 .system-title-centre {
+  font-size: 24px;
+}
+
+.insta-slide.theme-dark .system-title-centre {
+  color: var(--nuvero-tan);
+}
+
+.telemetry-grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.insta-slide.ratio-1-1 .telemetry-grid-4 {
+  gap: 10px;
+}
+
+.telemetry-cell {
+  background: #ffffff;
+  border: 1.5px solid var(--nuvero-blue);
+  border-radius: 8px;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 4px 4px 0px var(--nuvero-blue);
+}
+
+.insta-slide.ratio-1-1 .telemetry-cell {
+  padding: 12px 14px;
+}
+
+.insta-slide.theme-dark .telemetry-cell {
+  background: #002236;
+  border-color: var(--nuvero-tan);
+  box-shadow: 4px 4px 0px var(--nuvero-red);
+}
+
+.telemetry-label-mono {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--nuvero-blue-subtle);
+  text-transform: uppercase;
+}
+
+.insta-slide.theme-dark .telemetry-label-mono {
+  color: rgba(253, 240, 213, 0.6);
+}
+
+.telemetry-val-huge {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 800;
+  color: var(--nuvero-red);
+  line-height: 1.1;
+  margin-top: 4px;
+}
+
+.insta-slide.ratio-1-1 .telemetry-val-huge {
+  font-size: 32px;
+}
+
+.commissioning-footer-bar {
+  background: var(--nuvero-blue);
+  color: var(--nuvero-tan);
+  border-radius: 6px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+.insta-slide.ratio-1-1 .commissioning-footer-bar {
+  font-size: 11.5px;
+  padding: 9px 14px;
+}
+
+.uptime-pulse-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #22c55e;
+  font-size: 11px;
+}
+
+/* ==========================================================================
+   SERIES: BRAND INFRASTRUCTURE (POSTS 01 - 05)
+   Signature 8-Bit Minimal Retro Aesthetic:
+   - Zero Gradients (Pure Flat Solid Colors)
+   - Zero Fuzzy Glows / Zero Blurs
+   - Sharp 0px Corners (border-radius: 0 everywhere)
+   - Hard Stepped Pixel Drop Shadows (4px 4px 0 #000)
+   - Retro Pixel Fonts (Silkscreen & Press Start 2P)
+   - High Contrast, Minimal, Eye-Catching
+   ========================================================================== */
+
+/* 1. Base Slide Container (Flat 8-Bit Minimal Obsidian) */
+.insta-slide.series-infrastructure {
+  background-color: #0c0c12 !important;
+  background-image: none !important;
+  color: #f1f5f9 !important;
+  box-shadow: 8px 8px 0px #000000 !important;
+  border: 3px solid #262638 !important;
+  border-radius: 0px !important;
+}
+
+.insta-slide.series-infrastructure::before {
+  display: none !important;
+}
+
+/* 8-Bit Pixel Status Square Indicator */
+.pixel-status-square {
+  width: 8px;
+  height: 8px;
+  background: #00ff66;
+  display: inline-block;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.pixel-status-square.red {
+  background: #ff3344;
+}
+
+.pixel-status-square.blue {
+  background: #38bdf8;
+}
+
+/* 8-Bit Cell Fallback Meter */
+.infra-cell-meter {
+  width: 100%;
+  height: 8px;
+  background: #0a0a10;
+  border: 1px solid #38384c;
+  padding: 1px;
+  margin: 6px 0;
+  display: flex;
+}
+
+.infra-cell-meter-fill {
+  height: 100%;
+  background: var(--nuvero-red);
+}
+
+.infra-cell-meter-fill.green {
+  background: #00ff66;
+}
+
+.infra-cell-meter-fill.blue {
+  background: #38bdf8;
+}
+
+/* 2. 8-Bit Header Lockup */
+.series-infrastructure .social-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.series-infrastructure.ratio-1-1 .social-top-row {
+  margin-bottom: 12px;
+}
+
+.series-infrastructure .social-brand-pill {
+  background: #151520 !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 6px 12px;
+  box-shadow: 3px 3px 0px #000000 !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.series-infrastructure .brand-handle-text {
+  font-family: var(--font-pixel) !important;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff !important;
+  letter-spacing: 0.02em;
+}
+
+.series-infrastructure .social-category-tag {
+  background: var(--nuvero-red) !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  font-family: var(--font-pixel) !important;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 6px 12px;
+  border-radius: 0px !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+}
+
+.series-infrastructure .slide-sequence-badge {
+  background: #151520 !important;
+  border: 2px solid #2e2e42 !important;
+  color: #94a3b8 !important;
+  font-family: var(--font-pixel) !important;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 10px;
+  border-radius: 0px !important;
+  box-shadow: 2px 2px 0px #000000 !important;
+}
+
+/* 3. Text Block & 8-Bit Typography */
+.series-infrastructure .social-text-block {
+  margin-bottom: 20px;
+}
+
+.series-infrastructure.ratio-1-1 .social-text-block {
+  margin-bottom: 12px;
+}
+
+.series-infrastructure .social-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-pixel);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ff3344;
+  margin-bottom: 8px;
+}
+
+.series-infrastructure .social-eyebrow .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 0px !important;
+  background: var(--nuvero-red);
+  box-shadow: none !important;
+}
+
+.series-infrastructure .social-headline {
+  font-family: var(--font-display);
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: #ffffff !important;
+  margin-bottom: 10px;
+}
+
+.series-infrastructure.ratio-1-1 .social-headline {
+  font-size: 32px;
+  margin-bottom: 6px;
+}
+
+.series-infrastructure .social-headline .highlight-red {
+  color: #ff3344;
+  text-shadow: none !important;
+}
+
+.series-infrastructure .social-lead {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.45;
+  color: #a0a0b2 !important;
+  max-width: 95%;
+}
+
+.series-infrastructure.ratio-1-1 .social-lead {
+  font-size: 14px;
+}
+
+/* 4. Center Stage Full-Height Container */
+.series-infrastructure .social-center-stage {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  min-height: 0;
+  margin-bottom: 20px;
+}
+
+.series-infrastructure.ratio-1-1 .social-center-stage {
+  margin-bottom: 12px;
+}
+
+/* 5. 8-Bit Footer */
+.series-infrastructure .social-bottom-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 16px;
+  border-top: 2px solid #222232;
+}
+
+.series-infrastructure .lockup-domain {
+  font-family: var(--font-pixel);
+  font-size: 12.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+}
+
+.series-infrastructure .lockup-tag {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: #64748b;
+  margin-left: 6px;
+}
+
+.series-infrastructure .swipe-action-pill {
+  background: var(--nuvero-red) !important;
+  border: 2px solid #ffffff !important;
+  color: #ffffff !important;
+  font-family: var(--font-pixel) !important;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 0px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 3px 3px 0px #000000 !important;
+}
+
+.series-infrastructure .carousel-dots-pill {
+  background: #151520;
+  border: 2px solid #2e2e42;
+  padding: 6px 10px;
+  border-radius: 0px !important;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure .carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 0px !important;
+  background: #38384a;
+  transition: all 0.15s ease;
+}
+
+.series-infrastructure .carousel-dot.active {
+  background: var(--nuvero-red);
+  width: 16px;
+  border-radius: 0px !important;
+  box-shadow: none !important;
+}
+
+/* ==========================================================================
+   8-BIT HIGH-DENSITY BESPOKE STAGES (ZERO GRADIENTS, ZERO GLOWS)
+   ========================================================================== */
+
+/* Stepped 8-Bit Pixel Corner Blocks */
+.infra-corner-bracket {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: var(--nuvero-red);
+  pointer-events: none;
+  z-index: 5;
+}
+
+.infra-corner-bracket.tl { top: 4px; left: 4px; }
+.infra-corner-bracket.tr { top: 4px; right: 4px; }
+.infra-corner-bracket.bl { bottom: 4px; left: 4px; }
+.infra-corner-bracket.br { bottom: 4px; right: 4px; }
+
+/* A. 8-Bit Editorial Hero */
+.infra-editorial-hero {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  padding: 30px 28px;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-editorial-hero {
+  padding: 18px 20px;
+}
+
+.infra-meta-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #222232;
+}
+
+.infra-stamp-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-pixel) !important;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #1f1f2c;
+  border: 2px solid var(--nuvero-red);
+  padding: 6px 12px;
+  border-radius: 0px !important;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+/* Flat 8-Bit Solid Laser Line */
+.infra-laser-line {
+  width: 100%;
+  height: 3px;
+  background: var(--nuvero-red) !important;
+  margin: 14px 0;
+  box-shadow: none !important;
+}
+
+.infra-hero-monument-title {
+  font-family: var(--font-display);
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+  margin: 10px 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-hero-monument-title {
+  font-size: 38px;
+  margin: 6px 0;
+}
+
+.infra-hero-lead-quote {
+  font-family: var(--font-body);
+  font-size: 20px;
+  line-height: 1.45;
+  color: #cbd5e1;
+  font-weight: 400;
+}
+
+.series-infrastructure.ratio-1-1 .infra-hero-lead-quote {
+  font-size: 15px;
+}
+
+/* 8-Bit 6-Shift Inventory Grid */
+.infra-shift-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 16px 0;
+  padding: 14px;
+  background: #0d0d16;
+  border: 2px solid #262638;
+  border-radius: 0px !important;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-shift-preview-grid {
+  gap: 6px;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+.infra-shift-preview-cell {
+  background: #161622;
+  border: 1px solid #2c2c40;
+  border-radius: 0px !important;
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-shift-preview-cell {
+  padding: 5px 6px;
+}
+
+.infra-shift-preview-cell .time {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ff3344;
+}
+
+.infra-shift-preview-cell .task {
+  font-family: var(--font-display);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-shift-preview-cell .task {
+  font-size: 11px;
+}
+
+.infra-shift-preview-cell .status {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  color: #00ff66;
+}
+
+.infra-hero-cue-footer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 2px solid #222232;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+/* B. 8-Bit Operations Console */
+.infra-timeline-console {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 26px 24px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-timeline-console {
+  padding: 14px 16px;
+}
+
+.infra-console-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #222232;
+}
+
+.infra-rail-track {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+  justify-content: space-around;
+  margin: 12px 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-rail-track {
+  gap: 6px;
+  margin: 6px 0;
+}
+
+.infra-rail-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #161624;
+  border: 2px solid #2a2a3e;
+  border-radius: 0px !important;
+  padding: 14px 18px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-rail-entry {
+  padding: 8px 12px;
+}
+
+.infra-time-chip {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nuvero-red);
+  border: 2px solid #ffffff;
+  padding: 6px 12px;
+  border-radius: 0px !important;
+  letter-spacing: 0.04em;
+  box-shadow: 2px 2px 0px #000000;
+  flex-shrink: 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-time-chip {
+  font-size: 11px;
+  padding: 4px 8px;
+}
+
+.infra-entry-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+  margin: 0 16px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-entry-title {
+  font-size: 14px;
+  margin: 0 10px;
+}
+
+.infra-status-chip {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  color: #00ff66;
+  background: #102418;
+  border: 1px solid #00ff66;
+  padding: 5px 10px;
+  border-radius: 0px !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  letter-spacing: 0.04em;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.infra-runtime-footer {
+  background: #0d0d16;
+  border: 1px solid #262638;
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: #cbd5e1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-runtime-footer {
+  padding: 8px 12px;
+  font-size: 10.5px;
+}
+
+/* C. 8-Bit Nocturnal Console */
+.infra-nocturnal-console {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #0d0d16 !important;
+  border: 2px solid var(--nuvero-red) !important;
+  box-shadow: 4px 4px 0px #000000 !important;
+  border-radius: 0px !important;
+  padding: 26px 24px;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-nocturnal-console {
+  padding: 14px 16px;
+}
+
+.infra-nocturnal-banner {
+  background: #241216;
+  border: 2px solid var(--nuvero-red);
+  padding: 14px 18px;
+  border-radius: 0px !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  color: #ffffff;
+  margin: 10px 0;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-nocturnal-banner {
+  padding: 8px 12px;
+  font-size: 10.5px;
+}
+
+/* D. 8-Bit High-Score Stat Screen (Post 1 Slide 4: 31.5 hrs/wk) */
+.infra-stat-reactor-card {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 30px 26px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-stat-reactor-card {
+  padding: 16px 18px;
+}
+
+.infra-monument-num {
+  font-family: var(--font-pixel);
+  font-size: 68px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: #ff3344;
+  letter-spacing: -0.02em;
+  margin: 6px 0;
+  text-shadow: none !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-monument-num {
+  font-size: 46px;
+  margin: 2px 0;
+}
+
+.infra-monument-label-pill {
+  font-family: var(--font-pixel);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #1e1e2c;
+  border: 2px solid #ffffff;
+  padding: 6px 18px;
+  border-radius: 0px !important;
+  margin-bottom: 12px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-monument-label-pill {
+  font-size: 11px;
+  padding: 4px 12px;
+  margin-bottom: 6px;
+}
+
+.infra-workload-breakdown {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin: 12px 0;
+  padding: 14px;
+  background: #0d0d16;
+  border: 2px solid #262638;
+  border-radius: 0px !important;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-workload-breakdown {
+  gap: 5px;
+  padding: 8px;
+  margin: 6px 0;
+}
+
+.infra-workload-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.infra-workload-cell .time-val {
+  font-family: var(--font-pixel);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-workload-cell .time-val {
+  font-size: 12.5px;
+}
+
+.infra-workload-cell .task-label {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+/* 8-Bit Discrete Pixel Block Progress Bars */
+.pixel-meter-bar {
+  width: 100%;
+  height: 8px;
+  background: #0a0a10;
+  border: 1px solid #38384c;
+  padding: 1px;
+  display: flex;
+  gap: 2px;
+  margin-top: 4px;
+}
+
+.pixel-meter-block {
+  flex: 1;
+  height: 100%;
+  background: #242434;
+}
+
+.pixel-meter-block.active {
+  background: var(--nuvero-red);
+}
+
+.pixel-meter-block.active.green {
+  background: #00ff66;
+}
+
+.pixel-meter-block.active.blue {
+  background: #38bdf8;
+}
+
+/* E. 8-Bit Closing Manifesto Stage (Slide 5) */
+.infra-manifesto-stage {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 32px 28px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-manifesto-stage {
+  padding: 18px 20px;
+}
+
+.infra-manifesto-line {
+  font-family: var(--font-display);
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+
+.series-infrastructure.ratio-1-1 .infra-manifesto-line {
+  font-size: 30px;
+}
+
+.infra-manifesto-line.red {
+  color: #ff3344;
+  text-shadow: none !important;
+}
+
+/* 8-Bit Paradigm Comparison Board */
+.infra-paradigm-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 16px 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-paradigm-comparison {
+  gap: 8px;
+  margin: 8px 0;
+}
+
+.infra-paradigm-card {
+  padding: 16px 18px;
+  border-radius: 0px !important;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-paradigm-card {
+  padding: 10px 12px;
+}
+
+.infra-paradigm-card.old {
+  background: #181216;
+  border: 2px solid #55222a;
+}
+
+.infra-paradigm-card.nuvero {
+  background: #151520;
+  border: 2px solid var(--nuvero-red);
+}
+
+.infra-paradigm-card .tag {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.infra-paradigm-card.old .tag { color: #ff4d5a; }
+.infra-paradigm-card.nuvero .tag { color: #00ff66; }
+
+.infra-paradigm-card .desc {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.4;
+  color: #cbd5e1;
+}
+
+.series-infrastructure.ratio-1-1 .infra-paradigm-card .desc {
+  font-size: 12px;
+}
+
+/* F. 8-Bit Autonomous Pipeline Architecture Matrix (Post 2 Slide 2) */
+.infra-pipeline-matrix-stage {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 22px 20px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+  gap: 12px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-matrix-stage {
+  padding: 10px 12px;
+  gap: 6px;
+}
+
+/* 1. HUD Control Bar */
+.infra-pipeline-hud-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #222232;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-hud-bar {
+  padding-bottom: 4px;
+}
+
+.infra-pipeline-hud-bar .hud-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infra-pipeline-hud-bar .hud-title {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-hud-bar .hud-title {
+  font-size: 9px;
+}
+
+.infra-pipeline-hud-bar .hud-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.infra-pipeline-hud-bar .hud-tag {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  box-shadow: 2px 2px 0 #000000;
+  border-radius: 0px !important;
+}
+
+.infra-pipeline-hud-bar .hud-tag.green {
+  color: #00ff66;
+  background: #0c1e14;
+  border: 1px solid #00ff66;
+}
+
+.infra-pipeline-hud-bar .hud-tag.red {
+  color: #ff4d5a;
+  background: #241216;
+  border: 1px solid #ff3344;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-hud-bar .hud-tag {
+  font-size: 8px;
+  padding: 2px 5px;
+}
+
+/* 2. Horizontal Data Bus Track */
+.infra-pipeline-flow-bus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0d0d16;
+  border: 2px solid #262638;
+  padding: 8px 10px;
+  box-shadow: 2px 2px 0px #000000;
+  border-radius: 0px !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-flow-bus {
+  padding: 4px 6px;
+}
+
+.infra-pipeline-flow-bus .bus-step {
+  font-family: var(--font-pixel);
+  font-size: 9.5px;
+  font-weight: 700;
+  color: #cbd5e1;
+  background: #181824;
+  border: 1px solid #38384e;
+  padding: 3px 6px;
+  white-space: nowrap;
+  border-radius: 0px !important;
+}
+
+.infra-pipeline-flow-bus .bus-step.focal {
+  background: #28141a;
+  border-color: var(--nuvero-red);
+  color: #ff4d5a;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-flow-bus .bus-step {
+  font-size: 7.5px;
+  padding: 1px 3px;
+}
+
+.infra-pipeline-flow-bus .bus-arrow {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: var(--nuvero-red);
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-flow-bus .bus-arrow {
+  font-size: 8px;
+}
+
+/* 3. 2x3 Pipeline Architecture Grid */
+.infra-pipeline-grid-2x3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+  flex: 1;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-grid-2x3 {
+  gap: 5px;
+}
+
+.infra-grid-step-card {
+  background: #161624;
+  border: 2px solid #2a2a3e;
+  border-radius: 0px !important;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-grid-step-card {
+  padding: 6px 8px;
+}
+
+.infra-grid-step-card.focal {
+  background: #20141a;
+  border-color: var(--nuvero-red);
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.step-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.step-num-badge {
+  font-family: var(--font-pixel);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #28283a;
+  border: 1px solid #48485e;
+  padding: 2px 6px;
+  border-radius: 0px !important;
+}
+
+.step-num-badge.focal {
+  background: var(--nuvero-red);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .step-num-badge {
+  font-size: 9px;
+  padding: 1px 4px;
+}
+
+.step-card-name {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+  margin: 0 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.series-infrastructure.ratio-1-1 .step-card-name {
+  font-size: 11.5px;
+  margin: 0 2px;
+}
+
+.step-card-delta {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+}
+
+.step-card-delta.focal {
+  color: #ff3344;
+}
+
+.series-infrastructure.ratio-1-1 .step-card-delta {
+  font-size: 8.5px;
+}
+
+.step-card-action {
+  font-family: var(--font-body);
+  font-size: 12px;
+  line-height: 1.35;
+  color: #cbd5e1;
+  margin: 4px 0;
+}
+
+.series-infrastructure.ratio-1-1 .step-card-action {
+  font-size: 9.5px;
+  line-height: 1.2;
+  margin: 1px 0;
+}
+
+.step-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 5px;
+  border-top: 1px solid #262638;
+}
+
+.series-infrastructure.ratio-1-1 .step-card-footer {
+  padding-top: 2px;
+}
+
+.step-tech {
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.04em;
+}
+
+.series-infrastructure.ratio-1-1 .step-tech {
+  font-size: 7.5px;
+}
+
+.step-status {
+  font-family: var(--font-pixel);
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.step-status.ok {
+  color: #00ff66;
+}
+
+.step-status.star {
+  color: #ff4d5a;
+}
+
+.series-infrastructure.ratio-1-1 .step-status {
+  font-size: 7.5px;
+}
+
+/* 4. Bottom Pipeline Footer Bar */
+.infra-pipeline-footer-bar {
+  background: #0d0d16;
+  border: 2px solid #262638;
+  border-radius: 0px !important;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-footer-bar {
+  padding: 5px 8px;
+  font-size: 8px;
+}
+
+.infra-pipeline-footer-bar .footer-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.infra-pipeline-footer-bar .footer-stat .label {
+  color: #94a3b8;
+}
+
+.infra-pipeline-footer-bar .footer-stat .val {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.infra-pipeline-footer-bar .footer-stat .val.green {
+  color: #00ff66;
+}
+
+.infra-pipeline-footer-bar .footer-stat .val.red {
+  color: #ff4d5a;
+}
+
+.infra-pipeline-footer-bar .footer-divider {
+  width: 2px;
+  height: 16px;
+  background: #262638;
+}
+
+.series-infrastructure.ratio-1-1 .infra-pipeline-footer-bar .footer-divider {
+  height: 10px;
+}
+
+/* Legacy Pipeline Circuit (Safeguarded) */
+.infra-pipeline-circuit {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 24px 22px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.infra-connector-arrow svg {
+  width: 14px;
+  height: 14px;
+  max-width: 14px;
+  max-height: 14px;
+}
+
+/* G. 8-Bit Friction Deck */
+.infra-friction-deck {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid var(--nuvero-red) !important;
+  border-radius: 0px !important;
+  padding: 24px 22px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-friction-deck {
+  padding: 12px 14px;
+}
+
+.infra-friction-card {
+  background: #1a1216;
+  border: 2px solid #4a222a;
+  border-left: 6px solid var(--nuvero-red);
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-friction-card {
+  padding: 6px 10px;
+}
+
+.infra-friction-title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-friction-title {
+  font-size: 13px;
+}
+
+.infra-friction-pill {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nuvero-red);
+  border: 1px solid #ffffff;
+  padding: 4px 8px;
+  border-radius: 0px !important;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.infra-friction-alert-footer {
+  background: #24141a;
+  border: 2px solid var(--nuvero-red);
+  padding: 12px 16px;
+  border-radius: 0px !important;
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  color: #ffffff;
+  line-height: 1.45;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-friction-alert-footer {
+  padding: 8px 10px;
+  font-size: 10px;
+}
+
+/* H. 8-Bit Telemetry Stopwatch Card */
+.infra-telemetry-console-card {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #0d0d16 !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 24px 22px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-telemetry-console-card {
+  padding: 14px 16px;
+}
+
+.infra-timer-gauge-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #181216;
+  border: 2px solid var(--nuvero-red);
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-timer-gauge-row {
+  padding: 7px 12px;
+}
+
+.infra-timer-big {
+  font-family: var(--font-pixel);
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff3344;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-timer-big {
+  font-size: 18px;
+}
+
+.infra-log-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #14141e;
+  border: 1px solid #28283a;
+  border-radius: 0px !important;
+  padding: 12px 16px;
+  font-family: var(--font-pixel);
+}
+
+.series-infrastructure.ratio-1-1 .infra-log-row {
+  padding: 6px 10px;
+}
+
+.infra-log-time {
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--nuvero-red);
+  padding: 3px 7px;
+  border: 1px solid #fff;
+  border-radius: 0px !important;
+}
+
+.infra-log-text {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  flex: 1;
+  margin-left: 14px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-log-text {
+  font-size: 12.5px;
+  margin-left: 8px;
+}
+
+.infra-log-delta {
+  font-size: 11px;
+  font-weight: 700;
+  color: #00ff66;
+}
+
+/* I. 8-Bit Cross-Tool Slashed Stage (Post 3) */
+.infra-cross-tool-stage {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  gap: 16px;
+}
+
+.infra-tool-canvas {
+  flex: 1;
+  position: relative;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 24px 22px;
+  overflow: hidden;
+  box-shadow: 4px 4px 0px #000000 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tool-canvas {
+  padding: 14px 16px;
+}
+
+.infra-tools-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  position: relative;
+  z-index: 2;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tools-grid {
+  gap: 6px;
+}
+
+.infra-tool-card {
+  background: #161624;
+  border: 2px solid #2a2a3c;
+  border-radius: 0px !important;
+  padding: 16px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tool-card {
+  padding: 8px 6px;
+  gap: 2px;
+}
+
+.infra-tool-index {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  font-weight: 700;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.infra-tool-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 0.03em;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tool-name {
+  font-size: 15px;
+}
+
+.infra-tool-flow {
+  font-family: var(--font-pixel);
+  font-size: 10px;
+  color: #ff3344;
+}
+
+/* Crisp 8-Bit Pixel Slash Cut */
+.infra-laser-slash-cut {
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  right: -20px;
+  height: 6px;
+  background: var(--nuvero-red);
+  transform: translateY(-50%) rotate(-10deg);
+  box-shadow: 3px 3px 0px #000000;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.infra-slash-banner {
+  background: var(--nuvero-red);
+  color: #ffffff;
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 0px !important;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 0px #000000;
+  transform: rotate(10deg);
+  white-space: nowrap;
+}
+
+.infra-solution-substrate {
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 4px 4px 0px #000000 !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-solution-substrate {
+  padding: 12px 14px;
+  gap: 5px;
+}
+
+.infra-solution-heading {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-solution-heading {
+  font-size: 19px;
+}
+
+.infra-stack-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.infra-stack-chip {
+  font-family: var(--font-pixel);
+  font-size: 10.5px;
+  font-weight: 700;
+  color: #ffffff;
+  background: #1a1a28;
+  border: 2px solid #36364c;
+  padding: 5px 10px;
+  border-radius: 0px !important;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+/* J. 8-Bit Split Comparison Cards (Post 4) */
+.infra-split-container {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-split-container {
+  gap: 10px;
+}
+
+.infra-split-vs-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 0px !important;
+  background: var(--nuvero-red);
+  color: #ffffff;
+  font-family: var(--font-pixel);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #ffffff;
+  box-shadow: 3px 3px 0px #000000;
+  z-index: 10;
+}
+
+.infra-split-card {
+  border-radius: 0px !important;
+  padding: 24px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 4px 4px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-split-card {
+  padding: 14px 14px;
+}
+
+.infra-split-card.without {
+  background: #181216;
+  border: 2px dashed #66222c;
+}
+
+.infra-split-card.with {
+  background: #14141e !important;
+  border: 2px solid var(--nuvero-red);
+}
+
+.infra-state-tag {
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 5px 12px;
+  border-radius: 0px !important;
+  width: fit-content;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.infra-split-card.without .infra-state-tag {
+  color: #ffffff;
+  background: #4a161d;
+  border: 1px solid #ff4d5a;
+}
+
+.infra-split-card.with .infra-state-tag {
+  color: #ffffff;
+  background: var(--nuvero-red);
+  border: 1px solid #ffffff;
+}
+
+.infra-metric-num {
+  font-family: var(--font-pixel);
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  text-shadow: none !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-metric-num {
+  font-size: 32px;
+  margin-bottom: 4px;
+}
+
+.infra-split-card.without .infra-metric-num {
+  color: #ff4d5a;
+}
+
+.infra-split-card.with .infra-metric-num {
+  color: #ffffff;
+}
+
+.infra-metric-label {
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #cbd5e1;
+}
+
+.series-infrastructure.ratio-1-1 .infra-metric-label {
+  font-size: 13px;
+}
+
+.infra-split-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 14px 0;
+  flex: 1;
+  justify-content: center;
+}
+
+.series-infrastructure.ratio-1-1 .infra-split-features {
+  gap: 6px;
+  margin: 6px 0;
+}
+
+.infra-feature-bullet {
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.35;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-feature-bullet {
+  font-size: 11.5px;
+}
+
+.infra-split-card.without .infra-feature-bullet {
+  color: #fca5a5;
+}
+
+.infra-split-card.with .infra-feature-bullet {
+  color: #e2e8f0;
+}
+
+.infra-feature-bullet .ico {
+  font-family: var(--font-pixel);
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.infra-split-card.without .infra-feature-bullet .ico {
+  color: #ff4d5a;
+}
+
+.infra-split-card.with .infra-feature-bullet .ico {
+  color: #00ff66;
+}
+
+.infra-split-footer-status {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  margin-top: 14px;
+  padding-top: 10px;
+  border-top: 2px solid #222232;
+}
+
+.infra-split-card.with .infra-split-footer-status {
+  color: #00ff66;
+}
+
+.infra-split-card.without .infra-split-footer-status {
+  color: #ff6b75;
+}
+
+/* K. 8-Bit 3-Column Performance Cockpit */
+.infra-cockpit-stage {
+  flex: 1;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  width: 100%;
+}
+
+.series-infrastructure.ratio-1-1 .infra-cockpit-stage {
+  gap: 8px;
+}
+
+.infra-cockpit-card {
+  background: #14141e !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 24px 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-cockpit-card {
+  padding: 14px 10px;
+  gap: 5px;
+}
+
+.infra-cockpit-card.focal {
+  border-color: var(--nuvero-red) !important;
+  background: #20141a !important;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.infra-cockpit-num {
+  font-family: var(--font-pixel);
+  font-size: 42px;
+  font-weight: 700;
+  color: #ff3344;
+  line-height: 1.1;
+  text-shadow: none !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-cockpit-num {
+  font-size: 30px;
+}
+
+.infra-cockpit-title {
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.05em;
+}
+
+.infra-cockpit-sub {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+/* L. 8-Bit Commissioning HUD Panel (Post 5) */
+.infra-commissioning-chassis {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #14141e !important;
+  backdrop-filter: none !important;
+  border: 2px solid #2e2e42 !important;
+  border-radius: 0px !important;
+  padding: 28px 24px;
+  box-shadow: 4px 4px 0px #000000 !important;
+  position: relative;
+}
+
+.series-infrastructure.ratio-1-1 .infra-commissioning-chassis {
+  padding: 14px 16px;
+}
+
+.infra-chassis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #222232;
+}
+
+.infra-system-name {
+  font-family: var(--font-pixel);
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  margin: 8px 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-system-name {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.infra-telemetry-4grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  flex: 1;
+  margin: 12px 0;
+}
+
+.series-infrastructure.ratio-1-1 .infra-telemetry-4grid {
+  gap: 8px;
+  margin: 6px 0;
+}
+
+.infra-telemetry-cell {
+  background: #161624;
+  border: 2px solid #2a2a3e;
+  border-radius: 0px !important;
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-telemetry-cell {
+  padding: 10px 12px;
+}
+
+.infra-cell-label {
+  font-family: var(--font-pixel);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #94a3b8;
+  text-transform: uppercase;
+}
+
+.infra-cell-huge {
+  font-family: var(--font-pixel);
+  font-size: 40px;
+  font-weight: 700;
+  color: #ff3344;
+  line-height: 1.1;
+  margin: 4px 0;
+  text-shadow: none !important;
+}
+
+.series-infrastructure.ratio-1-1 .infra-cell-huge {
+  font-size: 28px;
+  margin: 2px 0;
+}
+
+.infra-chassis-footer {
+  background: #0d0d16;
+  border: 2px solid #262638;
+  border-radius: 0px !important;
+  padding: 12px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-pixel);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-chassis-footer {
+  font-size: 10px;
+  padding: 7px 10px;
+}
+
+/* 8-Bit Webhook Payload Inspector (Post 2 Slide 1) */
+.infra-webhook-inspector {
+  background: #0d0d16;
+  border: 2px solid #262638;
+  border-radius: 0px !important;
+  padding: 14px 18px;
+  margin: 14px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-pixel);
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-webhook-inspector {
+  padding: 8px 10px;
+  margin: 6px 0;
+  gap: 4px;
+}
+
+.infra-payload-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 11px;
+}
+
+.series-infrastructure.ratio-1-1 .infra-payload-row {
+  font-size: 10px;
+}
+
+.infra-payload-key {
+  color: #94a3b8;
+}
+
+.infra-payload-val {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.infra-payload-val.highlight-green {
+  color: #00ff66;
+}
+
+.infra-payload-val.highlight-red {
+  color: #ff3344;
+}
+
+/* 8-Bit 3-Tier Architecture Stack (Post 2 Slide 5) */
+.infra-tier-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 16px 0;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tier-stack {
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.infra-tier-item {
+  background: #161624;
+  border: 2px solid #2c2c3e;
+  border-radius: 0px !important;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tier-item {
+  padding: 7px 10px;
+}
+
+.infra-tier-item.core {
+  border-color: #38384e;
+}
+
+.infra-tier-item.glue {
+  border-color: #55222c;
+  background: #1c1418;
+}
+
+.infra-tier-item.infra-focal {
+  border-color: var(--nuvero-red);
+  background: #24141a;
+  box-shadow: 3px 3px 0px #000000;
+}
+
+.infra-tier-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.infra-tier-name {
+  font-family: var(--font-pixel);
+  font-size: 13.5px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.series-infrastructure.ratio-1-1 .infra-tier-name {
+  font-size: 11px;
+}
+
+.infra-tier-sub {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: #94a3b8;
+}
+
+.infra-tier-badge {
+  font-family: var(--font-pixel);
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 0px !important;
+  background: #28283a;
+  border: 1px solid #48485e;
+  color: #ffffff;
+}
+
+.infra-tier-item.infra-focal .infra-tier-badge {
+  background: var(--nuvero-red);
+  border-color: #ffffff;
+  color: #ffffff;
+  box-shadow: 2px 2px 0px #000000;
+}
+
+
+
+
+

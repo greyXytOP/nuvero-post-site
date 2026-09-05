@@ -13,10 +13,1229 @@ const NUVERO_LOGO_SVG = `
 </svg>
 `;
 
-// Complete Dataset for all 4 Instagram Carousel Case Studies
+// Complete Dataset: 5 Brand Infrastructure Posts + 4 Production Case Studies
 const POSTS_DATA = [
   {
+    id: 'post-ops-audit',
+    series: 'BRAND INFRASTRUCTURE',
+    categoryTag: 'OPS AUDIT',
+    client: 'Nuvero Ops Audit',
+    sector: 'Autonomous Workflow Ledger',
+    title: 'The work that should have disappeared',
+    shortDesc: 'A normal Tuesday off your plate: 6 daily workflows running unattended with 31.5 hrs/wk returned.',
+    caption: `Some work should not require a human.
+
+Look at a normal Tuesday when Nuvero is running:
+• 09:00: Morning report compiled
+• 10:40: Abandoned carts recovered
+• 12:15: Invoices reconciled
+• 15:30: Support tickets resolved
+• 18:05: Follow-up calls sent
+• 23:47: After-hours enquiries answered
+
+31.5 hrs/wk returned to the team.
+
+The goal is not to add another dashboard.
+It is to make the work disappear.
+
+Build the infrastructure underneath at nuvero.space.
+
+#AIInfrastructure #Operations #WorkflowAutomation #NuveroAI #BusinessOps`,
+    slides: [
+      {
+        slideNum: '01 / 05',
+        category: 'NUVERO / OPS AUDIT 001',
+        eyebrow: 'SYSTEM THESIS',
+        shortTitle: '01 Hook',
+        headline: 'Some work should not require a human.',
+        lead: 'When software is wired directly into software, human operators stop acting as repetitive manual relays.',
+        renderCustomStage: () => `
+          <div class="infra-editorial-hero">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-meta-header-row">
+              <div class="infra-stamp-badge">[ QUEST: OPS AUDIT 001 ]</div>
+              <div style="display: flex; align-items: center; gap: 8px; font-family: var(--font-pixel); font-size: 11px; color: #00ff66;">
+                <span class="pixel-status-square"></span>
+                <span>AUTONOMOUS SHIFT LEDGER // TUESDAY 24H</span>
+              </div>
+            </div>
+            <div class="infra-laser-line"></div>
+            <div class="infra-hero-monument-title">Some work should not require a human.</div>
+            <div class="infra-hero-lead-quote">A normal Tuesday, off your team's plate. 6 daily workflows running unattended with 31.5 hrs/wk returned.</div>
+            
+            <div class="infra-shift-preview-grid">
+              <div class="infra-shift-preview-cell">
+                <span class="time">09:00</span>
+                <span class="task">Morning report compiled</span>
+                <span class="status">✓ SYNCED</span>
+              </div>
+              <div class="infra-shift-preview-cell">
+                <span class="time">10:40</span>
+                <span class="task">Abandoned carts recovered</span>
+                <span class="status">✓ RECOVERED</span>
+              </div>
+              <div class="infra-shift-preview-cell">
+                <span class="time">12:15</span>
+                <span class="task">Invoices reconciled</span>
+                <span class="status">✓ BALANCED</span>
+              </div>
+              <div class="infra-shift-preview-cell">
+                <span class="time">15:30</span>
+                <span class="task">Support tickets resolved</span>
+                <span class="status">✓ RESOLVED</span>
+              </div>
+              <div class="infra-shift-preview-cell">
+                <span class="time">18:05</span>
+                <span class="task">Follow-up calls sent</span>
+                <span class="status">✓ SENT</span>
+              </div>
+              <div class="infra-shift-preview-cell">
+                <span class="time">23:47</span>
+                <span class="task">After-hours enquiries answered</span>
+                <span class="status">✓ QUALIFIED</span>
+              </div>
+            </div>
+
+            <div class="infra-hero-cue-footer">
+              <span style="color: #22c55e; font-weight: 700;">✓ 31.5 HRS/WK RETURNED</span>
+              <span>VERIFIED UNATTENDED // 6 WORKFLOWS</span>
+              <span style="color: var(--nuvero-red); font-weight: 700;">SWIPE FOR TELEMETRY →</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '02 / 05',
+        category: 'NUVERO / OPS AUDIT 001',
+        eyebrow: 'DAYTIME OPERATIONS',
+        shortTitle: '02 Daytime',
+        headline: 'A normal Tuesday morning. <span class="highlight-red">Off your plate.</span>',
+        lead: 'Every line timestamped, logged, and executed autonomously without human prompting.',
+        renderCustomStage: () => `
+          <div class="infra-timeline-console">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-console-bar">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="pixel-status-square"></span>
+                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">SHIFT TELEMETRY // 09:00 - 16:00</span>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #ff4d5a; background: #241216; border: 1px solid #ff3344; padding: 4px 8px; box-shadow: 2px 2px 0 #000;">[ 4 WORKFLOWS COMPLETED ]</span>
+            </div>
+            
+            <div style="background: #101018; border: 1px solid #262638; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-pixel); font-size: 11px; box-shadow: 2px 2px 0 #000;">
+              <span style="color: #cbd5e1;">PRODUCTION SHIFT PROGRESSION</span>
+              <span style="color: #00ff66; font-weight: 700;">100% UNATTENDED ACCURACY</span>
+            </div>
+
+            <div class="infra-rail-track">
+              <div class="infra-rail-entry">
+                <div class="infra-time-chip">09:00</div>
+                <div class="infra-entry-title">
+                  <div>Morning report compiled</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Shopify + Stripe + QuickBooks</div>
+                </div>
+                <div class="infra-status-chip">✓ SYNCED</div>
+              </div>
+              <div class="infra-rail-entry">
+                <div class="infra-time-chip">10:40</div>
+                <div class="infra-entry-title">
+                  <div>Abandoned carts recovered</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">WhatsApp Business API outreach</div>
+                </div>
+                <div class="infra-status-chip">✓ RECOVERED</div>
+              </div>
+              <div class="infra-rail-entry">
+                <div class="infra-time-chip">12:15</div>
+                <div class="infra-entry-title">
+                  <div>Invoices reconciled</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Zero discrepancy bank feed match</div>
+                </div>
+                <div class="infra-status-chip">✓ BALANCED</div>
+              </div>
+              <div class="infra-rail-entry">
+                <div class="infra-time-chip">15:30</div>
+                <div class="infra-entry-title">
+                  <div>Support tickets resolved</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Autonomous Tier-1 resolution</div>
+                </div>
+                <div class="infra-status-chip">✓ RESOLVED</div>
+              </div>
+            </div>
+            
+            <div class="infra-runtime-footer">
+              <span style="color: var(--nuvero-red); font-weight: 800;">RUNTIME STATUS:</span>
+              <span>Zero human intervention required across Shopify, QuickBooks & Zendesk.</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '03 / 05',
+        category: 'NUVERO / OPS AUDIT 001',
+        eyebrow: 'NOCTURNAL OPERATIONS',
+        shortTitle: '03 Nocturnal',
+        headline: 'Then, while the office is closed:',
+        lead: 'The intelligence layer stays awake so your business never goes offline.',
+        renderCustomStage: () => `
+          <div class="infra-nocturnal-console">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-console-bar">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="pixel-status-square"></span>
+                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">NOCTURNAL TELEMETRY // 18:00 - 08:00</span>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #00ff66; background: #0c1e14; border: 1px solid #00ff66; padding: 4px 8px; box-shadow: 2px 2px 0 #000;">[ LIGHTS-OUT RUNTIME ]</span>
+            </div>
+            <div class="infra-nocturnal-banner">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span style="font-weight: 700; color: #ff4d5a;">THEN:</span>
+                <span>OFFICE CLOSED // AI INTELLIGENCE ACTIVE</span>
+              </div>
+              <span style="font-weight: 700; color: #00ff66;">COVERAGE: 24/7 UNATTENDED</span>
+            </div>
+            <div class="infra-rail-track">
+              <div class="infra-rail-entry" style="border-color: rgba(193, 18, 31, 0.4); background: rgba(193, 18, 31, 0.08);">
+                <div class="infra-time-chip">18:05</div>
+                <div class="infra-entry-title">
+                  <div>Follow-up calls sent</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Voice agent follows up warm commercial quotes</div>
+                </div>
+                <div class="infra-status-chip">✓ COMPLETED</div>
+              </div>
+              <div class="infra-rail-entry" style="border-color: rgba(193, 18, 31, 0.4); background: rgba(193, 18, 31, 0.08);">
+                <div class="infra-time-chip">23:47</div>
+                <div class="infra-entry-title">
+                  <div>After-hours enquiries answered</div>
+                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Instant multilingual WhatsApp qualification</div>
+                </div>
+                <div class="infra-status-chip">✓ QUALIFIED</div>
+              </div>
+            </div>
+
+            <div style="background: #101018; border: 1px solid #262638; padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 12px; box-shadow: 2px 2px 0 #000;">
+              <div style="display: flex; flex-direction: column; gap: 2px;">
+                <span style="color: #94a3b8; font-size: 10.5px; font-family: var(--font-pixel);">WITHOUT NUVERO:</span>
+                <span style="color: #ff4d5a; font-weight: 700;">14 hr response lag (Next morning)</span>
+              </div>
+              <div style="width: 2px; height: 28px; background: #262638;"></div>
+              <div style="display: flex; flex-direction: column; gap: 2px; text-align: right;">
+                <span style="color: #94a3b8; font-size: 10.5px; font-family: var(--font-pixel);">WITH NUVERO:</span>
+                <span style="color: #00ff66; font-weight: 700;">0.8s instant first-ring response</span>
+              </div>
+            </div>
+
+            <div class="infra-runtime-footer" style="background: #1e1014; border: 1px solid #ff3344; box-shadow: 2px 2px 0 #000;">
+              <span style="color: #ff4d5a; font-family: var(--font-pixel); font-weight: 700;">[ RESULT ]</span>
+              <span>Next-morning response lag eliminated. Warm commercial inquiries closed while competitors sleep.</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '04 / 05',
+        category: 'NUVERO / OPS AUDIT 001',
+        eyebrow: 'PRODUCTION LEDGER',
+        shortTitle: '04 31.5 hrs',
+        headline: 'The compounding dividend of infrastructure.',
+        lead: 'Every line on this audit sheet represents tangible manual labor retired permanently.',
+        renderCustomStage: () => `
+          <div class="infra-stat-reactor-card">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            
+            <div style="width: 100%; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-pixel); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 2px solid #262638;">
+              <span>AUDIT SUMMARY RECORD</span>
+              <span style="color: #00ff66; font-weight: 700;">[ ✓ MEASURED IN PRODUCTION ]</span>
+            </div>
+
+            <div class="infra-monument-num">31.5 hrs/wk</div>
+            <div class="infra-monument-label-pill">RETURNED TO THE TEAM</div>
+            
+            <div class="infra-workload-breakdown">
+              <div class="infra-workload-cell">
+                <span class="time-val">6.5h</span>
+                <span class="task-label">Reporting</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+              </div>
+              <div class="infra-workload-cell">
+                <span class="time-val">8.0h</span>
+                <span class="task-label">Carts</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+              </div>
+              <div class="infra-workload-cell">
+                <span class="time-val">7.0h</span>
+                <span class="task-label">Invoices</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+              </div>
+              <div class="infra-workload-cell">
+                <span class="time-val">10.0h</span>
+                <span class="task-label">Support</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                </div>
+              </div>
+            </div>
+
+            <div style="width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #0d0d16; border: 2px solid #262638; padding: 12px 14px; font-family: var(--font-pixel); text-align: center; box-shadow: 2px 2px 0 #000;">
+              <div>
+                <div style="font-size: 10px; color: #94a3b8;">ANNUAL DIVIDEND</div>
+                <div style="font-size: 13.5px; font-weight: 700; color: #ffffff; margin-top: 4px;">1,638 HOURS</div>
+              </div>
+              <div>
+                <div style="font-size: 10px; color: #94a3b8;">CAPACITY GAIN</div>
+                <div style="font-size: 13.5px; font-weight: 700; color: #ff3344; margin-top: 4px;">0.8 FTE</div>
+              </div>
+              <div>
+                <div style="font-size: 10px; color: #94a3b8;">ACCURACY RATE</div>
+                <div style="font-size: 13.5px; font-weight: 700; color: #00ff66; margin-top: 4px;">99.4%</div>
+              </div>
+            </div>
+
+            <div style="font-family: var(--font-body); font-size: 14px; color: #94a3b8; line-height: 1.45; text-align: center;">
+              Measured in production across morning reporting, cart recovery, invoice reconciliation, support tickets, and after-hours triage.
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '05 / 05',
+        category: 'NUVERO / OPS AUDIT 001',
+        eyebrow: 'CLOSING THESIS',
+        shortTitle: '05 Disappear',
+        headline: 'The goal isn\'t to add another dashboard.',
+        lead: 'It\'s to make the work disappear.',
+        renderCustomStage: () => `
+          <div class="infra-manifesto-stage">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+              <span style="color: var(--nuvero-red); font-weight: 800;">SYSTEM PRINCIPLE 001</span>
+              <span>AUTONOMOUS INFRASTRUCTURE</span>
+            </div>
+
+            <div>
+              <div class="infra-manifesto-line">
+                The goal isn't to add another dashboard.
+              </div>
+              <div class="infra-laser-line" style="margin: 16px 0;"></div>
+              <div class="infra-manifesto-line red">
+                It's to make the work disappear.
+              </div>
+            </div>
+
+            <div class="infra-paradigm-comparison">
+              <div class="infra-paradigm-card old">
+                <span class="tag">OLD PARADIGM // DASHBOARD FATIGUE</span>
+                <div class="desc">
+                  • 12 browser tabs open each morning<br>
+                  • Operators copying data across SaaS apps<br>
+                  • Constant notification ping-pong
+                </div>
+              </div>
+              <div class="infra-paradigm-card nuvero">
+                <span class="tag">NUVERO // INVISIBLE RUNTIME</span>
+                <div class="desc">
+                  • Zero new interfaces to learn<br>
+                  • Autonomous background execution<br>
+                  • The work disappears permanently
+                </div>
+              </div>
+            </div>
+
+            <div style="padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body); font-size: 16px; line-height: 1.45; color: #cbd5e1;">
+              Nuvero AI builds AI infrastructure: agentic systems trained on how your company actually works, wired directly into your stack.
+            </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: 'post-lead-lifecycle',
+    series: 'BRAND INFRASTRUCTURE',
+    categoryTag: 'PIPELINE ENGINE',
+    client: 'Lead Telemetry',
+    sector: 'Autonomous Inbound Pipeline',
+    title: 'What actually happens when a lead comes in',
+    shortDesc: 'Legacy 5-step human relay delay vs Nuvero 9-second end-to-end execution telemetry.',
+    caption: `What actually happens when a lead comes in?
+
+In the old workflow:
+1. Human checks form
+2. Human opens CRM
+3. Human messages lead
+4. Human updates CRM
+5. Human schedules meeting
+Result: 2 to 4 hours of delay and missed momentum.
+
+Under the Nuvero layer:
+07:58:12: Lead received
+07:58:14: Lead qualified
+07:58:16: CRM updated
+07:58:21: Follow-up sent
+
+Under 10 seconds end to end.
+
+The model is not the interesting part.
+The system around it is.
+
+Map your lead infrastructure at nuvero.space.
+
+#LeadOps #AIInfrastructure #B2BGrowth #WorkflowAutomation #NuveroAI`,
+    slides: [
+      {
+        slideNum: '01 / 05',
+        category: 'INGEST EVENT // 2231',
+        eyebrow: 'INBOUND TRIGGER',
+        shortTitle: '01 Event',
+        headline: 'A lead came in.',
+        lead: 'What happens in the next 10 seconds defines whether you book the meeting or lose the deal.',
+        renderCustomStage: () => `
+          <div class="infra-editorial-hero">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-meta-header-row">
+              <div class="infra-stamp-badge" style="background: var(--nuvero-red); color: #ffffff;">[ ! ] INBOUND LEAD #2231</div>
+              <div style="display: flex; align-items: center; gap: 8px; font-family: var(--font-pixel); font-size: 11px; color: #00ff66;">
+                <span class="pixel-status-square"></span>
+                <span>INBOUND WEBHOOK TRIGGERED</span>
+              </div>
+            </div>
+            <div class="infra-laser-line"></div>
+            <div class="infra-hero-monument-title">A lead came in.</div>
+            <div class="infra-hero-lead-quote">
+              Speed to lead is not an optimization. It is the entire conversion engine.
+            </div>
+
+            <div class="infra-webhook-inspector">
+              <div class="infra-payload-row">
+                <span class="infra-payload-key">PAYLOAD_INGEST</span>
+                <span class="infra-payload-val highlight-red">inbound.form_submission</span>
+              </div>
+              <div class="infra-payload-row">
+                <span class="infra-payload-key">SOURCE_CHANNEL</span>
+                <span class="infra-payload-val">Website Contact Form // 07:58:12</span>
+              </div>
+              <div class="infra-payload-row">
+                <span class="infra-payload-key">ENRICHMENT_STATUS</span>
+                <span class="infra-payload-val highlight-green">CLEARBIT_OK // REVENUE &gt;$5M</span>
+              </div>
+              <div class="infra-payload-row">
+                <span class="infra-payload-key">LATENCY_BUDGET</span>
+                <span class="infra-payload-val highlight-red">&lt;10.0s END-TO-END</span>
+              </div>
+            </div>
+
+            <div class="infra-hero-cue-footer">
+              <span>ELAPSED TARGET: &lt;10 SECONDS</span>
+              <span style="color: var(--nuvero-red); font-weight: 700;">INSPECT PIPELINE →</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '02 / 05',
+        category: 'SYSTEM ARCHITECTURE',
+        eyebrow: 'AUTONOMOUS PIPELINE',
+        shortTitle: '02 Pipeline',
+        headline: 'The autonomous lead pipeline:',
+        lead: 'Six sequential steps executed with zero human friction or delay.',
+        renderCustomStage: () => `
+          <div class="infra-pipeline-matrix-stage">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+
+            <!-- HUD Control Bar -->
+            <div class="infra-pipeline-hud-bar">
+              <div class="hud-left">
+                <span class="pixel-status-square"></span>
+                <span class="hud-title">PIPELINE MATRIX // 6-STAGE AUTONOMOUS RUNTIME</span>
+              </div>
+              <div class="hud-right">
+                <span class="hud-tag green">[ 100% UNATTENDED ]</span>
+                <span class="hud-tag red">[ &lt;10.0s BUDGET ]</span>
+              </div>
+            </div>
+
+            <!-- Horizontal Flow Bus -->
+            <div class="infra-pipeline-flow-bus">
+              <span class="bus-step">01 INGEST</span>
+              <span class="bus-arrow">►</span>
+              <span class="bus-step">02 ENRICH</span>
+              <span class="bus-arrow">►</span>
+              <span class="bus-step focal">03 QUALIFY</span>
+              <span class="bus-arrow">►</span>
+              <span class="bus-step">04 CRM</span>
+              <span class="bus-arrow">►</span>
+              <span class="bus-step focal">05 OUTREACH</span>
+              <span class="bus-arrow">►</span>
+              <span class="bus-step">06 BOOKED</span>
+            </div>
+
+            <!-- 6-Stage 2x3 Architecture Grid -->
+            <div class="infra-pipeline-grid-2x3">
+              <!-- Stage 01 -->
+              <div class="infra-grid-step-card">
+                <div class="step-card-header">
+                  <span class="step-num-badge">01</span>
+                  <span class="step-card-name">Form submitted</span>
+                  <span class="step-card-delta">0.0s</span>
+                </div>
+                <div class="step-card-action">Website form triggers inbound webhook payload</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">WEBHOOK INGEST</span>
+                  <span class="step-status ok">✓ INGESTED</span>
+                </div>
+              </div>
+
+              <!-- Stage 02 -->
+              <div class="infra-grid-step-card">
+                <div class="step-card-header">
+                  <span class="step-num-badge">02</span>
+                  <span class="step-card-name">Lead enriched</span>
+                  <span class="step-card-delta">+1.2s</span>
+                </div>
+                <div class="step-card-action">Live lookup: company revenue, size &amp; tech stack</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">CLEARBIT / API</span>
+                  <span class="step-status ok">✓ ENRICHED</span>
+                </div>
+              </div>
+
+              <!-- Stage 03 (Focal) -->
+              <div class="infra-grid-step-card focal">
+                <div class="step-card-header">
+                  <span class="step-num-badge focal">03</span>
+                  <span class="step-card-name">ICP Qualified</span>
+                  <span class="step-card-delta focal">+2.1s</span>
+                </div>
+                <div class="step-card-action">Scored against Ideal Customer Profile &amp; buying intent</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">DECISION ENGINE</span>
+                  <span class="step-status star">★ ICP MATCH</span>
+                </div>
+              </div>
+
+              <!-- Stage 04 -->
+              <div class="infra-grid-step-card">
+                <div class="step-card-header">
+                  <span class="step-num-badge">04</span>
+                  <span class="step-card-name">CRM updated</span>
+                  <span class="step-card-delta">+2.0s</span>
+                </div>
+                <div class="step-card-action">Contact record created, deal staged, rep tagged</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">HUBSPOT SYNC</span>
+                  <span class="step-status ok">✓ SYNCED</span>
+                </div>
+              </div>
+
+              <!-- Stage 05 (Focal) -->
+              <div class="infra-grid-step-card focal">
+                <div class="step-card-header">
+                  <span class="step-num-badge focal">05</span>
+                  <span class="step-card-name">WhatsApp follow-up</span>
+                  <span class="step-card-delta focal">+3.7s</span>
+                </div>
+                <div class="step-card-action">Personalized context-aware message sent to lead</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">WHATSAPP API</span>
+                  <span class="step-status ok">✓ SENT &lt;60s</span>
+                </div>
+              </div>
+
+              <!-- Stage 06 -->
+              <div class="infra-grid-step-card">
+                <div class="step-card-header">
+                  <span class="step-num-badge">06</span>
+                  <span class="step-card-name">Meeting booked</span>
+                  <span class="step-card-delta">9.0s</span>
+                </div>
+                <div class="step-card-action">Calendar reservation confirmed directly into pipeline</div>
+                <div class="step-card-footer">
+                  <span class="step-tech">CALENDLY DISPATCH</span>
+                  <span class="step-status ok">✓ CONFIRMED</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Pipeline Telemetry Bar -->
+            <div class="infra-pipeline-footer-bar">
+              <div class="footer-stat">
+                <span class="label">RUNTIME:</span>
+                <span class="val green">9.0 SECONDS</span>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-stat">
+                <span class="label">HUMAN DELAY:</span>
+                <span class="val red">0 HOURS</span>
+              </div>
+              <div class="footer-divider"></div>
+              <div class="footer-stat">
+                <span class="label">STATUS:</span>
+                <span class="val">[ ALL 6 STAGES EXECUTED ]</span>
+              </div>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '03 / 05',
+        category: 'FRICTION AUDIT',
+        eyebrow: 'THE LEGACY RELAY',
+        shortTitle: '03 Old Relay',
+        headline: 'Old workflow',
+        lead: 'When humans act as software connectors, every handoff introduces friction and delay.',
+        renderCustomStage: () => `
+          <div class="infra-friction-deck">
+            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #ff4d5a; letter-spacing: 0.05em; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+              <span>5 MANUAL TOIL STEPS PER INBOUND LEAD</span>
+              <span>HUMAN RELAY DELAYS</span>
+            </div>
+            <div class="infra-friction-card">
+              <div>
+                <div class="infra-friction-title">Human checks form</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Inbox refresh wait: 35-45 minutes</div>
+              </div>
+              <span class="infra-friction-pill">MANUAL CHECK</span>
+            </div>
+            <div class="infra-friction-card">
+              <div>
+                <div class="infra-friction-title">Human opens CRM</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Login, search company & duplicates</div>
+              </div>
+              <span class="infra-friction-pill">LOGIN DELAY</span>
+            </div>
+            <div class="infra-friction-card">
+              <div>
+                <div class="infra-friction-title">Human messages lead</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Manual drafting while lead browses competitors</div>
+              </div>
+              <span class="infra-friction-pill">2-4 HR DELAY</span>
+            </div>
+            <div class="infra-friction-card">
+              <div>
+                <div class="infra-friction-title">Human updates CRM</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Dirty data, forgotten fields, missing tags</div>
+              </div>
+              <span class="infra-friction-pill">DIRTY DATA</span>
+            </div>
+            <div class="infra-friction-card">
+              <div>
+                <div class="infra-friction-title">Human schedules meeting</div>
+                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Back-and-forth emails over calendar availability</div>
+              </div>
+              <span class="infra-friction-pill">BACK-AND-FORTH</span>
+            </div>
+            <div class="infra-friction-alert-footer">
+              <strong>TOTAL AVERAGE DELAY:</strong> 2 to 4 hours. 78% of commercial buyers choose the vendor that responds first.
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '04 / 05',
+        category: 'PRODUCTION TELEMETRY',
+        eyebrow: 'SUB-SECOND EXECUTION',
+        shortTitle: '04 Nuvero Layer',
+        headline: 'Nuvero layer',
+        lead: 'Nine seconds total elapsed time from webhook ingestion to outbound contact.',
+        renderCustomStage: () => `
+          <div class="infra-telemetry-console-card">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-console-bar">
+              <div style="display: flex; align-items: center; gap: 8px;">
+                <span class="pixel-status-square"></span>
+                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff;">NUVERO RUNTIME ENGINE // LEAD #2231</span>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #ff3344; background: #241216; border: 1px solid #ff3344; padding: 4px 10px; box-shadow: 2px 2px 0 #000;">[ ELAPSED: 9.0s ]</span>
+            </div>
+            <div class="infra-timer-gauge-row">
+              <div class="infra-timer-big">
+                <span>[ ⏱ 00:09.0s ]</span>
+              </div>
+              <span style="font-family: var(--font-pixel); font-size: 10.5px; color: #00ff66; font-weight: 700;">[ SUB-SECOND EXECUTION ACTIVE ]</span>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 8px;">
+              <div class="infra-log-row">
+                <span class="infra-log-time">07:58:12</span>
+                <span class="infra-log-text">Lead received</span>
+                <span class="infra-log-delta">+0.0s</span>
+              </div>
+              <div class="infra-log-row">
+                <span class="infra-log-time">07:58:14</span>
+                <span class="infra-log-text">Lead qualified</span>
+                <span class="infra-log-delta">+2.1s</span>
+              </div>
+              <div class="infra-log-row">
+                <span class="infra-log-time">07:58:16</span>
+                <span class="infra-log-text">CRM updated</span>
+                <span class="infra-log-delta">+2.0s</span>
+              </div>
+              <div class="infra-log-row">
+                <span class="infra-log-time">07:58:21</span>
+                <span class="infra-log-text">Follow-up sent</span>
+                <span class="infra-log-delta">+4.9s</span>
+              </div>
+            </div>
+            <div class="infra-runtime-footer" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
+              <span style="color: #ff3344; font-weight: 800;">SPEED DIFFERENTIAL:</span>
+              <span>9 seconds vs 3.2 hours. Instant meeting scheduling triggered on WhatsApp.</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '05 / 05',
+        category: 'ARCHITECTURAL THESIS',
+        eyebrow: 'CORE PERSPECTIVE',
+        shortTitle: '05 System',
+        headline: 'The model isn\'t the interesting part.',
+        lead: 'The system around it is.',
+        renderCustomStage: () => `
+          <div class="infra-manifesto-stage">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            
+            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">
+              <span style="color: var(--nuvero-red); font-weight: 800;">SYSTEM ARCHITECTURE PRINCIPLE</span>
+              <span>ORCHESTRATION OVER MODELS</span>
+            </div>
+
+            <div>
+              <div class="infra-manifesto-line">
+                The model isn't the interesting part.
+              </div>
+              <div class="infra-laser-line" style="margin: 16px 0;"></div>
+              <div class="infra-manifesto-line red">
+                The system around it is.
+              </div>
+            </div>
+
+            <div class="infra-tier-stack">
+              <div class="infra-tier-item core">
+                <div class="infra-tier-info">
+                  <div class="infra-tier-name">TIER 01 // INTELLIGENCE CORE</div>
+                  <div class="infra-tier-sub">Raw Foundation Models (GPT-4o, Claude 3.5, Llama 3)</div>
+                </div>
+                <span class="infra-tier-badge">COMMODITY</span>
+              </div>
+              <div class="infra-tier-item glue">
+                <div class="infra-tier-info">
+                  <div class="infra-tier-name">TIER 02 // STATE &amp; DETERMINISM</div>
+                  <div class="infra-tier-sub">Deterministic state machines, retry queues, schema validators</div>
+                </div>
+                <span class="infra-tier-badge" style="color: #ff4d5a; border-color: rgba(193,18,31,0.4);">RELIABILITY</span>
+              </div>
+              <div class="infra-tier-item infra-focal">
+                <div class="infra-tier-info">
+                  <div class="infra-tier-name">TIER 03 // STACK INTEGRATION LAYER</div>
+                  <div class="infra-tier-sub">Direct CRM webhooks, ERP connections, WhatsApp APIs, fail-safes</div>
+                </div>
+                <span class="infra-tier-badge">THE VALUE</span>
+              </div>
+            </div>
+
+            <div style="padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body); font-size: 16px; line-height: 1.45; color: #cbd5e1;">
+              LLMs are commodities. Reliable production orchestration, stack integration, and deterministic safety are the real infrastructure.
+            </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: 'post-cross-tool-shuffling',
+    series: 'BRAND INFRASTRUCTURE',
+    categoryTag: 'STACK ARCHITECTURE',
+    client: 'Tool Integration',
+    sector: 'Cross-Stack Synchronization',
+    title: 'Your team is doing this every day',
+    shortDesc: 'Single static visual: copying data across 6 tools slashed cleanly by the Nuvero layer.',
+    caption: `Your team should not be copying data between 6 tools.
+
+CRM -> SHEETS -> GMAIL -> SLACK -> CRM -> REPORT.
+
+Every day, high-performing operators spend 40% of their work week acting as human copy-paste bridges between SaaS apps. It is slow, error-prone, and mentally exhausting.
+
+Nuvero builds the layer between them.
+
+Wired directly into HubSpot, Slack, Google Sheets, Gmail, Stripe, and your internal APIs, so data flows, workflows trigger, and manual shuffling simply disappears.
+
+Turn your tool sprawl into infrastructure at nuvero.space.
+
+#Operations #Integration #WorkflowAutomation #AIInfrastructure #NuveroAI`,
+    slides: [
+      {
+        slideNum: '01 / 01',
+        category: 'STACK ARCHITECTURE',
+        eyebrow: 'DATA FRICTION CUT',
+        shortTitle: '01 Static Post',
+        headline: 'Your team shouldn\'t be copying data between 6 tools.',
+        lead: 'When software cannot bridge itself, employees become the manual glue.',
+        renderCustomStage: () => `
+          <div class="infra-cross-tool-stage">
+            <div class="infra-tool-canvas">
+              <span class="infra-corner-bracket tl"></span>
+              <span class="infra-corner-bracket tr"></span>
+              <span class="infra-corner-bracket bl"></span>
+              <span class="infra-corner-bracket br"></span>
+              <div class="infra-tools-grid">
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">01 // INGEST</span>
+                  <span class="infra-tool-name">CRM</span>
+                  <span class="infra-tool-flow">→ to Sheets</span>
+                </div>
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">02 // SPREADSHEET</span>
+                  <span class="infra-tool-name">SHEETS</span>
+                  <span class="infra-tool-flow">→ to Gmail</span>
+                </div>
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">03 // INBOX</span>
+                  <span class="infra-tool-name">GMAIL</span>
+                  <span class="infra-tool-flow">→ to Slack</span>
+                </div>
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">04 // CHAT</span>
+                  <span class="infra-tool-name">SLACK</span>
+                  <span class="infra-tool-flow">→ to CRM</span>
+                </div>
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">05 // PIPELINE</span>
+                  <span class="infra-tool-name">CRM</span>
+                  <span class="infra-tool-flow">→ to Report</span>
+                </div>
+                <div class="infra-tool-card">
+                  <span class="infra-tool-index">06 // DECK</span>
+                  <span class="infra-tool-name">REPORT</span>
+                  <span class="infra-tool-flow">↺ Loop repeats</span>
+                </div>
+              </div>
+              
+              <div class="infra-laser-slash-cut">
+                <span class="infra-slash-banner">MANUAL TOIL CUT HERE</span>
+              </div>
+            </div>
+
+            <div class="infra-solution-substrate">
+              <div class="infra-solution-heading">Nuvero builds the layer between them.</div>
+              <div style="font-family: var(--font-body); font-size: 14.5px; color: #94a3b8;">
+                Wired into the tools you already run. No new dashboard. Just working infrastructure.
+              </div>
+              <div class="infra-stack-chips">
+                <span class="infra-stack-chip">HubSpot</span>
+                <span class="infra-stack-chip">Slack</span>
+                <span class="infra-stack-chip">Google Sheets</span>
+                <span class="infra-stack-chip">Gmail</span>
+                <span class="infra-stack-chip">Stripe</span>
+                <span class="infra-stack-chip">Calendly</span>
+                <span class="infra-stack-chip">Notion</span>
+                <span class="infra-stack-chip">Internal APIs</span>
+              </div>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-family: var(--font-mono);">
+                <div>
+                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">DATA LATENCY</div>
+                  <div style="font-size: 14px; font-weight: 800; color: #22c55e;">&lt;200ms API SYNC</div>
+                </div>
+                <div>
+                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">MANUAL ERRORS</div>
+                  <div style="font-size: 14px; font-weight: 800; color: #ff4d5a;">0% ELIMINATED</div>
+                </div>
+                <div>
+                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">TEAM DIVIDEND</div>
+                  <div style="font-size: 14px; font-weight: 800; color: #ffffff;">15h/user/wk</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: 'post-before-after',
+    series: 'BRAND INFRASTRUCTURE',
+    categoryTag: 'PRODUCTION BENCHMARKS',
+    client: 'Production Deltas',
+    sector: 'Verified Operational Gains',
+    title: 'Before / After without generic SaaS',
+    shortDesc: 'Direct comparative evidence: Lead response <60s, Reporting in 15 min, 24/7 First-ring.',
+    caption: `Before / after without generic SaaS claims.
+
+Here is what actually changes when operations run on Nuvero infrastructure:
+
+01 / LEAD FOLLOW-UP
+Without: 2 to 4 hours of manual chasing
+With: Under 60 seconds first response
+
+02 / REPORTING
+Without: 2 to 3 days pulling data from 6+ tools
+With: 15 minutes automated synthesis
+
+03 / AFTER-HOURS
+Without: Missed calls and next-day callbacks
+With: 24/7 first-ring response
+
+These are actual figures running in production today.
+
+See deployed systems at nuvero.space.
+
+#ProductionAI #Operations #BusinessAutomation #WorkflowEngine #NuveroAI`,
+    slides: [
+      {
+        slideNum: '01 / 04',
+        category: '01 / LEAD FOLLOW-UP',
+        eyebrow: 'SPEED TO LEAD',
+        shortTitle: '01 Follow-Up',
+        headline: '01 / LEAD FOLLOW-UP',
+        lead: 'What happens when you replace manual chasing with sub-minute agent response.',
+        renderCustomStage: () => `
+          <div class="infra-split-container">
+            <div class="infra-split-vs-badge">VS</div>
+            <div class="infra-split-card without">
+              <div>
+                <div class="infra-state-tag">WITHOUT</div>
+                <div class="infra-metric-num">2-4 hrs</div>
+                <div class="infra-metric-label">Manual chasing</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Inbound leads sit idle in email inbox</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>78% commercial buyers choose first responder</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Manual CRM data typing & missing tags</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: Leads cool down on hold</div>
+            </div>
+            <div class="infra-split-card with">
+              <div>
+                <div class="infra-state-tag">WITH</div>
+                <div class="infra-metric-num">&lt;60 sec</div>
+                <div class="infra-metric-label">Agent responds</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Outbound WhatsApp outreach in &lt;60s</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Autonomous ICP qualification & enrichment</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Real-time calendar booking link dispatched</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: Instant qualification across channels</div>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '02 / 04',
+        category: '02 / REPORTING',
+        eyebrow: 'DATA COMPILATION',
+        shortTitle: '02 Reporting',
+        headline: '02 / REPORTING',
+        lead: 'Retiring days of manual cross-platform copy-pasting for boardroom reporting.',
+        renderCustomStage: () => `
+          <div class="infra-split-container">
+            <div class="infra-split-vs-badge">VS</div>
+            <div class="infra-split-card without">
+              <div>
+                <div class="infra-state-tag">WITHOUT</div>
+                <div class="infra-metric-num">2-3 days</div>
+                <div class="infra-metric-label">Pulling data from 6+ tools</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Manual CSV downloads from 6+ SaaS portals</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Broken spreadsheet formulas & human errors</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Data is already stale before boardroom review</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: Formula breakage & stale charts</div>
+            </div>
+            <div class="infra-split-card with">
+              <div>
+                <div class="infra-state-tag">WITH</div>
+                <div class="infra-metric-num">15 min</div>
+                <div class="infra-metric-label">Automated report</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Continuous real-time API pipeline sync</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Automated multi-channel executive synthesis</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Instant audit-ready reports ready on demand</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: Live cross-stack synchronization</div>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '03 / 04',
+        category: '03 / AFTER-HOURS',
+        eyebrow: 'OFF-PEAK CAPTURE',
+        shortTitle: '03 After-Hours',
+        headline: '03 / AFTER-HOURS',
+        lead: 'Never letting commercial inquiries drift to competitors after 5 PM.',
+        renderCustomStage: () => `
+          <div class="infra-split-container">
+            <div class="infra-split-vs-badge">VS</div>
+            <div class="infra-split-card without">
+              <div>
+                <div class="infra-state-tag">WITHOUT</div>
+                <div class="infra-metric-num">Missed call</div>
+                <div class="infra-metric-label">Next-day callback</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Commercial phone calls missed after 5 PM</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>70% unreturned voicemails lost to competitors</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Delayed next-day callbacks cold by morning</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: 70% unreturned voicemails lost</div>
+            </div>
+            <div class="infra-split-card with">
+              <div>
+                <div class="infra-state-tag">WITH</div>
+                <div class="infra-metric-num">24/7</div>
+                <div class="infra-metric-label">First-ring response</div>
+              </div>
+              <div class="infra-split-features">
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Sub-second neural voice agent on 1st ring</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Natural conversation with regional accents</span></div>
+                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Instant order & meeting capture directly to CRM</span></div>
+              </div>
+              <div class="infra-split-footer-status">Status: 100% inbound capture day & night</div>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '04 / 04',
+        category: 'VERIFIED DELTAS',
+        eyebrow: 'PRODUCTION EVIDENCE',
+        shortTitle: '04 Summary',
+        headline: 'Not generic SaaS claims. <span class="highlight-red">Verified in production.</span>',
+        lead: 'These are actual figures currently delivered across live client deployments.',
+        renderCustomStage: () => `
+          <div class="infra-cockpit-stage">
+            <div class="infra-cockpit-card">
+              <div class="infra-cockpit-num">&lt;60s</div>
+              <div class="infra-cockpit-title">01 / FOLLOW-UP</div>
+              <div class="infra-cockpit-sub">Down from 2-4 hrs</div>
+              <div class="pixel-meter-bar">
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block"></span>
+              </div>
+            </div>
+            <div class="infra-cockpit-card focal">
+              <div class="infra-cockpit-num">15m</div>
+              <div class="infra-cockpit-title">02 / REPORTING</div>
+              <div class="infra-cockpit-sub">Down from 2-3 days</div>
+              <div class="pixel-meter-bar">
+                <span class="pixel-meter-block active"></span>
+                <span class="pixel-meter-block active"></span>
+                <span class="pixel-meter-block active"></span>
+                <span class="pixel-meter-block active"></span>
+                <span class="pixel-meter-block active"></span>
+                <span class="pixel-meter-block"></span>
+              </div>
+            </div>
+            <div class="infra-cockpit-card">
+              <div class="infra-cockpit-num">24/7</div>
+              <div class="infra-cockpit-title">03 / AFTER-HOURS</div>
+              <div class="infra-cockpit-sub">Down from missed calls</div>
+              <div class="pixel-meter-bar">
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+                <span class="pixel-meter-block active green"></span>
+              </div>
+            </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
+    id: 'post-deployment-011',
+    series: 'BRAND INFRASTRUCTURE',
+    categoryTag: 'COMMISSIONING RECORD',
+    client: 'Deployment 011',
+    sector: 'Voice Operations Telemetry',
+    title: 'This is what AI infrastructure looks like',
+    shortDesc: 'Visual signature series: Engineering commissioning record with 4-cell live telemetry panel.',
+    caption: `This is what AI infrastructure looks like.
+
+Every deployment leaves a record like this one: a system with a scope, an owner, and numbers it answers for.
+
+NUVERO / DEPLOYMENT 011
+Voice Operations System
+
+• Calls handled: 5,204 (last 30 days)
+• Leads qualified: 1,318
+• First response: 0.8s
+• Human handoffs: 3%
+
+Running on client stack / 24-7.
+
+Not a subscription you log into. A layer that clocks in so your team does not have to.
+
+Commission your system at nuvero.space.
+
+#AIInfrastructure #VoiceAI #Engineering #SystemArchitecture #NuveroAI`,
+    slides: [
+      {
+        slideNum: '01 / 01',
+        category: 'COMMISSIONING RECORD',
+        eyebrow: 'SYSTEM SPECIFICATION',
+        shortTitle: '01 Deployment',
+        headline: 'This is what AI infrastructure looks like.',
+        lead: 'Every deployment leaves an instrumented record with hard numbers it answers for.',
+        renderCustomStage: () => `
+          <div class="infra-commissioning-chassis">
+            <span class="infra-corner-bracket tl"></span>
+            <span class="infra-corner-bracket tr"></span>
+            <span class="infra-corner-bracket bl"></span>
+            <span class="infra-corner-bracket br"></span>
+            <div class="infra-chassis-header">
+              <div class="infra-stamp-badge" style="background: var(--nuvero-red); color: #ffffff;">
+                [ NUVERO / DEPLOYMENT 011 ]
+              </div>
+              <div style="font-family: var(--font-pixel); font-size: 11px; font-weight: 700; color: #94a3b8;">
+                SYSTEM TELEMETRY SHEET
+              </div>
+            </div>
+
+            <div class="infra-system-name">VOICE OPERATIONS SYSTEM</div>
+
+            <div class="infra-telemetry-4grid">
+              <div class="infra-telemetry-cell">
+                <span class="infra-cell-label">CALLS HANDLED</span>
+                <span class="infra-cell-huge">5,204</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                </div>
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: #00ff66; font-weight: 700; margin-top: 4px;">✓ LAST 30 DAYS</span>
+              </div>
+              <div class="infra-telemetry-cell">
+                <span class="infra-cell-label">LEADS QUALIFIED</span>
+                <span class="infra-cell-huge">1,318</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block active"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: #ff4d5a; font-weight: 700; margin-top: 4px;">★ DIRECT PIPELINE</span>
+              </div>
+              <div class="infra-telemetry-cell">
+                <span class="infra-cell-label">FIRST RESPONSE</span>
+                <span class="infra-cell-huge">0.8s</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active green"></span>
+                  <span class="pixel-meter-block active green"></span>
+                  <span class="pixel-meter-block active green"></span>
+                  <span class="pixel-meter-block active green"></span>
+                  <span class="pixel-meter-block active green"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: #00ff66; font-weight: 700; margin-top: 4px;">✓ FIRST RING</span>
+              </div>
+              <div class="infra-telemetry-cell">
+                <span class="infra-cell-label">HUMAN HANDOFFS</span>
+                <span class="infra-cell-huge">3%</span>
+                <div class="pixel-meter-bar">
+                  <span class="pixel-meter-block active blue"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                  <span class="pixel-meter-block"></span>
+                </div>
+                <span style="font-family: var(--font-pixel); font-size: 10px; color: #38bdf8; font-weight: 700; margin-top: 4px;">✓ 97% RESOLVED</span>
+              </div>
+            </div>
+
+            <div style="background: #0d0d16; border: 2px solid #262638; padding: 10px 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-family: var(--font-pixel); font-size: 10px; text-align: center; box-shadow: 2px 2px 0 #000;">
+              <div>
+                <span style="color: #94a3b8;">AUDIO INGEST:</span> <span style="color: #00ff66; font-weight: 700;">WebRTC &lt;100ms</span>
+              </div>
+              <div>
+                <span style="color: #94a3b8;">NEURAL VOICE:</span> <span style="color: #ffffff; font-weight: 700;">Regional Accent</span>
+              </div>
+              <div>
+                <span style="color: #94a3b8;">CRM DISPATCH:</span> <span style="color: #ff3344; font-weight: 700;">Live Webhook</span>
+              </div>
+            </div>
+
+            <div class="infra-chassis-footer">
+              <span>RUNNING ON CLIENT STACK / 24·7</span>
+              <div class="uptime-pulse-indicator">
+                <span class="pixel-status-square"></span>
+                <span>SYSTEM OK // 99.98% UPTIME</span>
+              </div>
+            </div>
+          </div>
+        `
+      }
+    ]
+  },
+  {
     id: 'post-1',
+    series: 'CASE STUDY',
     categoryTag: 'VOICE INFRASTRUCTURE',
     client: 'Southwest Gases',
     sector: 'Commercial Supply & Logistics',
@@ -186,6 +1405,7 @@ Build the infrastructure underneath at nuvero.space.
   },
   {
     id: 'post-2',
+    series: 'CASE STUDY',
     categoryTag: 'WHATSAPP COPILOT',
     client: 'GoHappy Club',
     sector: 'Senior Citizen Community & Wellness',
@@ -358,6 +1578,7 @@ Turn your communication bottlenecks into infrastructure at nuvero.space.
   },
   {
     id: 'post-3',
+    series: 'CASE STUDY',
     categoryTag: 'CAMPAIGN ENGINE',
     client: 'Marketrz Agency',
     sector: 'Performance Growth & Outbound',
@@ -528,6 +1749,7 @@ Turn your manual marketing toil into infrastructure at nuvero.space.
   },
   {
     id: 'post-4',
+    series: 'CASE STUDY',
     categoryTag: 'WORKFLOW ENGINE',
     client: 'Adfactors PR',
     sector: 'Enterprise PR & Communications',
@@ -688,7 +1910,7 @@ const state = {
   currentPostIndex: 0,
   currentSlideIndex: 0,
   aspectRatio: '4-5', // '4-5' (1080x1350) or '1-1' (1080x1080)
-  theme: 'tan', // 'tan' (Signature) or 'dark' (Blue)
+  theme: 'dark', // 'dark' (Default Obsidian/Navy) or 'tan' (Signature)
   viewMode: 'single', // 'single' or 'grid'
   zoomLevel: 0.58
 };
@@ -703,21 +1925,56 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('resize', autoScaleCanvas);
 });
 
-// Render Sidebar Post Selection Cards
+// Render Sidebar Post Selection Cards with Series Grouping
 function renderSidebar() {
   const listContainer = document.getElementById('postListContainer');
   if (!listContainer) return;
 
-  listContainer.innerHTML = POSTS_DATA.map((post, idx) => `
-    <div class="post-card-item ${idx === state.currentPostIndex ? 'active' : ''}" data-post-index="${idx}">
-      <div class="post-card-header">
-        <span class="post-card-id">POST 0${idx + 1}</span>
-        <span class="post-card-client">${post.client}</span>
+  const brandPosts = POSTS_DATA.filter(p => p.series === 'BRAND INFRASTRUCTURE');
+  const casePosts = POSTS_DATA.filter(p => p.series === 'CASE STUDY' || !p.series);
+
+  let html = '';
+
+  html += `<div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-red); padding: 8px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
+    <span>BRAND INFRASTRUCTURE SERIES</span>
+    <span style="background: rgba(193,18,31,0.15); padding: 1px 6px; border-radius: 4px;">5 POSTS</span>
+  </div>`;
+
+  html += brandPosts.map(post => {
+    const idx = POSTS_DATA.indexOf(post);
+    const slideCountTag = post.slides.length === 1 ? 'STATIC' : `${post.slides.length} SLIDES`;
+    return `
+      <div class="post-card-item ${idx === state.currentPostIndex ? 'active' : ''}" data-post-index="${idx}">
+        <div class="post-card-header">
+          <span class="post-card-id">POST 0${idx + 1}</span>
+          <span class="post-card-client" style="color: var(--nuvero-red);">${slideCountTag}</span>
+        </div>
+        <div class="post-card-title">${post.title}</div>
+        <div class="post-card-desc">${post.shortDesc}</div>
       </div>
-      <div class="post-card-title">${post.title}</div>
-      <div class="post-card-desc">${post.shortDesc}</div>
-    </div>
-  `).join('');
+    `;
+  }).join('');
+
+  html += `<div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-blue-subtle); padding: 16px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
+    <span>PRODUCTION CASE STUDIES</span>
+    <span style="background: rgba(0,48,73,0.1); padding: 1px 6px; border-radius: 4px;">4 POSTS</span>
+  </div>`;
+
+  html += casePosts.map(post => {
+    const idx = POSTS_DATA.indexOf(post);
+    return `
+      <div class="post-card-item ${idx === state.currentPostIndex ? 'active' : ''}" data-post-index="${idx}">
+        <div class="post-card-header">
+          <span class="post-card-id">POST 0${idx + 1}</span>
+          <span class="post-card-client">${post.client}</span>
+        </div>
+        <div class="post-card-title">${post.title}</div>
+        <div class="post-card-desc">${post.shortDesc}</div>
+      </div>
+    `;
+  }).join('');
+
+  listContainer.innerHTML = html;
 
   document.querySelectorAll('.post-card-item').forEach(el => {
     el.addEventListener('click', () => {
@@ -744,14 +2001,27 @@ function setSlide(slideIndex) {
   updateSlidePills();
 }
 
-// Update Slide Pill Navigation Bar
+// Update Slide Pill Navigation Bar dynamically
 function updateSlidePills() {
-  document.querySelectorAll('.slide-pill').forEach((pill, idx) => {
-    if (idx === state.currentSlideIndex) {
-      pill.classList.add('active');
-    } else {
-      pill.classList.remove('active');
-    }
+  const pillNav = document.getElementById('slidePillNav');
+  if (!pillNav) return;
+
+  const currentPost = POSTS_DATA[state.currentPostIndex];
+
+  pillNav.innerHTML = currentPost.slides.map((slide, idx) => {
+    const label = slide.shortTitle || `Slide 0${idx + 1}`;
+    return `
+      <button class="slide-pill ${idx === state.currentSlideIndex ? 'active' : ''}" data-slide="${idx}">
+        ${label}
+      </button>
+    `;
+  }).join('');
+
+  pillNav.querySelectorAll('.slide-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      const idx = parseInt(pill.dataset.slide, 10);
+      setSlide(idx);
+    });
   });
 }
 
@@ -771,10 +2041,107 @@ function updateCaptionDrawer() {
 // Generate HTML for an Instagram Post Slide
 function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
   const ratioClass = state.aspectRatio === '1-1' ? 'ratio-1-1' : 'ratio-4-5';
-  const themeClass = state.theme === 'dark' ? 'theme-dark' : 'theme-tan';
+  const isInfra = post.series === 'BRAND INFRASTRUCTURE';
+  const themeClass = isInfra ? 'theme-dark' : (state.theme === 'dark' ? 'theme-dark' : 'theme-tan');
+  const seriesClass = isInfra ? 'series-infrastructure' : 'series-case-study';
 
+  // Determine stage content: custom visual artifact or fallback mockup window
+  let stageContent = '';
+  if (typeof slide.renderCustomStage === 'function') {
+    stageContent = slide.renderCustomStage();
+  } else if (typeof slide.renderMockup === 'function') {
+    stageContent = `
+      <div class="social-ui-window">
+        <div class="window-top-bar">
+          <div class="window-dots">
+            <span class="window-dot red"></span>
+            <span class="window-dot yellow"></span>
+            <span class="window-dot green"></span>
+          </div>
+          <span class="window-title">${slide.mockupTitle || ''}</span>
+          <span class="window-status-pill">${slide.mockupStatus || 'SYSTEM'}</span>
+        </div>
+        <div class="window-body">
+          ${slide.renderMockup()}
+        </div>
+      </div>
+    `;
+  }
+
+  const isMultiSlide = post.slides.length > 1;
+
+  if (isInfra) {
+    return `
+      <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
+        
+        <!-- Top Social Header (High-Tech Infrastructure Lockup) -->
+        <div class="social-top-row">
+          <div class="social-brand-pill">
+            <div class="brand-logo-icon">
+              ${NUVERO_LOGO_SVG}
+            </div>
+            <span class="brand-handle-text">@nuvero.space</span>
+            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--nuvero-red); opacity: 0.9; margin-left: 4px;">// INFRA</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <div class="social-category-tag">${post.categoryTag}</div>
+            <span class="slide-sequence-badge">${slide.slideNum}</span>
+          </div>
+        </div>
+
+        <!-- High-Impact Editorial Text Block -->
+        <div class="social-text-block">
+          <div class="social-eyebrow">
+            <span class="dot"></span>
+            <span>${slide.category} // ${slide.eyebrow}</span>
+          </div>
+          <h1 class="social-headline" contenteditable="true" spellcheck="false">${slide.headline}</h1>
+          <p class="social-lead" contenteditable="true" spellcheck="false">${slide.lead}</p>
+        </div>
+
+        <!-- Center Stage: Bespoke Intuitive Infrastructure Artifact -->
+        <div class="social-center-stage">
+          ${stageContent}
+        </div>
+
+        <!-- Bottom Social Bar (Clean footer watermark + swipe cue) -->
+        <div class="social-bottom-bar">
+          <div class="bottom-author-lockup">
+            <span class="lockup-domain">nuvero.space</span>
+            <span class="lockup-tag">/ Operations into Infrastructure</span>
+          </div>
+          <div class="bottom-social-action">
+            ${isMultiSlide ? `
+              <div class="carousel-dots-pill">
+                ${post.slides.map((_, i) => `
+                  <div class="carousel-dot ${i === slideIndex ? 'active' : ''}"></div>
+                `).join('')}
+              </div>
+            ` : `
+              <div class="carousel-dots-pill" style="padding: 4px 10px;">
+                <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">STATIC POST</span>
+              </div>
+            `}
+            ${(!isLastSlide && isMultiSlide) ? `
+              <div class="swipe-action-pill">
+                <span>Swipe</span>
+                <span>→</span>
+              </div>
+            ` : `
+              <div class="swipe-action-pill" style="background: rgba(193, 18, 31, 0.15); color: #ff4d5a; border-color: rgba(193, 18, 31, 0.4);">
+                <span>nuvero.space</span>
+              </div>
+            `}
+          </div>
+        </div>
+
+      </div>
+    `;
+  }
+
+  // Classic Case Study slides (Posts 06 to 09)
   return `
-    <div class="insta-slide ${ratioClass} ${themeClass}" id="slideRender_${slideIndex}">
+    <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
       
       <!-- Top Social Header (Discreet handle + category pill) -->
       <div class="social-top-row">
@@ -800,22 +2167,9 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
         <p class="social-lead" contenteditable="true" spellcheck="false">${slide.lead}</p>
       </div>
 
-      <!-- Center Stage: Rich Bespoke UI Mockup -->
+      <!-- Center Stage: Rich Bespoke UI Mockup or Custom Visual Artifact -->
       <div class="social-center-stage">
-        <div class="social-ui-window">
-          <div class="window-top-bar">
-            <div class="window-dots">
-              <span class="window-dot red"></span>
-              <span class="window-dot yellow"></span>
-              <span class="window-dot green"></span>
-            </div>
-            <span class="window-title">${slide.mockupTitle}</span>
-            <span class="window-status-pill">${slide.mockupStatus}</span>
-          </div>
-          <div class="window-body">
-            ${slide.renderMockup()}
-          </div>
-        </div>
+        ${stageContent}
       </div>
 
       <!-- Bottom Social Bar (Clean footer watermark + swipe cue) -->
@@ -825,12 +2179,18 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
           <span class="lockup-tag">/ Operations into Infrastructure</span>
         </div>
         <div class="bottom-social-action">
-          <div class="carousel-dots-pill">
-            ${[0, 1, 2, 3].map(i => `
-              <div class="carousel-dot ${i === slideIndex ? 'active' : ''}"></div>
-            `).join('')}
-          </div>
-          ${!isLastSlide ? `
+          ${isMultiSlide ? `
+            <div class="carousel-dots-pill">
+              ${post.slides.map((_, i) => `
+                <div class="carousel-dot ${i === slideIndex ? 'active' : ''}"></div>
+              `).join('')}
+            </div>
+          ` : `
+            <div class="carousel-dots-pill" style="padding: 4px 10px;">
+              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">STATIC POST</span>
+            </div>
+          `}
+          ${(!isLastSlide && isMultiSlide) ? `
             <div class="swipe-action-pill">
               <span>Swipe</span>
               <span>→</span>
@@ -876,7 +2236,7 @@ function renderCanvas() {
               <span>SLIDE 0${idx + 1} // ${slide.category}</span>
               <button class="btn btn-secondary" style="padding: 4px 10px; font-size: 10px;" onclick="exportSingleSlideById('slideRender_${idx}', ${idx + 1})">PNG ↓</button>
             </div>
-            ${generateSlideHTML(currentPost, slide, idx, idx === 3)}
+            ${generateSlideHTML(currentPost, slide, idx, idx === currentPost.slides.length - 1)}
           </div>
         `).join('')}
       </div>
@@ -1180,7 +2540,7 @@ async function exportAllSlidesSequential() {
     }
   }
 
-  showToast(`All 4 slides for ${currentPost.client} exported successfully!`);
+  showToast(`All ${currentPost.slides.length} slides for ${currentPost.client} exported successfully!`);
 }
 
 window.setPost = setPost;
