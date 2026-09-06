@@ -7,7 +7,7 @@
 
 // Embedded official Nuvero vector mark for instant, crisp rendering
 const NUVERO_LOGO_SVG = `
-<svg viewBox="0 0 1007 983" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-svg-logo" style="width: 24px; height: 24px;">
+<svg viewBox="0 0 1007 983" fill="none" xmlns="http://www.w3.org/2000/svg" class="brand-svg-logo" style="width: 34px; height: 34px;">
   <path fill-rule="evenodd" clip-rule="evenodd" fill="#C1121F"
     d="M871.000,-0.000 C961.306,-1.478 1032.106,75.180 992.1000,166.000 C975.504,206.632 939.428,228.835 888.1000,237.000 C816.790,248.692 746.791,161.035 768.1000,86.1000 C779.925,50.580 806.306,20.681 839.1000,6.1000 C850.332,4.667 860.668,2.333 871.000,-0.000 ZM240.1000,12.1000 C326.985,16.026 341.399,63.639 374.1000,117.000 C401.664,157.996 428.336,199.004 455.000,239.1000 C614.984,485.975 775.016,732.025 935.000,978.000 C880.005,978.000 824.995,978.000 769.1000,978.000 C744.048,977.1000 712.031,981.000 691.1000,974.000 C623.928,950.211 592.841,870.002 556.1000,813.000 C455.010,654.682 352.990,496.317 250.1000,338.000 C250.667,338.000 250.333,338.000 249.1000,338.000 C249.1000,484.985 249.1000,632.015 249.1000,779.000 C250.004,835.537 263.308,919.465 236.000,954.1000 C227.924,965.509 211.872,974.645 197.000,978.000 C163.542,985.548 56.150,983.098 35.000,970.000 C-13.413,940.019 3.996,832.765 3.1000,760.000 C3.1000,586.684 3.1000,413.316 3.1000,239.1000 C3.998,186.013 -8.264,72.039 14.1000,39.1000 C42.545,2.064 129.712,13.997 194.000,13.1000 C209.665,13.667 225.335,13.333 240.1000,12.1000 ZM868.1000,284.000 C914.759,283.487 973.401,279.884 992.1000,306.000 C1015.415,335.869 1003.004,432.762 1002.1000,480.1000 C1002.1000,631.985 1002.1000,783.015 1002.1000,933.1000 C1001.667,933.000 1000.333,931.1000 999.000,931.000 C920.675,810.012 842.325,688.988 764.000,567.1000 C764.000,547.669 764.000,527.331 764.000,506.1000 C764.001,459.463 753.594,328.717 775.000,304.1000 C789.666,288.751 811.779,289.643 839.000,285.000 C848.999,284.667 859.001,284.333 868.1000,284.000 Z" />
 </svg>
@@ -47,16 +47,16 @@ function renderGiantLogoBridge(side) {
 
 // 8-Bit Pixel Icon Library for Retro Visual Aesthetics
 const PIXEL_ICONS = {
-  heart: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M2 3h2v2H2V3zm2-2h3v2H4V1zm3 2h2v2H7V3zm2-2h3v2H9V1zm3 2h2v2h-2V3zm2 2h2v4h-2V5zm-2 4h-2v2h2V9zm-2 2h-2v2h2v-2zm-2 2H7v2h2v-2zm-2-2H3v-2h2v2zm-2-2H1V5h2v4z"/></svg>`,
-  sword: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M12 1h3v3h-2v2h-2v2h-2v2H7v1H5v2H3v2H1v-2h2v-2h2v-2h1V9h2V7h2V5h2V3h-2V1h2z"/></svg>`,
-  skull: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v4H1V5zm2 4h2v2H3V9zm2 2h6v2H5v-2zm6-2h2v2h-2V9zm2-4h2v4h-2V5zm-2-2h2v2h-2V3zm-9 3h2v2H4V6zm6 0h2v2h-2V6z"/></svg>`,
-  zap: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M9 1H5v6h3v1H4v7h2v-5h4v-1h3V1H9z"/></svg>`,
-  clock: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zm-5 3h2v4H8V6zm2 4h3v2h-3v-2z"/></svg>`,
-  floppy: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M1 1h11v2h2v2h1v10H1V1zm2 2v4h7V3H3zm0 6v4h10V9H3z"/></svg>`,
-  coin: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zM7 5h2v6H7V5z"/></svg>`,
-  check: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M14 3h2v3h-2V3zm-2 3h2v3h-2V6zm-2 3h2v3h-2V9zm-2 3h2v3H8v-3zm-2-2h2v2H6v-2zm-2-2h2v2H4V7zm-2-2h2v2H2V5z"/></svg>`,
-  cross: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h3v3H2V2zm3 3h2v2H5V5zm2 2h2v2H7V7zm2-2h2v2H9V5zm2-3h3v3h-3V2zm0 9h3v3h-3v-3zm-2-2h2v2H9V9zm-4 0h2v2H5V9zm-3 2h3v3H2v-3z"/></svg>`,
-  bot: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M7 1h2v2H7V1zM3 4h10v8H3V4zM1 7h2v3H1V7zm12 0h2v3h-2V7zm-8 1h2v2H5V8zm4 0h2v2H9V8zm-3 3h4v1H6v-1z"/></svg>`
+  heart: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M2 3h2v2H2V3zm2-2h3v2H4V1zm3 2h2v2H7V3zm2-2h3v2H9V1zm3 2h2v2h-2V3zm2 2h2v4h-2V5zm-2 4h-2v2h2V9zm-2 2h-2v2h2v-2zm-2 2H7v2h2v-2zm-2-2H3v-2h2v2zm-2-2H1V5h2v4z"/></svg>`,
+  sword: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M12 1h3v3h-2v2h-2v2h-2v2H7v1H5v2H3v2H1v-2h2v-2h2v-2h1V9h2V7h2V5h2V3h-2V1h2z"/></svg>`,
+  skull: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v4H1V5zm2 4h2v2H3V9zm2 2h6v2H5v-2zm6-2h2v2h-2V9zm2-4h2v4h-2V5zm-2-2h2v2h-2V3zm-9 3h2v2H4V6zm6 0h2v2h-2V6z"/></svg>`,
+  zap: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M9 1H5v6h3v1H4v7h2v-5h4v-1h3V1H9z"/></svg>`,
+  clock: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zm-5 3h2v4H8V6zm2 4h3v2h-3v-2z"/></svg>`,
+  floppy: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M1 1h11v2h2v2h1v10H1V1zm2 2v4h7V3H3zm0 6v4h10V9H3z"/></svg>`,
+  coin: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zM7 5h2v6H7V5z"/></svg>`,
+  check: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M14 3h2v3h-2V3zm-2 3h2v3h-2V6zm-2 3h2v3h-2V9zm-2 3h2v3H8v-3zm-2-2h2v2H6v-2zm-2-2h2v2H4V7zm-2-2h2v2H2V5z"/></svg>`,
+  cross: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h3v3H2V2zm3 3h2v2H5V5zm2 2h2v2H7V7zm2-2h2v2H9V5zm2-3h3v3h-3V2zm0 9h3v3h-3v-3zm-2-2h2v2H9V9zm-4 0h2v2H5V9zm-3 2h3v3H2v-3z"/></svg>`,
+  bot: `<svg width="32" height="32" viewBox="0 0 16 16" fill="currentColor"><path d="M7 1h2v2H7V1zM3 4h10v8H3V4zM1 7h2v3H1V7zm12 0h2v3h-2V7zm-8 1h2v2H5V8zm4 0h2v2H9V8zm-3 3h4v1H6v-1z"/></svg>`
 };
 
 // Modern SVG Icon Library for Clean, Readable, Instagram-Native Visual Graphics
@@ -138,22 +138,22 @@ Build the infrastructure underneath at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[SYSTEM STATS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">LIVE RUNTIME</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SYSTEM STATS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">LIVE RUNTIME</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 31.5h</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">RETURNED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 31.5h</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">RETURNED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.bot} 6 / 6</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">AUTONOMOUS</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.bot} 6 / 6</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">AUTONOMOUS</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">0.0s</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">HUMAN LAG</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">0.0s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">HUMAN LAG</div>
                 </div>
               </div>
             </div>
@@ -196,8 +196,8 @@ Build the infrastructure underneath at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">WEEKLY TEAM CAPACITY DRAIN</span>
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px;">78% DRAINED</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">WEEKLY TEAM CAPACITY DRAIN</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px;">78% DRAINED</span>
               </div>
 
               <div class="pixel-meter-bar">
@@ -213,7 +213,7 @@ Build the infrastructure underneath at nuvero.space.
                 <div class="pixel-meter-cell"></div>
               </div>
 
-              <div style="display: flex; justify-content: space-between; font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-blue);">
+              <div style="display: flex; justify-content: space-between; font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">
                 <span>1,638 HOURS WASTED ANNUALLY</span>
                 <span style="color: var(--nuvero-red);">= 0.8 FTE HEADCOUNT</span>
               </div>
@@ -336,14 +336,14 @@ Build the infrastructure underneath at nuvero.space.
                 <span class="pixel-vs-tag">OLD MANUAL</span>
                 <div class="pixel-vs-metric">3.8h</div>
                 <div class="pixel-vs-desc">Handoff delay across 12 tabs</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ HIGH HUMAN ERROR</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ HIGH HUMAN ERROR</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">NUVERO</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">&lt; 850ms</div>
                 <div class="pixel-vs-desc">Direct stack execution</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
               </div>
             </div>
 
@@ -395,26 +395,26 @@ Build the infrastructure underneath at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">01</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">AUDIT HUMAN HANDOFFS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Find every copy-paste loop between tabs</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">AUDIT HUMAN HANDOFFS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Find every copy-paste loop between tabs</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">WIRE INBOUND WEBHOOKS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Connect software directly to autonomous runtime</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">WIRE INBOUND WEBHOOKS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Connect software directly to autonomous runtime</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">03</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">MEASURE IN HOURS RETURNED</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Real software runs silently in the background</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">MEASURE IN HOURS RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Real software runs silently in the background</div>
                 </div>
               </div>
             </div>
@@ -427,7 +427,7 @@ Build the infrastructure underneath at nuvero.space.
                   <div class="pixel-save-sub">Follow @nuvero.space for weekly teardowns</div>
                 </div>
               </div>
-              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -498,22 +498,22 @@ Turn your inbound flow into infrastructure at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[INBOUND TELEMETRY]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">SPEED TO LEAD</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[INBOUND TELEMETRY]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">SPEED TO LEAD</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 3.8h</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">MANUAL RELAY</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 3.8h</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">MANUAL RELAY</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.zap} 8.6s</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">NUVERO SPEED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.zap} 8.6s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">NUVERO SPEED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">+391%</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">CONVERSION</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">+391%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">CONVERSION</div>
                 </div>
               </div>
             </div>
@@ -557,20 +557,20 @@ Turn your inbound flow into infrastructure at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">00:00 FORM SUBMITTED</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Lead attention at 100%</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">00:00 FORM SUBMITTED</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Lead attention at 100%</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">00:45 INBOX SIT</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Unread notification</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">00:45 INBOX SIT</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Unread notification</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">02:15 CRM SEARCH</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Duplicate lookup & dirty data</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">02:15 CRM SEARCH</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Duplicate lookup & dirty data</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">03:48 FIRST OUTREACH</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: var(--nuvero-red);">Prospect already moved on</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">03:48 FIRST OUTREACH</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red);">Prospect already moved on</span>
                 </div>
               </div>
 
@@ -627,20 +627,20 @@ Turn your inbound flow into infrastructure at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">00.0s WEBHOOK INGEST</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Zero buffer delay</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">00.0s WEBHOOK INGEST</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Zero buffer delay</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">01.4s ICP ENRICHMENT</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Company revenue & tech stack</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">01.4s ICP ENRICHMENT</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Company revenue & tech stack</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">03.7s WHATSAPP / EMAIL</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Personalized response sent</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">03.7s WHATSAPP / EMAIL</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Personalized response sent</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">08.6s CALENDAR BOOKED</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: #10B981;">CRM updated & rep pinged</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">08.6s CALENDAR BOOKED</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981;">CRM updated & rep pinged</span>
                 </div>
               </div>
 
@@ -695,14 +695,14 @@ Turn your inbound flow into infrastructure at nuvero.space.
                 <span class="pixel-vs-tag">AFTER 30 MIN</span>
                 <div class="pixel-vs-metric">-80%</div>
                 <div class="pixel-vs-desc">Probability of qualification drops off a cliff</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ PROSPECT LOST</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ PROSPECT LOST</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">UNDER 60 SEC</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">391%</div>
                 <div class="pixel-vs-desc">Higher close rate with immediate response</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ LOCKED IN</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ LOCKED IN</div>
               </div>
             </div>
 
@@ -754,26 +754,26 @@ Turn your inbound flow into infrastructure at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">TIER 01</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">TIER 01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">RAW LLMS // COMMODITY</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">OpenAI, Anthropic, Gemini: available to everyone</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">RAW LLMS // COMMODITY</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">OpenAI, Anthropic, Gemini: available to everyone</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">TIER 02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">TIER 02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">STATE MACHINES // LOGIC</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Deterministic retry queues, validation, schemas</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">STATE MACHINES // LOGIC</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Deterministic retry queues, validation, schemas</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">TIER 03</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: #10B981;">TIER 03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">NUVERO INTEGRATION // THE VALUE</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Direct CRM webhooks, ERP connectors, fail-safes</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">NUVERO INTEGRATION // THE VALUE</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 2px;">Direct CRM webhooks, ERP connectors, fail-safes</div>
                 </div>
               </div>
             </div>
@@ -786,7 +786,7 @@ Turn your inbound flow into infrastructure at nuvero.space.
                   <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
                 </div>
               </div>
-              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -844,22 +844,22 @@ Turn your tool sprawl into infrastructure at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[STACK METRICS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">TOIL MEASUREMENT</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[STACK METRICS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">TOIL MEASUREMENT</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">40%</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">WEEK WASTED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">40%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">WEEK WASTED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">6 APPS</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">DISCONNECTED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">6 APPS</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">DISCONNECTED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">&lt;200ms</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">DIRECT SYNC</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">&lt;200ms</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">DIRECT SYNC</div>
                 </div>
               </div>
             </div>
@@ -903,16 +903,16 @@ Turn your tool sprawl into infrastructure at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; flex-direction: column; gap: 8px;">
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">CRM ➔ SHEETS</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Manual CSV exports & formatting</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">CRM ➔ SHEETS</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Manual CSV exports & formatting</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">GMAIL ➔ SLACK</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Manual rep alert pinging</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">GMAIL ➔ SLACK</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px;">Manual rep alert pinging</span>
                 </div>
                 <div style="display: flex; justify-content: space-between; align-items: center;">
-                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">STRIPE ➔ LEDGER</span>
-                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: var(--nuvero-red);">Discrepancy cross-checking</span>
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">STRIPE ➔ LEDGER</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red);">Discrepancy cross-checking</span>
                 </div>
               </div>
 
@@ -967,14 +967,14 @@ Turn your tool sprawl into infrastructure at nuvero.space.
                 <span class="pixel-vs-tag">MANUAL GLUE</span>
                 <div class="pixel-vs-metric">15h/wk</div>
                 <div class="pixel-vs-desc">Human time lost to browser switching</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ DELAYED DATA</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ DELAYED DATA</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">NUVERO MESH</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">&lt;200ms</div>
                 <div class="pixel-vs-desc">Direct webhook synchronizer</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
               </div>
             </div>
 
@@ -1027,26 +1027,26 @@ Turn your tool sprawl into infrastructure at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">DIRECT API CHANNELS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Replace human copy-paste with deterministic webhooks</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">DIRECT API CHANNELS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Replace human copy-paste with deterministic webhooks</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">SINGLE TRUTH LAYER</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">One event updates CRM, Slack, and accounting simultaneously</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">SINGLE TRUTH LAYER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">One event updates CRM, Slack, and accounting simultaneously</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: #10B981;">03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">DELETE UNNECESSARY SEATS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Save thousands monthly on unused dashboard licenses</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">DELETE UNNECESSARY SEATS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 2px;">Save thousands monthly on unused dashboard licenses</div>
                 </div>
               </div>
             </div>
@@ -1059,7 +1059,7 @@ Turn your tool sprawl into infrastructure at nuvero.space.
                   <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
                 </div>
               </div>
-              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -1126,22 +1126,22 @@ See deployed systems at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[PRODUCTION BENCHMARKS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">VERIFIED DATA</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[PRODUCTION BENCHMARKS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">VERIFIED DATA</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">&lt;60s</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">FIRST CONTACT</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">&lt;60s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">FIRST CONTACT</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">15 MIN</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">REPORTS READY</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">15 MIN</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">REPORTS READY</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">24/7</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">COVERAGE</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">24/7</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">COVERAGE</div>
                 </div>
               </div>
             </div>
@@ -1183,14 +1183,14 @@ See deployed systems at nuvero.space.
                 <span class="pixel-vs-tag">BEFORE NUVERO</span>
                 <div class="pixel-vs-metric">4.2h</div>
                 <div class="pixel-vs-desc">Manual inbox triage and delayed rep assignment</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ 68% LEAD ABANDONMENT</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ 68% LEAD ABANDONMENT</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">&lt;60s</div>
                 <div class="pixel-vs-desc">Personalized qualification and calendar link sent</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% CONTACTED</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ 100% CONTACTED</div>
               </div>
             </div>
 
@@ -1244,14 +1244,14 @@ See deployed systems at nuvero.space.
                 <span class="pixel-vs-tag">BEFORE NUVERO</span>
                 <div class="pixel-vs-metric">3 Days</div>
                 <div class="pixel-vs-desc">Finance team pulling and stitching CSV files</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ PRONE TO DATA ERRORS</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ PRONE TO DATA ERRORS</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">15 Min</div>
                 <div class="pixel-vs-desc">Automated compilation, verified, and sent to Slack</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% RECONCILED</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ 100% RECONCILED</div>
               </div>
             </div>
 
@@ -1305,14 +1305,14 @@ See deployed systems at nuvero.space.
                 <span class="pixel-vs-tag">BEFORE NUVERO</span>
                 <div class="pixel-vs-metric">18h Lag</div>
                 <div class="pixel-vs-desc">Weekend and night leads queued until Monday</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ COLD LEADS</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-red); margin-top: 4px;">✕ COLD LEADS</div>
               </div>
 
               <div class="pixel-vs-side win">
                 <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
                 <div class="pixel-vs-metric" style="color: #10B981;">82%</div>
                 <div class="pixel-vs-desc">Fully autonomous resolution with zero delay</div>
-                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 24/7 FIRST RING</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 4px;">✓ 24/7 FIRST RING</div>
               </div>
             </div>
 
@@ -1364,26 +1364,26 @@ See deployed systems at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">MEASURE IN TIME RETURNED</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">The only ROI metric that never lies in board meetings</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">MEASURE IN TIME RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">The only ROI metric that never lies in board meetings</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">DIRECT ON YOUR STACK</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Runs inside your tools, not a locked proprietary garden</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">DIRECT ON YOUR STACK</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Runs inside your tools, not a locked proprietary garden</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: #10B981;">03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">COMMISSIONED ASSETS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Infrastructure you own permanently, not endless subscriptions</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">COMMISSIONED ASSETS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 2px;">Infrastructure you own permanently, not endless subscriptions</div>
                 </div>
               </div>
             </div>
@@ -1396,7 +1396,7 @@ See deployed systems at nuvero.space.
                   <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
                 </div>
               </div>
-              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -1460,22 +1460,22 @@ Commission your system at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[COMMISSIONED TELEMETRY]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">LAST 30 DAYS</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[COMMISSIONED TELEMETRY]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">LAST 30 DAYS</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">5,204</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">CALLS HANDLED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">5,204</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">CALLS HANDLED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">0.8s</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">FIRST RESPONSE</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">0.8s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">FIRST RESPONSE</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">97%</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">AUTONOMOUS</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">97%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">AUTONOMOUS</div>
                 </div>
               </div>
             </div>
@@ -1581,26 +1581,26 @@ Commission your system at nuvero.space.
 
             <div class="pixel-panel-box">
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">COMMISSION ONCE, RUN FOREVER</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Engineered directly into your existing software stack</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">COMMISSION ONCE, RUN FOREVER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Engineered directly into your existing software stack</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">AUDITED PRODUCTION NUMBERS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Clear accountability with live latency and resolution telemetry</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">AUDITED PRODUCTION NUMBERS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Clear accountability with live latency and resolution telemetry</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: #10B981;">03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">RETURNS HUMAN HOURS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Liberates your key people to focus on revenue and growth</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: #10B981;">RETURNS HUMAN HOURS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #10B981; margin-top: 2px;">Liberates your key people to focus on revenue and growth</div>
                 </div>
               </div>
             </div>
@@ -1613,7 +1613,7 @@ Commission your system at nuvero.space.
                   <div class="pixel-save-sub">nuvero.space / Deployments</div>
                 </div>
               </div>
-              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -1658,21 +1658,21 @@ Build the infrastructure underneath at nuvero.space.
             <div style="display: flex; align-items: center; justify-content: space-between; padding-bottom: 12px; border-bottom: 1.5px solid rgba(0, 48, 73, 0.15);">
               <div style="display: flex; align-items: center; gap: 10px;">
                 <div style="width: 14px; height: 14px; border-radius: 50%; background: var(--nuvero-red); box-shadow: 0 0 0 3px rgba(193, 18, 31, 0.2);"></div>
-                <span style="font-family: var(--font-mono); font-size: 13px; font-weight: 700; color: var(--nuvero-blue);">SWITCHBOARD TRAFFIC (09:00 - 14:00)</span>
+                <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue);">SWITCHBOARD TRAFFIC (09:00 - 14:00)</span>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--nuvero-red);">850+ CALLS / MO</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">850+ CALLS / MO</span>
             </div>
             
             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 6px;">
               <div style="background: var(--nuvero-tan-elevated); border: 1.5px solid var(--nuvero-blue); border-radius: 8px; padding: 16px;">
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue-subtle);">ANSWERED CALLS</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">ANSWERED CALLS</div>
                 <div style="font-family: var(--font-display); font-size: 38px; font-weight: 700; color: var(--nuvero-blue); margin: 6px 0;">78%</div>
-                <div style="font-family: var(--font-body); font-size: 12px; color: var(--nuvero-blue-muted);">Staff managing live shipments</div>
+                <div style="font-family: var(--font-body); font-size: 30px; color: var(--nuvero-blue-muted);">Staff managing live shipments</div>
               </div>
               <div style="background: #FFF5F5; border: 2px solid var(--nuvero-red); border-radius: 8px; padding: 16px;">
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">DROPPED / MISSED</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">DROPPED / MISSED</div>
                 <div style="font-family: var(--font-display); font-size: 38px; font-weight: 700; color: var(--nuvero-red); margin: 6px 0;">22%</div>
-                <div style="font-family: var(--font-body); font-size: 12px; color: var(--nuvero-dark-red); font-weight: 600;">Lost sales opportunities</div>
+                <div style="font-family: var(--font-body); font-size: 30px; color: var(--nuvero-dark-red); font-weight: 600;">Lost sales opportunities</div>
               </div>
             </div>
 
@@ -1694,26 +1694,26 @@ Build the infrastructure underneath at nuvero.space.
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-blue); border-radius: 6px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue-subtle);">SURGE DYNAMICS</div>
-                <div style="font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Loading dock coordination takes 100% focus</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">SURGE DYNAMICS</div>
+                <div style="font-family: var(--font-display); font-size: 34px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Loading dock coordination takes 100% focus</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: var(--nuvero-tan-elevated); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,48,73,0.2);">ACTIVE PRIORITY</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: var(--nuvero-tan-elevated); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(0,48,73,0.2);">ACTIVE PRIORITY</span>
             </div>
 
             <div style="background: #FFF5F5; border: 1.5px solid var(--nuvero-red); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">CONCURRENT PHONES</div>
-                <div style="font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--nuvero-dark-red); margin-top: 2px;">Switchboard rings continuously with 4+ lines on hold</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">CONCURRENT PHONES</div>
+                <div style="font-family: var(--font-display); font-size: 34px; font-weight: 700; color: var(--nuvero-dark-red); margin-top: 2px;">Switchboard rings continuously with 4+ lines on hold</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.15); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">DROPPED</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.15); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">DROPPED</span>
             </div>
 
             <div style="background: #FFF5F5; border: 1.5px solid var(--nuvero-red); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">SALES FOLLOW-UP</div>
-                <div style="font-family: var(--font-display); font-size: 16px; font-weight: 700; color: var(--nuvero-dark-red); margin-top: 2px;">0 staff remaining to call back warm quote inquiries</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">SALES FOLLOW-UP</div>
+                <div style="font-family: var(--font-display); font-size: 34px; font-weight: 700; color: var(--nuvero-dark-red); margin-top: 2px;">0 staff remaining to call back warm quote inquiries</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.15); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">ZERO TOIL</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.15); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">ZERO TOIL</span>
             </div>
           </div>
         `
@@ -1731,7 +1731,7 @@ Build the infrastructure underneath at nuvero.space.
             <div class="call-active-card">
               <div class="call-profile-left">
                 <div class="call-pulse-ring">
-                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
                 <div class="call-meta-details">
                   <div class="caller-title">Commercial Yard Line #01</div>
@@ -1837,11 +1837,11 @@ Turn your communication bottlenecks into infrastructure at nuvero.space.
 
             <div style="background: #ffffff; border: 2px solid var(--nuvero-blue); border-radius: 8px; padding: 14px 18px; display: flex; align-items: center; justify-content: space-between;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue-subtle);">UNREAD QUEUE AT SUNSET</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">UNREAD QUEUE AT SUNSET</div>
                 <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-red); margin: 2px 0;">420+ Messages</div>
               </div>
               <div style="text-align: right;">
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue-subtle);">AVG RESPONSE TIME</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">AVG RESPONSE TIME</div>
                 <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin: 2px 0;">8.2 Hours</div>
               </div>
             </div>
@@ -1883,7 +1883,7 @@ Turn your communication bottlenecks into infrastructure at nuvero.space.
             </div>
 
             <div style="margin-top: 4px;">
-              <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue); margin-bottom: 6px;">SUPPORT TEAM REQUIRED ACROSS 6 DIALECTS:</div>
+              <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue); margin-bottom: 6px;">SUPPORT TEAM REQUIRED ACROSS 6 DIALECTS:</div>
               <div class="language-chips-row">
                 <span class="lang-chip active-chip">Hindi</span>
                 <span class="lang-chip active-chip">Gujarati</span>
@@ -1927,7 +1927,7 @@ Turn your communication bottlenecks into infrastructure at nuvero.space.
               <div class="chat-time">10:15 AM • Delivered ✓✓</div>
             </div>
 
-            <div style="background: rgba(0, 48, 73, 0.08); padding: 8px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 11px; color: var(--nuvero-blue);">
+            <div style="background: rgba(0, 48, 73, 0.08); padding: 8px 12px; border-radius: 4px; font-family: var(--font-mono); font-size: 30px; color: var(--nuvero-blue);">
               <strong>MEMORY CONTEXT:</strong> Recalls Ramesh attended 18 sessions in August • Preferred language: Hindi.
             </div>
           </div>
@@ -2001,26 +2001,26 @@ Turn your manual marketing toil into infrastructure at nuvero.space.
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <div style="background: #ffffff; border: 2px solid var(--nuvero-blue); border-radius: 8px; padding: 16px;">
               <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-                <span style="font-family: var(--font-mono); font-size: 12px; font-weight: 700; color: var(--nuvero-blue);">5-DAY TIME SINK PER CLIENT LAUNCH</span>
-                <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">32 HRS TOIL</span>
+                <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue);">5-DAY TIME SINK PER CLIENT LAUNCH</span>
+                <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">32 HRS TOIL</span>
               </div>
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="background: var(--nuvero-tan-elevated); padding: 10px; border-radius: 6px; border: 1px solid rgba(0,48,73,0.2);">
-                  <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--nuvero-blue-subtle);">DAYS 1-2</div>
-                  <div style="font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--nuvero-blue);">Draft 40 variants</div>
+                  <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">DAYS 1-2</div>
+                  <div style="font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--nuvero-blue);">Draft 40 variants</div>
                 </div>
                 <div style="background: var(--nuvero-tan-elevated); padding: 10px; border-radius: 6px; border: 1px solid rgba(0,48,73,0.2);">
-                  <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--nuvero-blue-subtle);">DAY 3</div>
-                  <div style="font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--nuvero-blue);">Tagging & logic</div>
+                  <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">DAY 3</div>
+                  <div style="font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--nuvero-blue);">Tagging & logic</div>
                 </div>
                 <div style="background: #FFF5F5; padding: 10px; border-radius: 6px; border: 1.5px solid var(--nuvero-red);">
-                  <div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--nuvero-red);">DAYS 4-5</div>
-                  <div style="font-family: var(--font-display); font-size: 13px; font-weight: 700; color: var(--nuvero-dark-red);">QA & launch delay</div>
+                  <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">DAYS 4-5</div>
+                  <div style="font-family: var(--font-display); font-size: 30px; font-weight: 700; color: var(--nuvero-dark-red);">QA & launch delay</div>
                 </div>
               </div>
             </div>
 
-            <div style="background: rgba(193, 18, 31, 0.08); border: 1.5px solid var(--nuvero-red); border-radius: 6px; padding: 12px 16px; font-family: var(--font-mono); font-size: 12px; color: var(--nuvero-blue);">
+            <div style="background: rgba(193, 18, 31, 0.08); border: 1.5px solid var(--nuvero-red); border-radius: 6px; padding: 12px 16px; font-family: var(--font-mono); font-size: 30px; color: var(--nuvero-blue);">
               <strong>CAPACITY HARD CEILING:</strong> Max 4 concurrent client campaigns before needing expensive new hires.
             </div>
           </div>
@@ -2038,26 +2038,26 @@ Turn your manual marketing toil into infrastructure at nuvero.space.
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">COPY DECK GRIND</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Writing 40 slightly altered email hooks manually</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">COPY DECK GRIND</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Writing 40 slightly altered email hooks manually</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">CREATIVE DRAIN</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">CREATIVE DRAIN</span>
             </div>
 
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">INBOX NOISE</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Sorting through hundreds of out-of-office & bounce emails</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">INBOX NOISE</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Sorting through hundreds of out-of-office & bounce emails</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">TIME SINK</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">TIME SINK</span>
             </div>
 
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">TOOL SWITCHING</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Copy-pasting leads between Google Sheets, Smartlead, and Slack</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">TOOL SWITCHING</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Copy-pasting leads between Google Sheets, Smartlead, and Slack</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">ERROR-PRONE</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">ERROR-PRONE</span>
             </div>
           </div>
         `
@@ -2171,7 +2171,7 @@ Turn your spreadsheet chaos into infrastructure at nuvero.space.
         renderMockup: () => `
           <div class="sheets-comparison-split">
             <div class="sheet-chaos-card">
-              <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">LEGACY EXCEL SPREADSHEETS:</div>
+              <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">LEGACY EXCEL SPREADSHEETS:</div>
               <div class="chaos-file-item">
                 <span>📄 RateCard_2023_v4_Final.xlsx</span>
                 <span style="color: var(--nuvero-red); font-weight: 700;">OUTDATED</span>
@@ -2188,12 +2188,12 @@ Turn your spreadsheet chaos into infrastructure at nuvero.space.
 
             <div style="background: #ffffff; border: 2px solid var(--nuvero-blue); border-radius: 8px; padding: 14px; display: flex; flex-direction: column; justify-content: space-around;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-blue-subtle);">TIME PER MULTI-CITY QUOTE</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-blue-subtle);">TIME PER MULTI-CITY QUOTE</div>
                 <div style="font-family: var(--font-display); font-size: 28px; font-weight: 700; color: var(--nuvero-blue);">4 to 6 Hours</div>
               </div>
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">MARGIN DRIFT RISK</div>
-                <div style="font-family: var(--font-body); font-size: 12px; color: var(--nuvero-dark-red); font-weight: 600;">Pricing discrepancies between regional offices</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">MARGIN DRIFT RISK</div>
+                <div style="font-family: var(--font-body); font-size: 30px; color: var(--nuvero-dark-red); font-weight: 600;">Pricing discrepancies between regional offices</div>
               </div>
             </div>
           </div>
@@ -2211,26 +2211,26 @@ Turn your spreadsheet chaos into infrastructure at nuvero.space.
           <div style="display: flex; flex-direction: column; gap: 12px;">
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">REGIONAL DISCREPANCY</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Mumbai, Delhi, and Bangalore branches quoting different margins</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">REGIONAL DISCREPANCY</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Mumbai, Delhi, and Bangalore branches quoting different margins</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">INCONSISTENT</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">INCONSISTENT</span>
             </div>
 
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">PARTNER BOTTLENECK</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Senior partners required to manually audit every PDF formula</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">PARTNER BOTTLENECK</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Senior partners required to manually audit every PDF formula</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">SLOW CYCLE</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">SLOW CYCLE</span>
             </div>
 
             <div style="background: #ffffff; border: 1.5px solid var(--nuvero-blue); border-left: 6px solid var(--nuvero-red); border-radius: 6px; padding: 14px 18px; display: flex; justify-content: space-between; align-items: center;">
               <div>
-                <div style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">PROPOSAL FORMATTING</div>
-                <div style="font-family: var(--font-display); font-size: 15px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Manual export into PowerPoint resulted in mismatched typography</div>
+                <div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; color: var(--nuvero-red);">PROPOSAL FORMATTING</div>
+                <div style="font-family: var(--font-display); font-size: 32px; font-weight: 700; color: var(--nuvero-blue); margin-top: 2px;">Manual export into PowerPoint resulted in mismatched typography</div>
               </div>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">OFF-BRAND</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: rgba(193,18,31,0.1); color: var(--nuvero-red); padding: 4px 8px; border-radius: 4px;">OFF-BRAND</span>
             </div>
           </div>
         `
@@ -2255,7 +2255,7 @@ Turn your spreadsheet chaos into infrastructure at nuvero.space.
             </div>
             <div class="platform-row" style="border: 2px solid var(--nuvero-red); background: rgba(193, 18, 31, 0.06);">
               <span style="font-weight: 700; color: var(--nuvero-red);">1-CLICK ACTION: Generate Boardroom PDF Proposal</span>
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; background: var(--nuvero-red); color: #fff; padding: 2px 8px; border-radius: 4px;">READY (<2s)</span>
+              <span style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; background: var(--nuvero-red); color: #fff; padding: 2px 8px; border-radius: 4px;">READY (<2s)</span>
             </div>
           </div>
         `
@@ -2322,7 +2322,7 @@ function renderSidebar() {
 
   let html = '';
 
-  html += `<div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-red); padding: 8px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
+  html += `<div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-red); padding: 8px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
     <span>BRAND INFRASTRUCTURE SERIES</span>
     <span style="background: rgba(193,18,31,0.15); padding: 1px 6px; border-radius: 4px;">5 POSTS</span>
   </div>`;
@@ -2342,7 +2342,7 @@ function renderSidebar() {
     `;
   }).join('');
 
-  html += `<div style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-blue-subtle); padding: 16px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
+  html += `<div style="font-family: var(--font-mono); font-size: 30px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: var(--nuvero-blue-subtle); padding: 16px 6px 4px 6px; display: flex; align-items: center; justify-content: space-between;">
     <span>PRODUCTION CASE STUDIES</span>
     <span style="background: rgba(0,48,73,0.1); padding: 1px 6px; border-radius: 4px;">4 POSTS</span>
   </div>`;
@@ -2571,7 +2571,7 @@ function renderCanvas() {
           <div class="post-frame-wrapper">
             <div class="post-frame-label">
               <span>SLIDE 0${idx + 1} // ${slide.category}</span>
-              <button class="btn btn-secondary" style="padding: 4px 10px; font-size: 10px;" onclick="exportSingleSlideById('slideRender_${idx}', ${idx + 1})">PNG ↓</button>
+              <button class="btn btn-secondary" style="padding: 4px 10px; font-size: 30px;" onclick="exportSingleSlideById('slideRender_${idx}', ${idx + 1})">PNG ↓</button>
             </div>
             ${generateSlideHTML(currentPost, slide, idx, idx === currentPost.slides.length - 1)}
           </div>

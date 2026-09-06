@@ -580,11 +580,11 @@ body {
 .social-brand-pill {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: rgba(0, 48, 73, 0.06);
-  border: 1.5px solid rgba(0, 48, 73, 0.2);
-  padding: 6px 14px 6px 10px;
-  border-radius: 30px;
+  border: 2px solid rgba(0, 48, 73, 0.2);
+  padding: 8px 18px 8px 14px;
+  border-radius: 40px;
 }
 
 .insta-slide.theme-dark .social-brand-pill {
@@ -593,8 +593,8 @@ body {
 }
 
 .social-brand-pill .brand-logo-icon {
-  width: 24px;
-  height: 24px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -603,7 +603,7 @@ body {
 
 .social-brand-pill .brand-handle-text {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--nuvero-blue);
   letter-spacing: 0;
@@ -615,18 +615,14 @@ body {
 
 .social-category-tag {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 30px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  padding: 6px 14px;
-  border-radius: 30px;
+  padding: 8px 20px;
+  border-radius: 40px;
   background: var(--nuvero-red);
   color: #ffffff;
-  box-shadow: 0 4px 10px rgba(193, 18, 31, 0.25);
-  display: flex;
-  align-items: center;
-  gap: 6px;
 }
 
 .slide-sequence-badge {
@@ -1225,7 +1221,7 @@ body {
 
 .bottom-author-lockup .lockup-domain {
   font-family: var(--font-mono);
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--nuvero-blue);
   letter-spacing: 0;
@@ -1237,7 +1233,7 @@ body {
 
 .bottom-author-lockup .lockup-tag {
   font-family: var(--font-mono);
-  font-size: 11.5px;
+  font-size: 30px;
   color: var(--nuvero-blue-subtle);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -2405,7 +2401,7 @@ body {
 
 .progress-rail-text {
   font-family: var(--font-mono);
-  font-size: 11px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: var(--nuvero-blue);
@@ -2416,8 +2412,8 @@ body {
 }
 
 .progress-track-bar {
-  width: 72px;
-  height: 5px;
+  width: 110px;
+  height: 10px;
   background: rgba(0, 48, 73, 0.12);
   border-radius: 6px;
   overflow: hidden;
@@ -2479,11 +2475,11 @@ body {
 .next-slide-cliffhanger {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
   background: rgba(193, 18, 31, 0.08);
-  border: 1.5px solid rgba(193, 18, 31, 0.22);
-  padding: 6px 14px;
-  border-radius: 30px;
+  border: 2px solid rgba(193, 18, 31, 0.25);
+  padding: 8px 18px;
+  border-radius: 40px;
   cursor: pointer;
   transition: all var(--transition-fast);
 }
@@ -2495,7 +2491,7 @@ body {
 
 .next-slide-cliffhanger .cliffhanger-label {
   font-family: var(--font-mono);
-  font-size: 10px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--nuvero-red);
   text-transform: uppercase;
@@ -2504,10 +2500,10 @@ body {
 
 .next-slide-cliffhanger .cliffhanger-text {
   font-family: var(--font-display);
-  font-size: 13px;
+  font-size: 30px;
   font-weight: 600;
   color: var(--nuvero-blue);
-  max-width: 260px;
+  max-width: 460px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2520,7 +2516,7 @@ body {
 .next-slide-cliffhanger .cliffhanger-arrow {
   color: var(--nuvero-red);
   font-weight: 800;
-  font-size: 14px;
+  font-size: 32px;
   transition: transform 0.2s ease;
 }
 
@@ -5467,16 +5463,16 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  padding: 8px 12px;
+  font-size: 30px;
+  padding: 14px 22px;
   background: var(--nuvero-red);
   color: #ffffff;
-  border: 2px solid #000000;
-  box-shadow: 3px 3px 0 #000;
+  border: 3px solid #000000;
+  box-shadow: 4px 4px 0 #000;
   z-index: 10;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 12px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -5519,13 +5515,13 @@ body {
 
 .text-3x-badge {
   font-family: 'Press Start 2P', monospace;
-  font-size: 13px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--nuvero-red);
   background: rgba(193, 18, 31, 0.12);
-  border: 2px solid var(--nuvero-red);
-  padding: 8px 14px;
-  box-shadow: 3px 3px 0 #000;
+  border: 3px solid var(--nuvero-red);
+  padding: 10px 18px;
+  box-shadow: 4px 4px 0 #000;
   letter-spacing: 0.05em;
 }
 
@@ -5537,7 +5533,7 @@ body {
 
 .text-3x-tag {
   font-family: 'Silkscreen', monospace;
-  font-size: 15px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--nuvero-blue);
   letter-spacing: 0.06em;
@@ -5602,16 +5598,16 @@ body {
 /* Tripled Subheads (26px to 34px) */
 .text-3x-subhead {
   font-family: var(--font-body);
-  font-size: 28px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.28;
+  line-height: 1.25;
   color: var(--nuvero-blue-muted);
   max-width: 95%;
   margin-top: 8px;
 }
 
 .insta-slide.ratio-1-1 .text-3x-subhead {
-  font-size: 22px;
+  font-size: 30px;
   line-height: 1.25;
 }
 
@@ -5660,7 +5656,7 @@ body {
 
 .pixel-meter-cell {
   flex: 1;
-  height: 20px;
+  height: 28px;
   background: rgba(0, 48, 73, 0.15);
 }
 
@@ -5708,12 +5704,12 @@ body {
 }
 
 .pixel-quest-icon {
-  width: 38px;
-  height: 38px;
+  width: 56px;
+  height: 56px;
   background: var(--nuvero-red);
   color: #ffffff;
   border: 2px solid #000;
-  box-shadow: 2px 2px 0 #000;
+  box-shadow: 3px 3px 0 #000;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -5728,12 +5724,12 @@ body {
 
 .pixel-quest-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: 12px;
+  font-size: 30px;
   color: var(--nuvero-blue);
 }
 
 .insta-slide.ratio-1-1 .pixel-quest-title {
-  font-size: 10px;
+  font-size: 30px;
 }
 
 .insta-slide.theme-dark .pixel-quest-title {
@@ -5742,7 +5738,7 @@ body {
 
 .pixel-quest-stat {
   font-family: 'Silkscreen', monospace;
-  font-size: 14px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--nuvero-red);
 }
@@ -5756,20 +5752,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px;
+  padding: 18px 24px;
   background: var(--nuvero-blue);
   color: var(--nuvero-tan);
   border: 3px solid #000000;
   box-shadow: 5px 5px 0 var(--nuvero-red);
   font-family: 'Press Start 2P', monospace;
-  font-size: 13px;
+  font-size: 30px;
   letter-spacing: 0.05em;
   margin-top: 10px;
 }
 
 .insta-slide.ratio-1-1 .pixel-prompt-banner {
-  padding: 12px 16px;
-  font-size: 10.5px;
+  padding: 14px 18px;
+  font-size: 30px;
 }
 
 .insta-slide.theme-dark .pixel-prompt-banner {
@@ -5780,6 +5776,7 @@ body {
 
 .pixel-blink-arrow {
   color: #22c55e;
+  font-size: 32px;
   animation: pixelBlink 1s infinite steps(1);
 }
 
@@ -5836,8 +5833,8 @@ body {
 
 .pixel-vs-tag {
   font-family: 'Press Start 2P', monospace;
-  font-size: 11px;
-  padding: 4px 8px;
+  font-size: 30px;
+  padding: 6px 12px;
   display: inline-block;
   width: fit-content;
   border: 2px solid #000;
@@ -5855,13 +5852,13 @@ body {
 
 .pixel-vs-metric {
   font-family: var(--font-display);
-  font-size: 56px;
+  font-size: 64px;
   font-weight: 900;
   line-height: 1;
 }
 
 .insta-slide.ratio-1-1 .pixel-vs-metric {
-  font-size: 40px;
+  font-size: 48px;
 }
 
 .pixel-vs-side.loss .pixel-vs-metric {
@@ -5874,13 +5871,13 @@ body {
 
 .pixel-vs-desc {
   font-family: var(--font-body);
-  font-size: 16px;
+  font-size: 30px;
   font-weight: 700;
   color: var(--nuvero-blue);
 }
 
 .insta-slide.ratio-1-1 .pixel-vs-desc {
-  font-size: 13px;
+  font-size: 30px;
 }
 
 .insta-slide.theme-dark .pixel-vs-desc {
@@ -5916,8 +5913,8 @@ body {
 }
 
 .pixel-floppy-icon {
-  width: 44px;
-  height: 44px;
+  width: 58px;
+  height: 58px;
   background: var(--nuvero-red);
   color: #ffffff;
   border: 2px solid #000;
@@ -5930,12 +5927,12 @@ body {
 
 .pixel-save-title {
   font-family: 'Press Start 2P', monospace;
-  font-size: 13px;
+  font-size: 32px;
   color: var(--nuvero-blue);
 }
 
 .insta-slide.ratio-1-1 .pixel-save-title {
-  font-size: 11px;
+  font-size: 30px;
 }
 
 .insta-slide.theme-dark .pixel-save-title {
@@ -5944,7 +5941,7 @@ body {
 
 .pixel-save-sub {
   font-family: 'Silkscreen', monospace;
-  font-size: 12px;
+  font-size: 30px;
   color: var(--nuvero-red);
   margin-top: 4px;
 }
