@@ -13,6 +13,73 @@ const NUVERO_LOGO_SVG = `
 </svg>
 `;
 
+// Giant Nuvero Brand Logo scaled to 100% of post canvas for Half-and-Half Seam Bridges
+const GIANT_NUVERO_LOGO_SVG = `
+<svg viewBox="0 0 1007 983" fill="none" xmlns="http://www.w3.org/2000/svg" class="giant-nuvero-svg">
+  <path fill-rule="evenodd" clip-rule="evenodd" fill="#C1121F"
+    d="M871.000,-0.000 C961.306,-1.478 1032.106,75.180 992.1000,166.000 C975.504,206.632 939.428,228.835 888.1000,237.000 C816.790,248.692 746.791,161.035 768.1000,86.1000 C779.925,50.580 806.306,20.681 839.1000,6.1000 C850.332,4.667 860.668,2.333 871.000,-0.000 ZM240.1000,12.1000 C326.985,16.026 341.399,63.639 374.1000,117.000 C401.664,157.996 428.336,199.004 455.000,239.1000 C614.984,485.975 775.016,732.025 935.000,978.000 C880.005,978.000 824.995,978.000 769.1000,978.000 C744.048,977.1000 712.031,981.000 691.1000,974.000 C623.928,950.211 592.841,870.002 556.1000,813.000 C455.010,654.682 352.990,496.317 250.1000,338.000 C250.667,338.000 250.333,338.000 249.1000,338.000 C249.1000,484.985 249.1000,632.015 249.1000,779.000 C250.004,835.537 263.308,919.465 236.000,954.1000 C227.924,965.509 211.872,974.645 197.000,978.000 C163.542,985.548 56.150,983.098 35.000,970.000 C-13.413,940.019 3.996,832.765 3.1000,760.000 C3.1000,586.684 3.1000,413.316 3.1000,239.1000 C3.998,186.013 -8.264,72.039 14.1000,39.1000 C42.545,2.064 129.712,13.997 194.000,13.1000 C209.665,13.667 225.335,13.333 240.1000,12.1000 ZM868.1000,284.000 C914.759,283.487 973.401,279.884 992.1000,306.000 C1015.415,335.869 1003.004,432.762 1002.1000,480.1000 C1002.1000,631.985 1002.1000,783.015 1002.1000,933.1000 C1001.667,933.000 1000.333,931.1000 999.000,931.000 C920.675,810.012 842.325,688.988 764.000,567.1000 C764.000,547.669 764.000,527.331 764.000,506.1000 C764.001,459.463 753.594,328.717 775.000,304.1000 C789.666,288.751 811.779,289.643 839.000,285.000 C848.999,284.667 859.001,284.333 868.1000,284.000 Z" />
+</svg>
+`;
+
+// Helper: Renders Giant Half-and-Half Logo Seam Bridge connecting adjacent slides
+function renderGiantLogoBridge(side) {
+  if (side === 'half-left') {
+    return `
+      <div class="giant-logo-seam-bridge half-left">
+        ${GIANT_NUVERO_LOGO_SVG}
+      </div>
+      <div class="seam-pixel-marker right">
+        <span>SWIPE ▶</span>
+      </div>
+    `;
+  } else if (side === 'half-right') {
+    return `
+      <div class="giant-logo-seam-bridge half-right">
+        ${GIANT_NUVERO_LOGO_SVG}
+      </div>
+      <div class="seam-pixel-marker left">
+        <span>◀ CONNECT</span>
+      </div>
+    `;
+  }
+  return '';
+}
+
+// 8-Bit Pixel Icon Library for Retro Visual Aesthetics
+const PIXEL_ICONS = {
+  heart: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M2 3h2v2H2V3zm2-2h3v2H4V1zm3 2h2v2H7V3zm2-2h3v2H9V1zm3 2h2v2h-2V3zm2 2h2v4h-2V5zm-2 4h-2v2h2V9zm-2 2h-2v2h2v-2zm-2 2H7v2h2v-2zm-2-2H3v-2h2v2zm-2-2H1V5h2v4z"/></svg>`,
+  sword: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M12 1h3v3h-2v2h-2v2h-2v2H7v1H5v2H3v2H1v-2h2v-2h2v-2h1V9h2V7h2V5h2V3h-2V1h2z"/></svg>`,
+  skull: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v4H1V5zm2 4h2v2H3V9zm2 2h6v2H5v-2zm6-2h2v2h-2V9zm2-4h2v4h-2V5zm-2-2h2v2h-2V3zm-9 3h2v2H4V6zm6 0h2v2h-2V6z"/></svg>`,
+  zap: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M9 1H5v6h3v1H4v7h2v-5h4v-1h3V1H9z"/></svg>`,
+  clock: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zm-5 3h2v4H8V6zm2 4h3v2h-3v-2z"/></svg>`,
+  floppy: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M1 1h11v2h2v2h1v10H1V1zm2 2v4h7V3H3zm0 6v4h10V9H3z"/></svg>`,
+  coin: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M5 1h6v2H5V1zM3 3h2v2H3V3zM1 5h2v6H1V5zm2 6h2v2H3v-2zm2 2h6v2H5v-2zm6-2h2v2h-2v-2zm2-6h2v6h-2V5zm-2-2h2v2h-2V3zM7 5h2v6H7V5z"/></svg>`,
+  check: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M14 3h2v3h-2V3zm-2 3h2v3h-2V6zm-2 3h2v3h-2V9zm-2 3h2v3H8v-3zm-2-2h2v2H6v-2zm-2-2h2v2H4V7zm-2-2h2v2H2V5z"/></svg>`,
+  cross: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M2 2h3v3H2V2zm3 3h2v2H5V5zm2 2h2v2H7V7zm2-2h2v2H9V5zm2-3h3v3h-3V2zm0 9h3v3h-3v-3zm-2-2h2v2H9V9zm-4 0h2v2H5V9zm-3 2h3v3H2v-3z"/></svg>`,
+  bot: `<svg width="22" height="22" viewBox="0 0 16 16" fill="currentColor"><path d="M7 1h2v2H7V1zM3 4h10v8H3V4zM1 7h2v3H1V7zm12 0h2v3h-2V7zm-8 1h2v2H5V8zm4 0h2v2H9V8zm-3 3h4v1H6v-1z"/></svg>`
+};
+
+// Modern SVG Icon Library for Clean, Readable, Instagram-Native Visual Graphics
+const ICONS = {
+  clock: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>`,
+  zap: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+  checkCircle: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>`,
+  alertCircle: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>`,
+  arrowRight: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`,
+  database: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>`,
+  messageSquare: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>`,
+  phone: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>`,
+  shield: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>`,
+  trendingUp: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>`,
+  layers: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>`,
+  fileText: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
+  bot: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8.01" y2="16"/><line x1="16" y1="16" x2="16.01" y2="16"/></svg>`,
+  bookmark: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>`,
+  cart: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>`,
+  dollarSign: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>`,
+  moon: `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`
+};
+
 // Complete Dataset: 5 Brand Infrastructure Posts + 4 Production Case Studies
 const POSTS_DATA = [
   {
@@ -45,64 +112,55 @@ Build the infrastructure underneath at nuvero.space.
       {
         slideNum: '01 / 05',
         category: 'NUVERO / OPS AUDIT 001',
-        eyebrow: 'SYSTEM THESIS',
+        eyebrow: 'LIVE AUDIT',
         shortTitle: '01 Hook',
-        headline: 'Some work should not require a human.',
-        lead: 'When software is wired directly into software, human operators stop acting as repetitive manual relays.',
+        isCover: true,
+        seamBridge: 'half-left',
+        headline: 'Some work should <span class="highlight-pill">NOT</span> require a human.',
+        lead: 'A normal Tuesday: 6 daily workflows running unattended with 31.5 hrs/week returned.',
+        nextTeaser: 'Where 31.5 hrs/wk vanish',
         renderCustomStage: () => `
-          <div class="infra-editorial-hero">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-meta-header-row">
-              <div class="infra-stamp-badge">[ QUEST: OPS AUDIT 001 ]</div>
-              <div style="display: flex; align-items: center; gap: 8px; font-family: var(--font-pixel); font-size: 11px; color: #00ff66;">
-                <span class="pixel-status-square"></span>
-                <span>AUTONOMOUS SHIFT LEDGER // TUESDAY 24H</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">OPS AUDIT // NUVERO AI</span>
+                <span class="text-3x-tag">01 / 05</span>
               </div>
-            </div>
-            <div class="infra-laser-line"></div>
-            <div class="infra-hero-monument-title">Some work should not require a human.</div>
-            <div class="infra-hero-lead-quote">A normal Tuesday, off your team's plate. 6 daily workflows running unattended with 31.5 hrs/wk returned.</div>
-            
-            <div class="infra-shift-preview-grid">
-              <div class="infra-shift-preview-cell">
-                <span class="time">09:00</span>
-                <span class="task">Morning report compiled</span>
-                <span class="status">✓ SYNCED</span>
+
+              <div class="text-3x-headline">
+                SOME WORK SHOULD <span class="pixel-highlight">NOT</span> REQUIRE A HUMAN.
               </div>
-              <div class="infra-shift-preview-cell">
-                <span class="time">10:40</span>
-                <span class="task">Abandoned carts recovered</span>
-                <span class="status">✓ RECOVERED</span>
-              </div>
-              <div class="infra-shift-preview-cell">
-                <span class="time">12:15</span>
-                <span class="task">Invoices reconciled</span>
-                <span class="status">✓ BALANCED</span>
-              </div>
-              <div class="infra-shift-preview-cell">
-                <span class="time">15:30</span>
-                <span class="task">Support tickets resolved</span>
-                <span class="status">✓ RESOLVED</span>
-              </div>
-              <div class="infra-shift-preview-cell">
-                <span class="time">18:05</span>
-                <span class="task">Follow-up calls sent</span>
-                <span class="status">✓ SENT</span>
-              </div>
-              <div class="infra-shift-preview-cell">
-                <span class="time">23:47</span>
-                <span class="task">After-hours enquiries answered</span>
-                <span class="status">✓ QUALIFIED</span>
+
+              <div class="text-3x-subhead">
+                A normal Tuesday: 6 daily workflows running unattended with 31.5 hrs/week returned.
               </div>
             </div>
 
-            <div class="infra-hero-cue-footer">
-              <span style="color: #22c55e; font-weight: 700;">✓ 31.5 HRS/WK RETURNED</span>
-              <span>VERIFIED UNATTENDED // 6 WORKFLOWS</span>
-              <span style="color: var(--nuvero-red); font-weight: 700;">SWIPE FOR TELEMETRY →</span>
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[SYSTEM STATS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">LIVE RUNTIME</span>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 31.5h</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">RETURNED</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.bot} 6 / 6</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">AUTONOMOUS</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">0.0s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">HUMAN LAG</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE TO AUDIT 6 LEAKS</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
@@ -110,67 +168,60 @@ Build the infrastructure underneath at nuvero.space.
       {
         slideNum: '02 / 05',
         category: 'NUVERO / OPS AUDIT 001',
-        eyebrow: 'DAYTIME OPERATIONS',
-        shortTitle: '02 Daytime',
-        headline: 'A normal Tuesday morning. <span class="highlight-red">Off your plate.</span>',
-        lead: 'Every line timestamped, logged, and executed autonomously without human prompting.',
+        eyebrow: 'TOIL DRAIN',
+        shortTitle: '02 Leaks',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'Where 31.5 hours vanish every week.',
+        lead: 'Six daily manual handoffs quietly draining high-performing teams.',
+        nextTeaser: 'How software connects directly',
         renderCustomStage: () => `
-          <div class="infra-timeline-console">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-console-bar">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="pixel-status-square"></span>
-                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">SHIFT TELEMETRY // 09:00 - 16:00</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">DRAIN AUDIT // STAGE 02</span>
+                <span class="text-3x-tag">02 / 05</span>
               </div>
-              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #ff4d5a; background: #241216; border: 1px solid #ff3344; padding: 4px 8px; box-shadow: 2px 2px 0 #000;">[ 4 WORKFLOWS COMPLETED ]</span>
-            </div>
-            
-            <div style="background: #101018; border: 1px solid #262638; padding: 10px 16px; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-pixel); font-size: 11px; box-shadow: 2px 2px 0 #000;">
-              <span style="color: #cbd5e1;">PRODUCTION SHIFT PROGRESSION</span>
-              <span style="color: #00ff66; font-weight: 700;">100% UNATTENDED ACCURACY</span>
+
+              <div class="text-3x-giant-number">31.5h</div>
+
+              <div class="text-3x-headline" style="font-size: 56px;">
+                LOST EVERY WEEK TO TOIL.
+              </div>
+
+              <div class="text-3x-subhead">
+                Repetitive browser copy-pasting that quietly bleeds high-velocity teams.
+              </div>
             </div>
 
-            <div class="infra-rail-track">
-              <div class="infra-rail-entry">
-                <div class="infra-time-chip">09:00</div>
-                <div class="infra-entry-title">
-                  <div>Morning report compiled</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Shopify + Stripe + QuickBooks</div>
-                </div>
-                <div class="infra-status-chip">✓ SYNCED</div>
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">WEEKLY TEAM CAPACITY DRAIN</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px;">78% DRAINED</span>
               </div>
-              <div class="infra-rail-entry">
-                <div class="infra-time-chip">10:40</div>
-                <div class="infra-entry-title">
-                  <div>Abandoned carts recovered</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">WhatsApp Business API outreach</div>
-                </div>
-                <div class="infra-status-chip">✓ RECOVERED</div>
+
+              <div class="pixel-meter-bar">
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell"></div>
+                <div class="pixel-meter-cell"></div>
               </div>
-              <div class="infra-rail-entry">
-                <div class="infra-time-chip">12:15</div>
-                <div class="infra-entry-title">
-                  <div>Invoices reconciled</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Zero discrepancy bank feed match</div>
-                </div>
-                <div class="infra-status-chip">✓ BALANCED</div>
-              </div>
-              <div class="infra-rail-entry">
-                <div class="infra-time-chip">15:30</div>
-                <div class="infra-entry-title">
-                  <div>Support tickets resolved</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Autonomous Tier-1 resolution</div>
-                </div>
-                <div class="infra-status-chip">✓ RESOLVED</div>
+
+              <div style="display: flex; justify-content: space-between; font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-blue);">
+                <span>1,638 HOURS WASTED ANNUALLY</span>
+                <span style="color: var(--nuvero-red);">= 0.8 FTE HEADCOUNT</span>
               </div>
             </div>
-            
-            <div class="infra-runtime-footer">
-              <span style="color: var(--nuvero-red); font-weight: 800;">RUNTIME STATUS:</span>
-              <span>Zero human intervention required across Shopify, QuickBooks & Zendesk.</span>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR 6 SILENT LEAKS</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
@@ -178,64 +229,79 @@ Build the infrastructure underneath at nuvero.space.
       {
         slideNum: '03 / 05',
         category: 'NUVERO / OPS AUDIT 001',
-        eyebrow: 'NOCTURNAL OPERATIONS',
-        shortTitle: '03 Nocturnal',
-        headline: 'Then, while the office is closed:',
-        lead: 'The intelligence layer stays awake so your business never goes offline.',
+        eyebrow: '6 SILENT LEAKS',
+        shortTitle: '03 6 Leaks',
+        isFullStage: true,
+        seamBridge: 'half-left',
+        headline: '6 places human time quietly dies.',
+        lead: 'The daily repetitive loops running inside your operations right now.',
+        nextTeaser: 'Nuvero runtime architecture',
         renderCustomStage: () => `
-          <div class="infra-nocturnal-console">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-console-bar">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="pixel-status-square"></span>
-                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">NOCTURNAL TELEMETRY // 18:00 - 08:00</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">WORKFLOW AUDIT</span>
+                <span class="text-3x-tag">03 / 05</span>
               </div>
-              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #00ff66; background: #0c1e14; border: 1px solid #00ff66; padding: 4px 8px; box-shadow: 2px 2px 0 #000;">[ LIGHTS-OUT RUNTIME ]</span>
-            </div>
-            <div class="infra-nocturnal-banner">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-weight: 700; color: #ff4d5a;">THEN:</span>
-                <span>OFFICE CLOSED // AI INTELLIGENCE ACTIVE</span>
-              </div>
-              <span style="font-weight: 700; color: #00ff66;">COVERAGE: 24/7 UNATTENDED</span>
-            </div>
-            <div class="infra-rail-track">
-              <div class="infra-rail-entry" style="border-color: rgba(193, 18, 31, 0.4); background: rgba(193, 18, 31, 0.08);">
-                <div class="infra-time-chip">18:05</div>
-                <div class="infra-entry-title">
-                  <div>Follow-up calls sent</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Voice agent follows up warm commercial quotes</div>
-                </div>
-                <div class="infra-status-chip">✓ COMPLETED</div>
-              </div>
-              <div class="infra-rail-entry" style="border-color: rgba(193, 18, 31, 0.4); background: rgba(193, 18, 31, 0.08);">
-                <div class="infra-time-chip">23:47</div>
-                <div class="infra-entry-title">
-                  <div>After-hours enquiries answered</div>
-                  <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; font-weight: 500; margin-top: 2px;">Instant multilingual WhatsApp qualification</div>
-                </div>
-                <div class="infra-status-chip">✓ QUALIFIED</div>
+
+              <div class="text-3x-headline" style="font-size: 58px;">
+                6 PLACES HUMAN TIME DIES.
               </div>
             </div>
 
-            <div style="background: #101018; border: 1px solid #262638; padding: 12px 18px; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 12px; box-shadow: 2px 2px 0 #000;">
-              <div style="display: flex; flex-direction: column; gap: 2px;">
-                <span style="color: #94a3b8; font-size: 10.5px; font-family: var(--font-pixel);">WITHOUT NUVERO:</span>
-                <span style="color: #ff4d5a; font-weight: 700;">14 hr response lag (Next morning)</span>
+            <div class="pixel-quest-grid">
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.floppy}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">09:00 REPORTS</span>
+                  <span class="pixel-quest-stat">4.5h wasted</span>
+                </div>
               </div>
-              <div style="width: 2px; height: 28px; background: #262638;"></div>
-              <div style="display: flex; flex-direction: column; gap: 2px; text-align: right;">
-                <span style="color: #94a3b8; font-size: 10.5px; font-family: var(--font-pixel);">WITH NUVERO:</span>
-                <span style="color: #00ff66; font-weight: 700;">0.8s instant first-ring response</span>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.coin}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">10:40 CARTS</span>
+                  <span class="pixel-quest-stat">5.0h wasted</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.sword}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">12:15 INVOICES</span>
+                  <span class="pixel-quest-stat">6.0h wasted</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.bot}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">15:30 TICKETS</span>
+                  <span class="pixel-quest-stat">7.5h wasted</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.zap}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">18:05 CALLS</span>
+                  <span class="pixel-quest-stat">4.0h wasted</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.clock}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">23:47 NIGHT LEADS</span>
+                  <span class="pixel-quest-stat">4.5h wasted</span>
+                </div>
               </div>
             </div>
 
-            <div class="infra-runtime-footer" style="background: #1e1014; border: 1px solid #ff3344; box-shadow: 2px 2px 0 #000;">
-              <span style="color: #ff4d5a; font-family: var(--font-pixel); font-weight: 700;">[ RESULT ]</span>
-              <span>Next-morning response lag eliminated. Warm commercial inquiries closed while competitors sleep.</span>
+            <div class="pixel-prompt-banner">
+              <span>ALL 6 NOW RUN AT 0.0s LAG</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
@@ -243,93 +309,60 @@ Build the infrastructure underneath at nuvero.space.
       {
         slideNum: '04 / 05',
         category: 'NUVERO / OPS AUDIT 001',
-        eyebrow: 'PRODUCTION LEDGER',
-        shortTitle: '04 31.5 hrs',
-        headline: 'The compounding dividend of infrastructure.',
-        lead: 'Every line on this audit sheet represents tangible manual labor retired permanently.',
+        eyebrow: 'RUNTIME BENCHMARK',
+        shortTitle: '04 0.0s Lag',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'Human lag under Nuvero: 0.0 seconds.',
+        lead: 'When software connects directly to software, humans stop acting as manual relays.',
+        nextTeaser: 'The operational blueprint',
         renderCustomStage: () => `
-          <div class="infra-stat-reactor-card">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            
-            <div style="width: 100%; display: flex; align-items: center; justify-content: space-between; font-family: var(--font-pixel); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 2px solid #262638;">
-              <span>AUDIT SUMMARY RECORD</span>
-              <span style="color: #00ff66; font-weight: 700;">[ ✓ MEASURED IN PRODUCTION ]</span>
-            </div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">BENCHMARK // RUNTIME</span>
+                <span class="text-3x-tag">04 / 05</span>
+              </div>
 
-            <div class="infra-monument-num">31.5 hrs/wk</div>
-            <div class="infra-monument-label-pill">RETURNED TO THE TEAM</div>
-            
-            <div class="infra-workload-breakdown">
-              <div class="infra-workload-cell">
-                <span class="time-val">6.5h</span>
-                <span class="task-label">Reporting</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                </div>
-              </div>
-              <div class="infra-workload-cell">
-                <span class="time-val">8.0h</span>
-                <span class="task-label">Carts</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block"></span>
-                </div>
-              </div>
-              <div class="infra-workload-cell">
-                <span class="time-val">7.0h</span>
-                <span class="task-label">Invoices</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                </div>
-              </div>
-              <div class="infra-workload-cell">
-                <span class="time-val">10.0h</span>
-                <span class="task-label">Support</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                </div>
+              <div class="text-3x-giant-number">0.0s</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                HUMAN LAG UNDER NUVERO.
               </div>
             </div>
 
-            <div style="width: 100%; display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #0d0d16; border: 2px solid #262638; padding: 12px 14px; font-family: var(--font-pixel); text-align: center; box-shadow: 2px 2px 0 #000;">
-              <div>
-                <div style="font-size: 10px; color: #94a3b8;">ANNUAL DIVIDEND</div>
-                <div style="font-size: 13.5px; font-weight: 700; color: #ffffff; margin-top: 4px;">1,638 HOURS</div>
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">OLD MANUAL</span>
+                <div class="pixel-vs-metric">3.8h</div>
+                <div class="pixel-vs-desc">Handoff delay across 12 tabs</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ HIGH HUMAN ERROR</div>
               </div>
-              <div>
-                <div style="font-size: 10px; color: #94a3b8;">CAPACITY GAIN</div>
-                <div style="font-size: 13.5px; font-weight: 700; color: #ff3344; margin-top: 4px;">0.8 FTE</div>
-              </div>
-              <div>
-                <div style="font-size: 10px; color: #94a3b8;">ACCURACY RATE</div>
-                <div style="font-size: 13.5px; font-weight: 700; color: #00ff66; margin-top: 4px;">99.4%</div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">NUVERO</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">&lt; 850ms</div>
+                <div class="pixel-vs-desc">Direct stack execution</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
               </div>
             </div>
 
-            <div style="font-family: var(--font-body); font-size: 14px; color: #94a3b8; line-height: 1.45; text-align: center;">
-              Measured in production across morning reporting, cart recovery, invoice reconciliation, support tickets, and after-hours triage.
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR CORE BLUEPRINT</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
@@ -337,53 +370,64 @@ Build the infrastructure underneath at nuvero.space.
       {
         slideNum: '05 / 05',
         category: 'NUVERO / OPS AUDIT 001',
-        eyebrow: 'CLOSING THESIS',
-        shortTitle: '05 Disappear',
-        headline: 'The goal isn\'t to add another dashboard.',
-        lead: 'It\'s to make the work disappear.',
+        eyebrow: 'SYSTEM PRINCIPLE',
+        shortTitle: '05 Blueprint',
+        isFullStage: true,
+        headline: 'Make work disappear.',
+        lead: 'The goal is not another dashboard. It is to delete manual handoffs forever.',
+        nextTeaser: 'nuvero.space',
         renderCustomStage: () => `
-          <div class="infra-manifesto-stage">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            
-            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-              <span style="color: var(--nuvero-red); font-weight: 800;">SYSTEM PRINCIPLE 001</span>
-              <span>AUTONOMOUS INFRASTRUCTURE</span>
-            </div>
-
+          <div class="text-3x-stage">
             <div>
-              <div class="infra-manifesto-line">
-                The goal isn't to add another dashboard.
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">CORE PRINCIPLE</span>
+                <span class="text-3x-tag">05 / 05</span>
               </div>
-              <div class="infra-laser-line" style="margin: 16px 0;"></div>
-              <div class="infra-manifesto-line red">
-                It's to make the work disappear.
+
+              <div class="text-3x-headline">
+                MAKE WORK DISAPPEAR.
+              </div>
+
+              <div class="text-3x-subhead">
+                The goal is not another dashboard. It is to delete manual handoffs forever.
               </div>
             </div>
 
-            <div class="infra-paradigm-comparison">
-              <div class="infra-paradigm-card old">
-                <span class="tag">OLD PARADIGM // DASHBOARD FATIGUE</span>
-                <div class="desc">
-                  • 12 browser tabs open each morning<br>
-                  • Operators copying data across SaaS apps<br>
-                  • Constant notification ping-pong
+            <div class="pixel-panel-box">
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">01</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">AUDIT HUMAN HANDOFFS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Find every copy-paste loop between tabs</div>
                 </div>
               </div>
-              <div class="infra-paradigm-card nuvero">
-                <span class="tag">NUVERO // INVISIBLE RUNTIME</span>
-                <div class="desc">
-                  • Zero new interfaces to learn<br>
-                  • Autonomous background execution<br>
-                  • The work disappears permanently
+
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">02</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">WIRE INBOUND WEBHOOKS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Connect software directly to autonomous runtime</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 16px; color: var(--nuvero-red);">03</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 12px; color: var(--nuvero-blue);">MEASURE IN HOURS RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Real software runs silently in the background</div>
                 </div>
               </div>
             </div>
 
-            <div style="padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body); font-size: 16px; line-height: 1.45; color: #cbd5e1;">
-              Nuvero AI builds AI infrastructure: agentic systems trained on how your company actually works, wired directly into your stack.
+            <div class="pixel-save-cta-box">
+              <div class="pixel-save-left">
+                <div class="pixel-floppy-icon">${PIXEL_ICONS.floppy}</div>
+                <div>
+                  <div class="pixel-save-title">SAVE THIS BLUEPRINT</div>
+                  <div class="pixel-save-sub">Follow @nuvero.space for weekly teardowns</div>
+                </div>
+              </div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -397,396 +441,352 @@ Build the infrastructure underneath at nuvero.space.
     client: 'Lead Telemetry',
     sector: 'Autonomous Inbound Pipeline',
     title: 'What actually happens when a lead comes in',
-    shortDesc: 'Legacy 5-step human relay delay vs Nuvero 9-second end-to-end execution telemetry.',
+    shortDesc: 'Legacy 5-step human relay delay vs Nuvero 8.6-second end-to-end execution telemetry.',
     caption: `What actually happens when a lead comes in?
 
 In the old workflow:
-1. Human checks form
-2. Human opens CRM
-3. Human messages lead
-4. Human updates CRM
-5. Human schedules meeting
-Result: 2 to 4 hours of delay and missed momentum.
+1. Human checks form (45 min wait)
+2. Human opens CRM (login, duplicate search)
+3. Human messages lead (manual draft)
+4. Human updates CRM (dirty data, missed fields)
+5. Human schedules meeting (calendar back-and-forth)
+Result: 2 to 4 hours of delay. Momentum is lost.
 
 Under the Nuvero layer:
-07:58:12: Lead received
-07:58:14: Lead qualified
-07:58:16: CRM updated
-07:58:21: Follow-up sent
+00.0s: Inbound webhook received
+01.4s: Instant ICP qualification
+02.1s: CRM record staged and deal created
+03.7s: Personalized WhatsApp/email dispatched
+08.6s: Calendar reservation confirmed
 
 Under 10 seconds end to end.
 
-The model is not the interesting part.
-The system around it is.
+Leads contacted within 60 seconds convert 391% higher than those contacted after 30 minutes.
 
-Map your lead infrastructure at nuvero.space.
+The model is not the interesting part. The system around it is.
 
-#LeadOps #AIInfrastructure #B2BGrowth #WorkflowAutomation #NuveroAI`,
-    slides: [
+Turn your inbound flow into infrastructure at nuvero.space.
+
+#LeadGeneration #SpeedToLead #SalesOperations #AIInfrastructure #NuveroAI #WorkflowAutomation`,
+        slides: [
       {
         slideNum: '01 / 05',
-        category: 'INGEST EVENT // 2231',
-        eyebrow: 'INBOUND TRIGGER',
-        shortTitle: '01 Event',
-        headline: 'A lead came in.',
-        lead: 'What happens in the next 10 seconds defines whether you book the meeting or lose the deal.',
+        category: 'PIPELINE ENGINE // SPEED TO LEAD',
+        eyebrow: 'INBOUND VELOCITY REPORT',
+        shortTitle: '01 Hook',
+        isCover: true,
+        seamBridge: 'half-left',
+        headline: 'A lead came in. You have 9 seconds.',
+        lead: 'Before their attention vanishes. Here is what happens in a sales pipeline.',
+        nextTeaser: 'Where leads die in the 5-step human relay',
         renderCustomStage: () => `
-          <div class="infra-editorial-hero">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-meta-header-row">
-              <div class="infra-stamp-badge" style="background: var(--nuvero-red); color: #ffffff;">[ ! ] INBOUND LEAD #2231</div>
-              <div style="display: flex; align-items: center; gap: 8px; font-family: var(--font-pixel); font-size: 11px; color: #00ff66;">
-                <span class="pixel-status-square"></span>
-                <span>INBOUND WEBHOOK TRIGGERED</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">SPEED TO LEAD // NUVERO AI</span>
+                <span class="text-3x-tag">01 / 05</span>
               </div>
-            </div>
-            <div class="infra-laser-line"></div>
-            <div class="infra-hero-monument-title">A lead came in.</div>
-            <div class="infra-hero-lead-quote">
-              Speed to lead is not an optimization. It is the entire conversion engine.
-            </div>
 
-            <div class="infra-webhook-inspector">
-              <div class="infra-payload-row">
-                <span class="infra-payload-key">PAYLOAD_INGEST</span>
-                <span class="infra-payload-val highlight-red">inbound.form_submission</span>
+              <div class="text-3x-headline">
+                A LEAD CAME IN. YOU HAVE <span class="pixel-highlight">9 SECONDS</span>.
               </div>
-              <div class="infra-payload-row">
-                <span class="infra-payload-key">SOURCE_CHANNEL</span>
-                <span class="infra-payload-val">Website Contact Form // 07:58:12</span>
-              </div>
-              <div class="infra-payload-row">
-                <span class="infra-payload-key">ENRICHMENT_STATUS</span>
-                <span class="infra-payload-val highlight-green">CLEARBIT_OK // REVENUE &gt;$5M</span>
-              </div>
-              <div class="infra-payload-row">
-                <span class="infra-payload-key">LATENCY_BUDGET</span>
-                <span class="infra-payload-val highlight-red">&lt;10.0s END-TO-END</span>
+
+              <div class="text-3x-subhead">
+                Every second after form submission, buying intent evaporates. Here is the pipeline truth.
               </div>
             </div>
 
-            <div class="infra-hero-cue-footer">
-              <span>ELAPSED TARGET: &lt;10 SECONDS</span>
-              <span style="color: var(--nuvero-red); font-weight: 700;">INSPECT PIPELINE →</span>
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[INBOUND TELEMETRY]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">SPEED TO LEAD</span>
+              </div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 3.8h</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">MANUAL RELAY</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.zap} 8.6s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">NUVERO SPEED</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">+391%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">CONVERSION</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR RELAY DELAY AUDIT</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
         slideNum: '02 / 05',
-        category: 'SYSTEM ARCHITECTURE',
-        eyebrow: 'AUTONOMOUS PIPELINE',
-        shortTitle: '02 Pipeline',
-        headline: 'The autonomous lead pipeline:',
-        lead: 'Six sequential steps executed with zero human friction or delay.',
+        category: 'PIPELINE ENGINE // SPEED TO LEAD',
+        eyebrow: 'RELAY DELAY',
+        shortTitle: '02 Relay',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'The 3.8 hour relay delay.',
+        lead: 'How manual handoffs quietly kill high-intent inbound leads.',
+        nextTeaser: 'Nuvero 8.6s execution pipeline',
         renderCustomStage: () => `
-          <div class="infra-pipeline-matrix-stage">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-
-            <!-- HUD Control Bar -->
-            <div class="infra-pipeline-hud-bar">
-              <div class="hud-left">
-                <span class="pixel-status-square"></span>
-                <span class="hud-title">PIPELINE MATRIX // 6-STAGE AUTONOMOUS RUNTIME</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">RELAY AUDIT // STAGE 02</span>
+                <span class="text-3x-tag">02 / 05</span>
               </div>
-              <div class="hud-right">
-                <span class="hud-tag green">[ 100% UNATTENDED ]</span>
-                <span class="hud-tag red">[ &lt;10.0s BUDGET ]</span>
+
+              <div class="text-3x-giant-number">3.8h</div>
+
+              <div class="text-3x-headline" style="font-size: 56px;">
+                THE 3.8 HOUR RELAY DELAY.
+              </div>
+
+              <div class="text-3x-subhead">
+                Five manual steps where prospect buying intent steadily evaporates.
               </div>
             </div>
 
-            <!-- Horizontal Flow Bus -->
-            <div class="infra-pipeline-flow-bus">
-              <span class="bus-step">01 INGEST</span>
-              <span class="bus-arrow">►</span>
-              <span class="bus-step">02 ENRICH</span>
-              <span class="bus-arrow">►</span>
-              <span class="bus-step focal">03 QUALIFY</span>
-              <span class="bus-arrow">►</span>
-              <span class="bus-step">04 CRM</span>
-              <span class="bus-arrow">►</span>
-              <span class="bus-step focal">05 OUTREACH</span>
-              <span class="bus-arrow">►</span>
-              <span class="bus-step">06 BOOKED</span>
-            </div>
-
-            <!-- 6-Stage 2x3 Architecture Grid -->
-            <div class="infra-pipeline-grid-2x3">
-              <!-- Stage 01 -->
-              <div class="infra-grid-step-card">
-                <div class="step-card-header">
-                  <span class="step-num-badge">01</span>
-                  <span class="step-card-name">Form submitted</span>
-                  <span class="step-card-delta">0.0s</span>
+            <div class="pixel-panel-box">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">00:00 FORM SUBMITTED</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Lead attention at 100%</span>
                 </div>
-                <div class="step-card-action">Website form triggers inbound webhook payload</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">WEBHOOK INGEST</span>
-                  <span class="step-status ok">✓ INGESTED</span>
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">00:45 INBOX SIT</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Unread notification</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">02:15 CRM SEARCH</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Duplicate lookup & dirty data</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">03:48 FIRST OUTREACH</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: var(--nuvero-red);">Prospect already moved on</span>
                 </div>
               </div>
 
-              <!-- Stage 02 -->
-              <div class="infra-grid-step-card">
-                <div class="step-card-header">
-                  <span class="step-num-badge">02</span>
-                  <span class="step-card-name">Lead enriched</span>
-                  <span class="step-card-delta">+1.2s</span>
-                </div>
-                <div class="step-card-action">Live lookup: company revenue, size &amp; tech stack</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">CLEARBIT / API</span>
-                  <span class="step-status ok">✓ ENRICHED</span>
-                </div>
-              </div>
-
-              <!-- Stage 03 (Focal) -->
-              <div class="infra-grid-step-card focal">
-                <div class="step-card-header">
-                  <span class="step-num-badge focal">03</span>
-                  <span class="step-card-name">ICP Qualified</span>
-                  <span class="step-card-delta focal">+2.1s</span>
-                </div>
-                <div class="step-card-action">Scored against Ideal Customer Profile &amp; buying intent</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">DECISION ENGINE</span>
-                  <span class="step-status star">★ ICP MATCH</span>
-                </div>
-              </div>
-
-              <!-- Stage 04 -->
-              <div class="infra-grid-step-card">
-                <div class="step-card-header">
-                  <span class="step-num-badge">04</span>
-                  <span class="step-card-name">CRM updated</span>
-                  <span class="step-card-delta">+2.0s</span>
-                </div>
-                <div class="step-card-action">Contact record created, deal staged, rep tagged</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">HUBSPOT SYNC</span>
-                  <span class="step-status ok">✓ SYNCED</span>
-                </div>
-              </div>
-
-              <!-- Stage 05 (Focal) -->
-              <div class="infra-grid-step-card focal">
-                <div class="step-card-header">
-                  <span class="step-num-badge focal">05</span>
-                  <span class="step-card-name">WhatsApp follow-up</span>
-                  <span class="step-card-delta focal">+3.7s</span>
-                </div>
-                <div class="step-card-action">Personalized context-aware message sent to lead</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">WHATSAPP API</span>
-                  <span class="step-status ok">✓ SENT &lt;60s</span>
-                </div>
-              </div>
-
-              <!-- Stage 06 -->
-              <div class="infra-grid-step-card">
-                <div class="step-card-header">
-                  <span class="step-num-badge">06</span>
-                  <span class="step-card-name">Meeting booked</span>
-                  <span class="step-card-delta">9.0s</span>
-                </div>
-                <div class="step-card-action">Calendar reservation confirmed directly into pipeline</div>
-                <div class="step-card-footer">
-                  <span class="step-tech">CALENDLY DISPATCH</span>
-                  <span class="step-status ok">✓ CONFIRMED</span>
-                </div>
+              <div class="pixel-meter-bar">
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell"></div>
+                <div class="pixel-meter-cell"></div>
+                <div class="pixel-meter-cell"></div>
               </div>
             </div>
 
-            <!-- Bottom Pipeline Telemetry Bar -->
-            <div class="infra-pipeline-footer-bar">
-              <div class="footer-stat">
-                <span class="label">RUNTIME:</span>
-                <span class="val green">9.0 SECONDS</span>
-              </div>
-              <div class="footer-divider"></div>
-              <div class="footer-stat">
-                <span class="label">HUMAN DELAY:</span>
-                <span class="val red">0 HOURS</span>
-              </div>
-              <div class="footer-divider"></div>
-              <div class="footer-stat">
-                <span class="label">STATUS:</span>
-                <span class="val">[ ALL 6 STAGES EXECUTED ]</span>
-              </div>
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR 8.6s RUNTIME</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
         slideNum: '03 / 05',
-        category: 'FRICTION AUDIT',
-        eyebrow: 'THE LEGACY RELAY',
-        shortTitle: '03 Old Relay',
-        headline: 'Old workflow',
-        lead: 'When humans act as software connectors, every handoff introduces friction and delay.',
+        category: 'PIPELINE ENGINE // SPEED TO LEAD',
+        eyebrow: 'RUNTIME TELEMETRY',
+        shortTitle: '03 8.6s',
+        isFullStage: true,
+        seamBridge: 'half-left',
+        headline: 'Nuvero inbound pipeline: 8.6 seconds.',
+        lead: 'Parallel machine execution replaces the entire 5-step human relay in real time.',
+        nextTeaser: '+391% conversion surge',
         renderCustomStage: () => `
-          <div class="infra-friction-deck">
-            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11.5px; font-weight: 800; color: #ff4d5a; letter-spacing: 0.05em; padding-bottom: 6px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-              <span>5 MANUAL TOIL STEPS PER INBOUND LEAD</span>
-              <span>HUMAN RELAY DELAYS</span>
-            </div>
-            <div class="infra-friction-card">
-              <div>
-                <div class="infra-friction-title">Human checks form</div>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Inbox refresh wait: 35-45 minutes</div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">RUNTIME TELEMETRY</span>
+                <span class="text-3x-tag">03 / 05</span>
               </div>
-              <span class="infra-friction-pill">MANUAL CHECK</span>
-            </div>
-            <div class="infra-friction-card">
-              <div>
-                <div class="infra-friction-title">Human opens CRM</div>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Login, search company & duplicates</div>
+
+              <div class="text-3x-giant-number">8.6s</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                NUVERO INBOUND PIPELINE.
               </div>
-              <span class="infra-friction-pill">LOGIN DELAY</span>
-            </div>
-            <div class="infra-friction-card">
-              <div>
-                <div class="infra-friction-title">Human messages lead</div>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Manual drafting while lead browses competitors</div>
+
+              <div class="text-3x-subhead">
+                Full enrichment, qualification, CRM sync, and dispatch in parallel.
               </div>
-              <span class="infra-friction-pill">2-4 HR DELAY</span>
             </div>
-            <div class="infra-friction-card">
-              <div>
-                <div class="infra-friction-title">Human updates CRM</div>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Dirty data, forgotten fields, missing tags</div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">00.0s WEBHOOK INGEST</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Zero buffer delay</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">01.4s ICP ENRICHMENT</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Company revenue & tech stack</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">03.7s WHATSAPP / EMAIL</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Personalized response sent</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: #10B981;">08.6s CALENDAR BOOKED</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: #10B981;">CRM updated & rep pinged</span>
+                </div>
               </div>
-              <span class="infra-friction-pill">DIRTY DATA</span>
-            </div>
-            <div class="infra-friction-card">
-              <div>
-                <div class="infra-friction-title">Human schedules meeting</div>
-                <div style="font-family: var(--font-mono); font-size: 11px; color: #94a3b8; margin-top: 2px;">Back-and-forth emails over calendar availability</div>
+
+              <div class="pixel-meter-bar">
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
+                <div class="pixel-meter-cell active-green"></div>
               </div>
-              <span class="infra-friction-pill">BACK-AND-FORTH</span>
             </div>
-            <div class="infra-friction-alert-footer">
-              <strong>TOTAL AVERAGE DELAY:</strong> 2 to 4 hours. 78% of commercial buyers choose the vendor that responds first.
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR THE +391% SURGE</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
         slideNum: '04 / 05',
-        category: 'PRODUCTION TELEMETRY',
-        eyebrow: 'SUB-SECOND EXECUTION',
-        shortTitle: '04 Nuvero Layer',
-        headline: 'Nuvero layer',
-        lead: 'Nine seconds total elapsed time from webhook ingestion to outbound contact.',
+        category: 'PIPELINE ENGINE // SPEED TO LEAD',
+        eyebrow: 'CONVERSION SURGE',
+        shortTitle: '04 +391%',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'Conversion surge under 60 seconds.',
+        lead: 'Leads engaged immediately convert at quadruple the rate.',
+        nextTeaser: 'The system around the model',
         renderCustomStage: () => `
-          <div class="infra-telemetry-console-card">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-console-bar">
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span class="pixel-status-square"></span>
-                <span style="font-family: var(--font-pixel); font-size: 11.5px; font-weight: 700; color: #ffffff;">NUVERO RUNTIME ENGINE // LEAD #2231</span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">CONVERSION BENCHMARK</span>
+                <span class="text-3x-tag">04 / 05</span>
               </div>
-              <span style="font-family: var(--font-pixel); font-size: 10.5px; font-weight: 700; color: #ff3344; background: #241216; border: 1px solid #ff3344; padding: 4px 10px; box-shadow: 2px 2px 0 #000;">[ ELAPSED: 9.0s ]</span>
-            </div>
-            <div class="infra-timer-gauge-row">
-              <div class="infra-timer-big">
-                <span>[ ⏱ 00:09.0s ]</span>
-              </div>
-              <span style="font-family: var(--font-pixel); font-size: 10.5px; color: #00ff66; font-weight: 700;">[ SUB-SECOND EXECUTION ACTIVE ]</span>
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 8px;">
-              <div class="infra-log-row">
-                <span class="infra-log-time">07:58:12</span>
-                <span class="infra-log-text">Lead received</span>
-                <span class="infra-log-delta">+0.0s</span>
-              </div>
-              <div class="infra-log-row">
-                <span class="infra-log-time">07:58:14</span>
-                <span class="infra-log-text">Lead qualified</span>
-                <span class="infra-log-delta">+2.1s</span>
-              </div>
-              <div class="infra-log-row">
-                <span class="infra-log-time">07:58:16</span>
-                <span class="infra-log-text">CRM updated</span>
-                <span class="infra-log-delta">+2.0s</span>
-              </div>
-              <div class="infra-log-row">
-                <span class="infra-log-time">07:58:21</span>
-                <span class="infra-log-text">Follow-up sent</span>
-                <span class="infra-log-delta">+4.9s</span>
+
+              <div class="text-3x-giant-number">+391%</div>
+
+              <div class="text-3x-headline" style="font-size: 50px;">
+                CONVERSION SURGE UNDER 60s.
               </div>
             </div>
-            <div class="infra-runtime-footer" style="background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.1);">
-              <span style="color: #ff3344; font-weight: 800;">SPEED DIFFERENTIAL:</span>
-              <span>9 seconds vs 3.2 hours. Instant meeting scheduling triggered on WhatsApp.</span>
+
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">AFTER 30 MIN</span>
+                <div class="pixel-vs-metric">-80%</div>
+                <div class="pixel-vs-desc">Probability of qualification drops off a cliff</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ PROSPECT LOST</div>
+              </div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">UNDER 60 SEC</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">391%</div>
+                <div class="pixel-vs-desc">Higher close rate with immediate response</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ LOCKED IN</div>
+              </div>
+            </div>
+
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR ARCHITECTURE VALUE</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
         slideNum: '05 / 05',
-        category: 'ARCHITECTURAL THESIS',
-        eyebrow: 'CORE PERSPECTIVE',
-        shortTitle: '05 System',
-        headline: 'The model isn\'t the interesting part.',
-        lead: 'The system around it is.',
+        category: 'PIPELINE ENGINE // SPEED TO LEAD',
+        eyebrow: 'SYSTEM PRINCIPLE',
+        shortTitle: '05 Architecture',
+        isFullStage: true,
+        headline: 'Models are commodity. The system is value.',
+        lead: 'The advantage belongs to whoever wires the system directly into production.',
+        nextTeaser: 'nuvero.space',
         renderCustomStage: () => `
-          <div class="infra-manifesto-stage">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            
-            <div style="display: flex; align-items: center; justify-content: space-between; font-family: var(--font-mono); font-size: 11px; color: #94a3b8; padding-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">
-              <span style="color: var(--nuvero-red); font-weight: 800;">SYSTEM ARCHITECTURE PRINCIPLE</span>
-              <span>ORCHESTRATION OVER MODELS</span>
-            </div>
-
+          <div class="text-3x-stage">
             <div>
-              <div class="infra-manifesto-line">
-                The model isn't the interesting part.
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">CORE DIRECTIVE</span>
+                <span class="text-3x-tag">05 / 05</span>
               </div>
-              <div class="infra-laser-line" style="margin: 16px 0;"></div>
-              <div class="infra-manifesto-line red">
-                The system around it is.
+
+              <div class="text-3x-headline" style="font-size: 60px;">
+                MODELS ARE COMMODITY. THE SYSTEM IS VALUE.
+              </div>
+
+              <div class="text-3x-subhead">
+                Anyone can call an API. The advantage belongs to whoever wires the system directly into production.
               </div>
             </div>
 
-            <div class="infra-tier-stack">
-              <div class="infra-tier-item core">
-                <div class="infra-tier-info">
-                  <div class="infra-tier-name">TIER 01 // INTELLIGENCE CORE</div>
-                  <div class="infra-tier-sub">Raw Foundation Models (GPT-4o, Claude 3.5, Llama 3)</div>
+            <div class="pixel-panel-box">
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">TIER 01</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">RAW LLMS // COMMODITY</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">OpenAI, Anthropic, Gemini: available to everyone</div>
                 </div>
-                <span class="infra-tier-badge">COMMODITY</span>
               </div>
-              <div class="infra-tier-item glue">
-                <div class="infra-tier-info">
-                  <div class="infra-tier-name">TIER 02 // STATE &amp; DETERMINISM</div>
-                  <div class="infra-tier-sub">Deterministic state machines, retry queues, schema validators</div>
+
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">TIER 02</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">STATE MACHINES // LOGIC</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Deterministic retry queues, validation, schemas</div>
                 </div>
-                <span class="infra-tier-badge" style="color: #ff4d5a; border-color: rgba(193,18,31,0.4);">RELIABILITY</span>
               </div>
-              <div class="infra-tier-item infra-focal">
-                <div class="infra-tier-info">
-                  <div class="infra-tier-name">TIER 03 // STACK INTEGRATION LAYER</div>
-                  <div class="infra-tier-sub">Direct CRM webhooks, ERP connections, WhatsApp APIs, fail-safes</div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">TIER 03</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">NUVERO INTEGRATION // THE VALUE</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Direct CRM webhooks, ERP connectors, fail-safes</div>
                 </div>
-                <span class="infra-tier-badge">THE VALUE</span>
               </div>
             </div>
 
-            <div style="padding-top: 14px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-family: var(--font-body); font-size: 16px; line-height: 1.45; color: #cbd5e1;">
-              LLMs are commodities. Reliable production orchestration, stack integration, and deterministic safety are the real infrastructure.
+            <div class="pixel-save-cta-box">
+              <div class="pixel-save-left">
+                <div class="pixel-floppy-icon">${PIXEL_ICONS.floppy}</div>
+                <div>
+                  <div class="pixel-save-title">SAVE SPEED TO LEAD BLUEPRINT</div>
+                  <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
+                </div>
+              </div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -800,7 +800,7 @@ Map your lead infrastructure at nuvero.space.
     client: 'Tool Integration',
     sector: 'Cross-Stack Synchronization',
     title: 'Your team is doing this every day',
-    shortDesc: 'Single static visual: copying data across 6 tools slashed cleanly by the Nuvero layer.',
+    shortDesc: 'Copying data across 6 tools slashed cleanly by the Nuvero integration layer.',
     caption: `Your team should not be copying data between 6 tools.
 
 CRM -> SHEETS -> GMAIL -> SLACK -> CRM -> REPORT.
@@ -814,88 +814,252 @@ Wired directly into HubSpot, Slack, Google Sheets, Gmail, Stripe, and your inter
 Turn your tool sprawl into infrastructure at nuvero.space.
 
 #Operations #Integration #WorkflowAutomation #AIInfrastructure #NuveroAI`,
-    slides: [
+        slides: [
       {
-        slideNum: '01 / 01',
+        slideNum: '01 / 04',
         category: 'STACK ARCHITECTURE',
         eyebrow: 'DATA FRICTION CUT',
-        shortTitle: '01 Static Post',
-        headline: 'Your team shouldn\'t be copying data between 6 tools.',
-        lead: 'When software cannot bridge itself, employees become the manual glue.',
+        shortTitle: '01 Hook',
+        isCover: true,
+        seamBridge: 'half-left',
+        headline: 'Stop acting as human glue across tools.',
+        lead: 'Your team spends 40% of their work week copying data between 6 SaaS apps.',
+        nextTeaser: 'The 6-tool manual relay loop',
         renderCustomStage: () => `
-          <div class="infra-cross-tool-stage">
-            <div class="infra-tool-canvas">
-              <span class="infra-corner-bracket tl"></span>
-              <span class="infra-corner-bracket tr"></span>
-              <span class="infra-corner-bracket bl"></span>
-              <span class="infra-corner-bracket br"></span>
-              <div class="infra-tools-grid">
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">01 // INGEST</span>
-                  <span class="infra-tool-name">CRM</span>
-                  <span class="infra-tool-flow">→ to Sheets</span>
-                </div>
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">02 // SPREADSHEET</span>
-                  <span class="infra-tool-name">SHEETS</span>
-                  <span class="infra-tool-flow">→ to Gmail</span>
-                </div>
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">03 // INBOX</span>
-                  <span class="infra-tool-name">GMAIL</span>
-                  <span class="infra-tool-flow">→ to Slack</span>
-                </div>
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">04 // CHAT</span>
-                  <span class="infra-tool-name">SLACK</span>
-                  <span class="infra-tool-flow">→ to CRM</span>
-                </div>
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">05 // PIPELINE</span>
-                  <span class="infra-tool-name">CRM</span>
-                  <span class="infra-tool-flow">→ to Report</span>
-                </div>
-                <div class="infra-tool-card">
-                  <span class="infra-tool-index">06 // DECK</span>
-                  <span class="infra-tool-name">REPORT</span>
-                  <span class="infra-tool-flow">↺ Loop repeats</span>
-                </div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">STACK AUDIT // NUVERO AI</span>
+                <span class="text-3x-tag">01 / 04</span>
               </div>
-              
-              <div class="infra-laser-slash-cut">
-                <span class="infra-slash-banner">MANUAL TOIL CUT HERE</span>
+
+              <div class="text-3x-headline">
+                STOP ACTING AS <span class="pixel-highlight">HUMAN GLUE</span>.
+              </div>
+
+              <div class="text-3x-subhead">
+                Your team spends 40% of their work week copying data between 6 SaaS apps.
               </div>
             </div>
 
-            <div class="infra-solution-substrate">
-              <div class="infra-solution-heading">Nuvero builds the layer between them.</div>
-              <div style="font-family: var(--font-body); font-size: 14.5px; color: #94a3b8;">
-                Wired into the tools you already run. No new dashboard. Just working infrastructure.
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[STACK METRICS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">TOIL MEASUREMENT</span>
               </div>
-              <div class="infra-stack-chips">
-                <span class="infra-stack-chip">HubSpot</span>
-                <span class="infra-stack-chip">Slack</span>
-                <span class="infra-stack-chip">Google Sheets</span>
-                <span class="infra-stack-chip">Gmail</span>
-                <span class="infra-stack-chip">Stripe</span>
-                <span class="infra-stack-chip">Calendly</span>
-                <span class="infra-stack-chip">Notion</span>
-                <span class="infra-stack-chip">Internal APIs</span>
-              </div>
-              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.1); text-align: center; font-family: var(--font-mono);">
-                <div>
-                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">DATA LATENCY</div>
-                  <div style="font-size: 14px; font-weight: 800; color: #22c55e;">&lt;200ms API SYNC</div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">40%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">WEEK WASTED</div>
                 </div>
-                <div>
-                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">MANUAL ERRORS</div>
-                  <div style="font-size: 14px; font-weight: 800; color: #ff4d5a;">0% ELIMINATED</div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">6 APPS</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">DISCONNECTED</div>
                 </div>
-                <div>
-                  <div style="font-size: 10px; color: #94a3b8; letter-spacing: 0.05em;">TEAM DIVIDEND</div>
-                  <div style="font-size: 14px; font-weight: 800; color: #ffffff;">15h/user/wk</div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">&lt;200ms</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">DIRECT SYNC</div>
                 </div>
               </div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR STACK FRICTION AUDIT</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '02 / 04',
+        category: 'STACK ARCHITECTURE',
+        eyebrow: 'TOIL DRAIN',
+        shortTitle: '02 Sprawl',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: '40% of your week disappears here.',
+        lead: 'Manual copy-paste routines that quietly drain your most expensive talent.',
+        nextTeaser: 'Direct event mesh architecture',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">SPRAWL AUDIT // STAGE 02</span>
+                <span class="text-3x-tag">02 / 04</span>
+              </div>
+
+              <div class="text-3x-giant-number">40%</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                OF YOUR WEEK DISAPPEARS HERE.
+              </div>
+
+              <div class="text-3x-subhead">
+                Repetitive manual copy-paste bridges between CRM, spreadsheets, and email.
+              </div>
+            </div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; flex-direction: column; gap: 8px;">
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">CRM ➔ SHEETS</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Manual CSV exports & formatting</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1.5px solid rgba(0,0,0,0.1); padding-bottom: 6px;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">GMAIL ➔ SLACK</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px;">Manual rep alert pinging</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">STRIPE ➔ LEDGER</span>
+                  <span style="font-family: 'Silkscreen', monospace; font-size: 11px; color: var(--nuvero-red);">Discrepancy cross-checking</span>
+                </div>
+              </div>
+
+              <div class="pixel-meter-bar">
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell active-red"></div>
+                <div class="pixel-meter-cell"></div>
+                <div class="pixel-meter-cell"></div>
+              </div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR THE DIRECT API MESH</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '03 / 04',
+        category: 'STACK ARCHITECTURE',
+        eyebrow: 'EVENT MESH',
+        shortTitle: '03 API Mesh',
+        isFullStage: true,
+        seamBridge: 'half-left',
+        headline: 'Wire data directly.',
+        lead: 'Direct synchronization replaces manual handoffs with zero human latency.',
+        nextTeaser: 'System blueprint',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">EVENT BUS // RUNTIME</span>
+                <span class="text-3x-tag">03 / 04</span>
+              </div>
+
+              <div class="text-3x-giant-number">&lt;200ms</div>
+
+              <div class="text-3x-headline" style="font-size: 56px;">
+                WIRE DATA DIRECTLY.
+              </div>
+            </div>
+
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">MANUAL GLUE</span>
+                <div class="pixel-vs-metric">15h/wk</div>
+                <div class="pixel-vs-desc">Human time lost to browser switching</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ DELAYED DATA</div>
+              </div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">NUVERO MESH</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">&lt;200ms</div>
+                <div class="pixel-vs-desc">Direct webhook synchronizer</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% UNATTENDED</div>
+              </div>
+            </div>
+
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR CORE ARCHITECTURE</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '04 / 04',
+        category: 'STACK ARCHITECTURE',
+        eyebrow: 'SYSTEM PRINCIPLE',
+        shortTitle: '04 Infrastructure',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'Infrastructure over sprawl.',
+        lead: 'Do not buy a 7th SaaS tool. Wire an autonomous mesh underneath the 6 you already have.',
+        nextTeaser: 'nuvero.space',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">CORE PRINCIPLE</span>
+                <span class="text-3x-tag">04 / 04</span>
+              </div>
+
+              <div class="text-3x-headline" style="font-size: 58px;">
+                INFRASTRUCTURE OVER SPRAWL.
+              </div>
+
+              <div class="text-3x-subhead">
+                Do not buy a 7th SaaS tool. Wire an autonomous mesh underneath the 6 you already have.
+              </div>
+            </div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">DIRECT API CHANNELS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Replace human copy-paste with deterministic webhooks</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">SINGLE TRUTH LAYER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">One event updates CRM, Slack, and accounting simultaneously</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">DELETE UNNECESSARY SEATS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Save thousands monthly on unused dashboard licenses</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-save-cta-box">
+              <div class="pixel-save-left">
+                <div class="pixel-floppy-icon">${PIXEL_ICONS.floppy}</div>
+                <div>
+                  <div class="pixel-save-title">SAVE INTEGRATION BLUEPRINT</div>
+                  <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
+                </div>
+              </div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -931,171 +1095,308 @@ These are actual figures running in production today.
 See deployed systems at nuvero.space.
 
 #ProductionAI #Operations #BusinessAutomation #WorkflowEngine #NuveroAI`,
-    slides: [
+        slides: [
       {
-        slideNum: '01 / 04',
-        category: '01 / LEAD FOLLOW-UP',
-        eyebrow: 'SPEED TO LEAD',
-        shortTitle: '01 Follow-Up',
-        headline: '01 / LEAD FOLLOW-UP',
-        lead: 'What happens when you replace manual chasing with sub-minute agent response.',
+        slideNum: '01 / 05',
+        category: 'PRODUCTION BENCHMARKS',
+        eyebrow: 'EVIDENCE REPORT',
+        shortTitle: '01 Hook',
+        isCover: true,
+        seamBridge: 'half-left',
+        headline: 'Before / After without generic SaaS hype.',
+        lead: 'Real operational deltas measured across live production deployments.',
+        nextTeaser: 'Benchmark 01: Lead follow-up speed',
         renderCustomStage: () => `
-          <div class="infra-split-container">
-            <div class="infra-split-vs-badge">VS</div>
-            <div class="infra-split-card without">
-              <div>
-                <div class="infra-state-tag">WITHOUT</div>
-                <div class="infra-metric-num">2-4 hrs</div>
-                <div class="infra-metric-label">Manual chasing</div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">BENCHMARKS // NUVERO AI</span>
+                <span class="text-3x-tag">01 / 05</span>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Inbound leads sit idle in email inbox</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>78% commercial buyers choose first responder</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Manual CRM data typing & missing tags</span></div>
+
+              <div class="text-3x-headline">
+                BEFORE / AFTER.<br>
+                <span class="pixel-highlight">NO GENERIC SAAS</span> HYPE.
               </div>
-              <div class="infra-split-footer-status">Status: Leads cool down on hold</div>
+
+              <div class="text-3x-subhead">
+                Real operational numbers from live client deployments: speed, reporting, and 24/7 coverage.
+              </div>
             </div>
-            <div class="infra-split-card with">
-              <div>
-                <div class="infra-state-tag">WITH</div>
-                <div class="infra-metric-num">&lt;60 sec</div>
-                <div class="infra-metric-label">Agent responds</div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[PRODUCTION BENCHMARKS]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">VERIFIED DATA</span>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Outbound WhatsApp outreach in &lt;60s</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Autonomous ICP qualification & enrichment</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Real-time calendar booking link dispatched</span></div>
+
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">&lt;60s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">FIRST CONTACT</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">15 MIN</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">REPORTS READY</div>
+                </div>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">24/7</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">COVERAGE</div>
+                </div>
               </div>
-              <div class="infra-split-footer-status">Status: Instant qualification across channels</div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR VERIFIED BENCHMARKS</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
-        slideNum: '02 / 04',
-        category: '02 / REPORTING',
-        eyebrow: 'DATA COMPILATION',
-        shortTitle: '02 Reporting',
-        headline: '02 / REPORTING',
-        lead: 'Retiring days of manual cross-platform copy-pasting for boardroom reporting.',
+        slideNum: '02 / 05',
+        category: 'PRODUCTION BENCHMARKS',
+        eyebrow: 'BENCHMARK 01',
+        shortTitle: '02 Speed',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: 'First contact under 60 seconds.',
+        lead: 'Speed to lead measured across high-ticket commercial inquiries.',
+        nextTeaser: 'Benchmark 02: Boardroom reporting speed',
         renderCustomStage: () => `
-          <div class="infra-split-container">
-            <div class="infra-split-vs-badge">VS</div>
-            <div class="infra-split-card without">
-              <div>
-                <div class="infra-state-tag">WITHOUT</div>
-                <div class="infra-metric-num">2-3 days</div>
-                <div class="infra-metric-label">Pulling data from 6+ tools</div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">BENCHMARK 01 // INBOUND</span>
+                <span class="text-3x-tag">02 / 05</span>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Manual CSV downloads from 6+ SaaS portals</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Broken spreadsheet formulas & human errors</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Data is already stale before boardroom review</span></div>
+
+              <div class="text-3x-giant-number">&lt;60s</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                FIRST CONTACT UNDER 60 SECONDS.
               </div>
-              <div class="infra-split-footer-status">Status: Formula breakage & stale charts</div>
             </div>
-            <div class="infra-split-card with">
-              <div>
-                <div class="infra-state-tag">WITH</div>
-                <div class="infra-metric-num">15 min</div>
-                <div class="infra-metric-label">Automated report</div>
+
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">BEFORE NUVERO</span>
+                <div class="pixel-vs-metric">4.2h</div>
+                <div class="pixel-vs-desc">Manual inbox triage and delayed rep assignment</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ 68% LEAD ABANDONMENT</div>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Continuous real-time API pipeline sync</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Automated multi-channel executive synthesis</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Instant audit-ready reports ready on demand</span></div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">&lt;60s</div>
+                <div class="pixel-vs-desc">Personalized qualification and calendar link sent</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% CONTACTED</div>
               </div>
-              <div class="infra-split-footer-status">Status: Live cross-stack synchronization</div>
+            </div>
+
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR REPORTING BENCHMARK</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
-        slideNum: '03 / 04',
-        category: '03 / AFTER-HOURS',
-        eyebrow: 'OFF-PEAK CAPTURE',
-        shortTitle: '03 After-Hours',
-        headline: '03 / AFTER-HOURS',
-        lead: 'Never letting commercial inquiries drift to competitors after 5 PM.',
+        slideNum: '03 / 05',
+        category: 'PRODUCTION BENCHMARKS',
+        eyebrow: 'BENCHMARK 02',
+        shortTitle: '03 Reports',
+        isFullStage: true,
+        seamBridge: 'half-left',
+        headline: 'Reporting once took 3 days.',
+        lead: 'Boardroom reports compiled across accounting, sales, and warehouse in minutes.',
+        nextTeaser: 'Benchmark 03: 24/7 coverage',
         renderCustomStage: () => `
-          <div class="infra-split-container">
-            <div class="infra-split-vs-badge">VS</div>
-            <div class="infra-split-card without">
-              <div>
-                <div class="infra-state-tag">WITHOUT</div>
-                <div class="infra-metric-num">Missed call</div>
-                <div class="infra-metric-label">Next-day callback</div>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">BENCHMARK 02 // REPORTING</span>
+                <span class="text-3x-tag">03 / 05</span>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Commercial phone calls missed after 5 PM</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>70% unreturned voicemails lost to competitors</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✕</span><span>Delayed next-day callbacks cold by morning</span></div>
+
+              <div class="text-3x-giant-number">15 MIN</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                REPORTING ONCE TOOK 3 DAYS.
               </div>
-              <div class="infra-split-footer-status">Status: 70% unreturned voicemails lost</div>
             </div>
-            <div class="infra-split-card with">
-              <div>
-                <div class="infra-state-tag">WITH</div>
-                <div class="infra-metric-num">24/7</div>
-                <div class="infra-metric-label">First-ring response</div>
+
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">BEFORE NUVERO</span>
+                <div class="pixel-vs-metric">3 Days</div>
+                <div class="pixel-vs-desc">Finance team pulling and stitching CSV files</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ PRONE TO DATA ERRORS</div>
               </div>
-              <div class="infra-split-features">
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Sub-second neural voice agent on 1st ring</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Natural conversation with regional accents</span></div>
-                <div class="infra-feature-bullet"><span class="ico">✓</span><span>Instant order & meeting capture directly to CRM</span></div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">15 Min</div>
+                <div class="pixel-vs-desc">Automated compilation, verified, and sent to Slack</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 100% RECONCILED</div>
               </div>
-              <div class="infra-split-footer-status">Status: 100% inbound capture day & night</div>
+            </div>
+
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR 24/7 SUPPORT BENCHMARK</span>
+              <span class="pixel-blink-arrow">▶▶</span>
             </div>
           </div>
         `
       },
       {
-        slideNum: '04 / 04',
-        category: 'VERIFIED DELTAS',
-        eyebrow: 'PRODUCTION EVIDENCE',
-        shortTitle: '04 Summary',
-        headline: 'Not generic SaaS claims. <span class="highlight-red">Verified in production.</span>',
-        lead: 'These are actual figures currently delivered across live client deployments.',
+        slideNum: '04 / 05',
+        category: 'PRODUCTION BENCHMARKS',
+        eyebrow: 'BENCHMARK 03',
+        shortTitle: '04 Support',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: '24/7 first-ring resolution.',
+        lead: 'Round-the-clock commercial customer engagement without adding night shifts.',
+        nextTeaser: 'Audit summary and save CTA',
         renderCustomStage: () => `
-          <div class="infra-cockpit-stage">
-            <div class="infra-cockpit-card">
-              <div class="infra-cockpit-num">&lt;60s</div>
-              <div class="infra-cockpit-title">01 / FOLLOW-UP</div>
-              <div class="infra-cockpit-sub">Down from 2-4 hrs</div>
-              <div class="pixel-meter-bar">
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block"></span>
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">BENCHMARK 03 // COVERAGE</span>
+                <span class="text-3x-tag">04 / 05</span>
+              </div>
+
+              <div class="text-3x-giant-number">100%</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                24/7 FIRST-RING RESOLUTION.
               </div>
             </div>
-            <div class="infra-cockpit-card focal">
-              <div class="infra-cockpit-num">15m</div>
-              <div class="infra-cockpit-title">02 / REPORTING</div>
-              <div class="infra-cockpit-sub">Down from 2-3 days</div>
-              <div class="pixel-meter-bar">
-                <span class="pixel-meter-block active"></span>
-                <span class="pixel-meter-block active"></span>
-                <span class="pixel-meter-block active"></span>
-                <span class="pixel-meter-block active"></span>
-                <span class="pixel-meter-block active"></span>
-                <span class="pixel-meter-block"></span>
+
+            <div class="pixel-vs-deck">
+              <div class="pixel-vs-side loss">
+                <span class="pixel-vs-tag">BEFORE NUVERO</span>
+                <div class="pixel-vs-metric">18h Lag</div>
+                <div class="pixel-vs-desc">Weekend and night leads queued until Monday</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: var(--nuvero-red); margin-top: 4px;">✕ COLD LEADS</div>
+              </div>
+
+              <div class="pixel-vs-side win">
+                <span class="pixel-vs-tag" style="background: #10B981; color: #fff;">AFTER NUVERO</span>
+                <div class="pixel-vs-metric" style="color: #10B981;">82%</div>
+                <div class="pixel-vs-desc">Fully autonomous resolution with zero delay</div>
+                <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 4px;">✓ 24/7 FIRST RING</div>
               </div>
             </div>
-            <div class="infra-cockpit-card">
-              <div class="infra-cockpit-num">24/7</div>
-              <div class="infra-cockpit-title">03 / AFTER-HOURS</div>
-              <div class="infra-cockpit-sub">Down from missed calls</div>
-              <div class="pixel-meter-bar">
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
-                <span class="pixel-meter-block active green"></span>
+
+            <div class="pixel-meter-bar">
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+              <div class="pixel-meter-cell active-green"></div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR VERIFIED TAKEAWAY</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '05 / 05',
+        category: 'PRODUCTION BENCHMARKS',
+        eyebrow: 'SYSTEM PRINCIPLE',
+        shortTitle: '05 Audit',
+        isFullStage: true,
+        headline: 'Numbers it answers for.',
+        lead: 'Every deployment leaves an instrumented record with hard numbers it answers for.',
+        nextTeaser: 'nuvero.space',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">STAGE CLEARED</span>
+                <span class="text-3x-tag">05 / 05</span>
               </div>
+
+              <div class="text-3x-headline" style="font-size: 58px;">
+                NUMBERS IT ANSWERS FOR.
+              </div>
+
+              <div class="text-3x-subhead">
+                Every deployment leaves an instrumented record with hard numbers it answers for.
+              </div>
+            </div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">MEASURE IN TIME RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">The only ROI metric that never lies in board meetings</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">DIRECT ON YOUR STACK</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Runs inside your tools, not a locked proprietary garden</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">COMMISSIONED ASSETS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Infrastructure you own permanently, not endless subscriptions</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-save-cta-box">
+              <div class="pixel-save-left">
+                <div class="pixel-floppy-icon">${PIXEL_ICONS.floppy}</div>
+                <div>
+                  <div class="pixel-save-title">SAVE BEFORE / AFTER BENCHMARK</div>
+                  <div class="pixel-save-sub">nuvero.space / Autonomous Operations</div>
+                </div>
+              </div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -1129,104 +1430,190 @@ Not a subscription you log into. A layer that clocks in so your team does not ha
 Commission your system at nuvero.space.
 
 #AIInfrastructure #VoiceAI #Engineering #SystemArchitecture #NuveroAI`,
-    slides: [
+        slides: [
       {
-        slideNum: '01 / 01',
+        slideNum: '01 / 03',
         category: 'COMMISSIONING RECORD',
         eyebrow: 'SYSTEM SPECIFICATION',
-        shortTitle: '01 Deployment',
+        shortTitle: '01 Record',
+        isCover: true,
+        seamBridge: 'half-left',
         headline: 'This is what AI infrastructure looks like.',
         lead: 'Every deployment leaves an instrumented record with hard numbers it answers for.',
+        nextTeaser: 'Telemetry Sheet 011',
         renderCustomStage: () => `
-          <div class="infra-commissioning-chassis">
-            <span class="infra-corner-bracket tl"></span>
-            <span class="infra-corner-bracket tr"></span>
-            <span class="infra-corner-bracket bl"></span>
-            <span class="infra-corner-bracket br"></span>
-            <div class="infra-chassis-header">
-              <div class="infra-stamp-badge" style="background: var(--nuvero-red); color: #ffffff;">
-                [ NUVERO / DEPLOYMENT 011 ]
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">RECORD // DEPLOYMENT 011</span>
+                <span class="text-3x-tag">01 / 03</span>
               </div>
-              <div style="font-family: var(--font-pixel); font-size: 11px; font-weight: 700; color: #94a3b8;">
-                SYSTEM TELEMETRY SHEET
+
+              <div class="text-3x-headline" style="font-size: 64px;">
+                THIS IS WHAT AI <span class="pixel-highlight">INFRASTRUCTURE</span> LOOKS LIKE.
+              </div>
+
+              <div class="text-3x-subhead">
+                Every deployment leaves an instrumented record with hard numbers it answers for.
               </div>
             </div>
 
-            <div class="infra-system-name">VOICE OPERATIONS SYSTEM</div>
+            <div class="pixel-panel-box">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-red);">[COMMISSIONED TELEMETRY]</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 12px; color: var(--nuvero-blue);">LAST 30 DAYS</span>
+              </div>
 
-            <div class="infra-telemetry-4grid">
-              <div class="infra-telemetry-cell">
-                <span class="infra-cell-label">CALLS HANDLED</span>
-                <span class="infra-cell-huge">5,204</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-red);">5,204</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">CALLS HANDLED</div>
                 </div>
-                <span style="font-family: var(--font-pixel); font-size: 10px; color: #00ff66; font-weight: 700; margin-top: 4px;">✓ LAST 30 DAYS</span>
-              </div>
-              <div class="infra-telemetry-cell">
-                <span class="infra-cell-label">LEADS QUALIFIED</span>
-                <span class="infra-cell-huge">1,318</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block active"></span>
-                  <span class="pixel-meter-block"></span>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: var(--nuvero-blue);">0.8s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">FIRST RESPONSE</div>
                 </div>
-                <span style="font-family: var(--font-pixel); font-size: 10px; color: #ff4d5a; font-weight: 700; margin-top: 4px;">★ DIRECT PIPELINE</span>
-              </div>
-              <div class="infra-telemetry-cell">
-                <span class="infra-cell-label">FIRST RESPONSE</span>
-                <span class="infra-cell-huge">0.8s</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active green"></span>
-                  <span class="pixel-meter-block active green"></span>
-                  <span class="pixel-meter-block active green"></span>
-                  <span class="pixel-meter-block active green"></span>
-                  <span class="pixel-meter-block active green"></span>
-                  <span class="pixel-meter-block"></span>
+                <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
+                  <div style="font-family: var(--font-display); font-size: 32px; font-weight: 900; color: #10B981;">97%</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 9px; margin-top: 4px;">AUTONOMOUS</div>
                 </div>
-                <span style="font-family: var(--font-pixel); font-size: 10px; color: #00ff66; font-weight: 700; margin-top: 4px;">✓ FIRST RING</span>
-              </div>
-              <div class="infra-telemetry-cell">
-                <span class="infra-cell-label">HUMAN HANDOFFS</span>
-                <span class="infra-cell-huge">3%</span>
-                <div class="pixel-meter-bar">
-                  <span class="pixel-meter-block active blue"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                  <span class="pixel-meter-block"></span>
-                </div>
-                <span style="font-family: var(--font-pixel); font-size: 10px; color: #38bdf8; font-weight: 700; margin-top: 4px;">✓ 97% RESOLVED</span>
               </div>
             </div>
 
-            <div style="background: #0d0d16; border: 2px solid #262638; padding: 10px 14px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; font-family: var(--font-pixel); font-size: 10px; text-align: center; box-shadow: 2px 2px 0 #000;">
-              <div>
-                <span style="color: #94a3b8;">AUDIO INGEST:</span> <span style="color: #00ff66; font-weight: 700;">WebRTC &lt;100ms</span>
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR COMMISSIONING LOG</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '02 / 03',
+        category: 'COMMISSIONING RECORD',
+        eyebrow: 'LIVE TELEMETRY SHEET',
+        shortTitle: '02 Sheet',
+        isFullStage: true,
+        seamBridge: 'half-right',
+        headline: '5,204 calls handled in 30 days.',
+        lead: 'Voice operations running 24/7 on client stack with sub-second response.',
+        nextTeaser: 'Core commissioning directive',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">DEPLOYMENT 011 // LOG</span>
+                <span class="text-3x-tag">02 / 03</span>
               </div>
-              <div>
-                <span style="color: #94a3b8;">NEURAL VOICE:</span> <span style="color: #ffffff; font-weight: 700;">Regional Accent</span>
-              </div>
-              <div>
-                <span style="color: #94a3b8;">CRM DISPATCH:</span> <span style="color: #ff3344; font-weight: 700;">Live Webhook</span>
+
+              <div class="text-3x-giant-number">5,204</div>
+
+              <div class="text-3x-headline" style="font-size: 54px;">
+                CALLS HANDLED IN 30 DAYS.
               </div>
             </div>
 
-            <div class="infra-chassis-footer">
-              <span>RUNNING ON CLIENT STACK / 24·7</span>
-              <div class="uptime-pulse-indicator">
-                <span class="pixel-status-square"></span>
-                <span>SYSTEM OK // 99.98% UPTIME</span>
+            <div class="pixel-quest-grid">
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.check}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">1,318 LEADS</span>
+                  <span class="pixel-quest-stat">DIRECT TO CRM</span>
+                </div>
               </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.zap}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">0.8s LATENCY</span>
+                  <span class="pixel-quest-stat">FIRST RING</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.bot}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">3% HANDOFF</span>
+                  <span class="pixel-quest-stat">97% AUTONOMY</span>
+                </div>
+              </div>
+
+              <div class="pixel-quest-card">
+                <div class="pixel-quest-icon">${PIXEL_ICONS.shield}</div>
+                <div class="pixel-quest-info">
+                  <span class="pixel-quest-title">99.98% UPTIME</span>
+                  <span class="pixel-quest-stat">24/7 STACK</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-prompt-banner">
+              <span>SWIPE FOR SYSTEM DIRECTIVE</span>
+              <span class="pixel-blink-arrow">▶▶</span>
+            </div>
+          </div>
+        `
+      },
+      {
+        slideNum: '03 / 03',
+        category: 'COMMISSIONING RECORD',
+        eyebrow: 'COMMISSIONING DIRECTIVE',
+        shortTitle: '03 Directive',
+        isFullStage: true,
+        headline: 'Not a dashboard. A workforce.',
+        lead: 'Not a subscription you log into. An autonomous layer that clocks in so your team does not have to.',
+        nextTeaser: 'nuvero.space',
+        renderCustomStage: () => `
+          <div class="text-3x-stage">
+            <div>
+              <div class="text-3x-header-row">
+                <span class="text-3x-badge">DIRECTIVE // 011</span>
+                <span class="text-3x-tag">03 / 03</span>
+              </div>
+
+              <div class="text-3x-headline" style="font-size: 58px;">
+                NOT A DASHBOARD. A WORKFORCE.
+              </div>
+
+              <div class="text-3x-subhead">
+                Not a subscription you log into. An autonomous layer that clocks in so your team does not have to.
+              </div>
+            </div>
+
+            <div class="pixel-panel-box">
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-red);">01</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">COMMISSION ONCE, RUN FOREVER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Engineered directly into your existing software stack</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: var(--nuvero-blue);">02</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: var(--nuvero-blue);">AUDITED PRODUCTION NUMBERS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #666; margin-top: 2px;">Clear accountability with live latency and resolution telemetry</div>
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: center; gap: 14px;">
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 14px; color: #10B981;">03</span>
+                <div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 11px; color: #10B981;">RETURNS HUMAN HOURS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 13px; color: #10B981; margin-top: 2px;">Liberates your key people to focus on revenue and growth</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pixel-save-cta-box">
+              <div class="pixel-save-left">
+                <div class="pixel-floppy-icon">${PIXEL_ICONS.floppy}</div>
+                <div>
+                  <div class="pixel-save-title">COMMISSION YOUR SYSTEM</div>
+                  <div class="pixel-save-sub">nuvero.space / Deployments</div>
+                </div>
+              </div>
+              <div style="font-family: 'Press Start 2P', monospace; font-size: 10px; color: var(--nuvero-red);">[SAVE 📌]</div>
             </div>
           </div>
         `
@@ -2042,8 +2429,12 @@ function updateCaptionDrawer() {
 function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
   const ratioClass = state.aspectRatio === '1-1' ? 'ratio-1-1' : 'ratio-4-5';
   const isInfra = post.series === 'BRAND INFRASTRUCTURE';
-  const themeClass = isInfra ? 'theme-dark' : (state.theme === 'dark' ? 'theme-dark' : 'theme-tan');
+  const themeClass = state.theme === 'dark' ? 'theme-dark' : 'theme-tan';
   const seriesClass = isInfra ? 'series-infrastructure' : 'series-case-study';
+  const isMultiSlide = post.slides.length > 1;
+  const progressPct = ((slideIndex + 1) / post.slides.length) * 100;
+  const isCover = Boolean(slide.isCover);
+  const isFullStage = Boolean(slide.isCover || slide.isFullStage);
 
   // Determine stage content: custom visual artifact or fallback mockup window
   let stageContent = '';
@@ -2068,28 +2459,49 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
     `;
   }
 
-  const isMultiSlide = post.slides.length > 1;
+  // Next cliffhanger teaser text
+  const nextTeaserText = slide.nextTeaser || (slideIndex < post.slides.length - 1 ? (post.slides[slideIndex + 1].shortTitle || 'Next Slide') : 'nuvero.space');
 
-  if (isInfra) {
-    return `
-      <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
-        
-        <!-- Top Social Header (High-Tech Infrastructure Lockup) -->
-        <div class="social-top-row">
-          <div class="social-brand-pill">
-            <div class="brand-logo-icon">
-              ${NUVERO_LOGO_SVG}
-            </div>
-            <span class="brand-handle-text">@nuvero.space</span>
-            <span style="font-family: var(--font-mono); font-size: 10px; font-weight: 700; color: var(--nuvero-red); opacity: 0.9; margin-left: 4px;">// INFRA</span>
+  return `
+    <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
+      
+      <!-- Giant Brand Logo Seam Bridge (100% Post Scale Half-and-Half) -->
+      ${slide.seamBridge ? renderGiantLogoBridge(slide.seamBridge) : ''}
+
+      <!-- Slide-to-Slide Visual Edge Bridge (Seamless Swipe Cue) -->
+      ${(!isLastSlide && isMultiSlide && !slide.seamBridge) ? `
+        <div class="slide-edge-bridge">
+          <span>SWIPE</span>
+          <span class="bridge-arrow">→</span>
+        </div>
+      ` : ''}
+
+      <!-- Top Social Header (Brand pill + Connected Progress Rail) -->
+      <div class="social-top-row">
+        <div class="social-brand-pill">
+          <div class="brand-logo-icon">
+            ${NUVERO_LOGO_SVG}
           </div>
-          <div style="display: flex; align-items: center; gap: 10px;">
-            <div class="social-category-tag">${post.categoryTag}</div>
-            <span class="slide-sequence-badge">${slide.slideNum}</span>
-          </div>
+          <span class="brand-handle-text">@nuvero.space</span>
         </div>
 
-        <!-- High-Impact Editorial Text Block -->
+        <div style="display: flex; align-items: center; gap: 10px;">
+          ${isMultiSlide ? `
+            <div class="carousel-progress-rail">
+              <span class="progress-rail-text">0${slideIndex + 1} / 0${post.slides.length}</span>
+              <div class="progress-track-bar">
+                <div class="progress-track-fill" style="width: ${progressPct}%;"></div>
+              </div>
+            </div>
+          ` : `
+            <div class="social-category-tag">${post.categoryTag}</div>
+          `}
+          ${isMultiSlide ? `<div class="social-category-tag">${post.categoryTag}</div>` : ''}
+        </div>
+      </div>
+
+      <!-- Editorial Text Block (rendered on non-full/non-cover slides) -->
+      ${!isFullStage ? `
         <div class="social-text-block">
           <div class="social-eyebrow">
             <span class="dot"></span>
@@ -2098,106 +2510,31 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
           <h1 class="social-headline" contenteditable="true" spellcheck="false">${slide.headline}</h1>
           <p class="social-lead" contenteditable="true" spellcheck="false">${slide.lead}</p>
         </div>
+      ` : ''}
 
-        <!-- Center Stage: Bespoke Intuitive Infrastructure Artifact -->
-        <div class="social-center-stage">
-          ${stageContent}
-        </div>
-
-        <!-- Bottom Social Bar (Clean footer watermark + swipe cue) -->
-        <div class="social-bottom-bar">
-          <div class="bottom-author-lockup">
-            <span class="lockup-domain">nuvero.space</span>
-            <span class="lockup-tag">/ Operations into Infrastructure</span>
-          </div>
-          <div class="bottom-social-action">
-            ${isMultiSlide ? `
-              <div class="carousel-dots-pill">
-                ${post.slides.map((_, i) => `
-                  <div class="carousel-dot ${i === slideIndex ? 'active' : ''}"></div>
-                `).join('')}
-              </div>
-            ` : `
-              <div class="carousel-dots-pill" style="padding: 4px 10px;">
-                <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">STATIC POST</span>
-              </div>
-            `}
-            ${(!isLastSlide && isMultiSlide) ? `
-              <div class="swipe-action-pill">
-                <span>Swipe</span>
-                <span>→</span>
-              </div>
-            ` : `
-              <div class="swipe-action-pill" style="background: rgba(193, 18, 31, 0.15); color: #ff4d5a; border-color: rgba(193, 18, 31, 0.4);">
-                <span>nuvero.space</span>
-              </div>
-            `}
-          </div>
-        </div>
-
-      </div>
-    `;
-  }
-
-  // Classic Case Study slides (Posts 06 to 09)
-  return `
-    <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
-      
-      <!-- Top Social Header (Discreet handle + category pill) -->
-      <div class="social-top-row">
-        <div class="social-brand-pill">
-          <div class="brand-logo-icon">
-            ${NUVERO_LOGO_SVG}
-          </div>
-          <span class="brand-handle-text">@nuvero.space</span>
-        </div>
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <div class="social-category-tag">${post.categoryTag}</div>
-          <span class="slide-sequence-badge">${slide.slideNum}</span>
-        </div>
-      </div>
-
-      <!-- High-Impact Editorial Text Block -->
-      <div class="social-text-block">
-        <div class="social-eyebrow">
-          <span class="dot"></span>
-          <span>${slide.category} // ${slide.eyebrow}</span>
-        </div>
-        <h1 class="social-headline" contenteditable="true" spellcheck="false">${slide.headline}</h1>
-        <p class="social-lead" contenteditable="true" spellcheck="false">${slide.lead}</p>
-      </div>
-
-      <!-- Center Stage: Rich Bespoke UI Mockup or Custom Visual Artifact -->
-      <div class="social-center-stage">
+      <!-- Center Stage: Bespoke Visual Artifact or Cover Stage -->
+      <div class="social-center-stage" style="${isFullStage ? 'height: 100%; justify-content: stretch;' : ''}">
         ${stageContent}
       </div>
 
-      <!-- Bottom Social Bar (Clean footer watermark + swipe cue) -->
+      <!-- Bottom Social Bar (Author lockup + Next-slide cliffhanger) -->
       <div class="social-bottom-bar">
         <div class="bottom-author-lockup">
           <span class="lockup-domain">nuvero.space</span>
-          <span class="lockup-tag">/ Operations into Infrastructure</span>
+          <span class="lockup-tag">/ Autonomous Operations</span>
         </div>
+        
         <div class="bottom-social-action">
-          ${isMultiSlide ? `
-            <div class="carousel-dots-pill">
-              ${post.slides.map((_, i) => `
-                <div class="carousel-dot ${i === slideIndex ? 'active' : ''}"></div>
-              `).join('')}
-            </div>
-          ` : `
-            <div class="carousel-dots-pill" style="padding: 4px 10px;">
-              <span style="font-family: var(--font-mono); font-size: 11px; font-weight: 700; color: var(--nuvero-red);">STATIC POST</span>
-            </div>
-          `}
           ${(!isLastSlide && isMultiSlide) ? `
-            <div class="swipe-action-pill">
-              <span>Swipe</span>
-              <span>→</span>
+            <div class="next-slide-cliffhanger" onclick="setSlide(${slideIndex + 1})">
+              <span class="cliffhanger-label">NEXT:</span>
+              <span class="cliffhanger-text">${nextTeaserText}</span>
+              <span class="cliffhanger-arrow">→</span>
             </div>
           ` : `
-            <div class="swipe-action-pill" style="background: rgba(0, 48, 73, 0.1); color: var(--nuvero-blue); border-color: rgba(0,48,73,0.3);">
-              <span>nuvero.space</span>
+            <div class="next-slide-cliffhanger" style="border-color: rgba(16, 185, 129, 0.35); background: rgba(16, 185, 129, 0.1);">
+              <span class="cliffhanger-label" style="color: #10B981;">SAVE</span>
+              <span class="cliffhanger-text">📌 Bookmark this blueprint</span>
             </div>
           `}
         </div>
