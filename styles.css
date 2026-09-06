@@ -622,9 +622,9 @@ body {
 }
 
 .social-brand-pill .brand-handle-text {
-  font-family: var(--font-mono);
+  font-family: 'Silkscreen', monospace;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 400;
   color: var(--nuvero-blue);
   letter-spacing: 0;
 }
@@ -2491,17 +2491,10 @@ body {
   50% { transform: translateX(4px); }
 }
 
-/* 4. Bottom Next-Slide Teaser Cliffhanger */
-.next-slide-cliffhanger {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: rgba(193, 18, 31, 0.08);
-  border: 2px solid rgba(193, 18, 31, 0.25);
-  padding: 8px 18px;
-  border-radius: 40px;
-  cursor: pointer;
-  transition: all var(--transition-fast);
+/* 4. Bottom Next-Slide Teaser Cliffhanger (Hidden / Removed) */
+.next-slide-cliffhanger,
+.bottom-social-action {
+  display: none !important;
 }
 
 .insta-slide.theme-dark .next-slide-cliffhanger {

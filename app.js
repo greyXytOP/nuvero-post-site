@@ -2453,8 +2453,6 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
     `;
   }
 
-  // Next cliffhanger teaser text
-  const nextTeaserText = slide.nextTeaser || (slideIndex < post.slides.length - 1 ? (post.slides[slideIndex + 1].shortTitle || 'Next Slide') : 'nuvero.space');
 
   return `
     <div class="insta-slide ${ratioClass} ${themeClass} ${seriesClass}" id="slideRender_${slideIndex}">
@@ -2511,26 +2509,11 @@ function generateSlideHTML(post, slide, slideIndex, isLastSlide) {
         ${stageContent}
       </div>
 
-      <!-- Bottom Social Bar (Author lockup + Next-slide cliffhanger) -->
+      <!-- Bottom Social Bar (Author lockup) -->
       <div class="social-bottom-bar">
         <div class="bottom-author-lockup">
           <span class="lockup-domain">nuvero.space</span>
           <span class="lockup-tag">/ Autonomous Operations</span>
-        </div>
-        
-        <div class="bottom-social-action">
-          ${(!isLastSlide && isMultiSlide) ? `
-            <div class="next-slide-cliffhanger" onclick="setSlide(${slideIndex + 1})">
-              <span class="cliffhanger-label">NEXT:</span>
-              <span class="cliffhanger-text">${nextTeaserText}</span>
-              <span class="cliffhanger-arrow">→</span>
-            </div>
-          ` : `
-            <div class="next-slide-cliffhanger" style="border-color: rgba(16, 185, 129, 0.35); background: rgba(16, 185, 129, 0.1);">
-              <span class="cliffhanger-label" style="color: #10B981;">SAVE</span>
-              <span class="cliffhanger-text">📌 Bookmark this blueprint</span>
-            </div>
-          `}
         </div>
       </div>
 
