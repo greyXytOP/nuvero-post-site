@@ -28,17 +28,11 @@ function renderGiantLogoBridge(side) {
       <div class="giant-logo-seam-bridge half-left">
         ${GIANT_NUVERO_LOGO_SVG}
       </div>
-      <div class="seam-pixel-marker right">
-        <span>SWIPE ▶</span>
-      </div>
     `;
   } else if (side === 'half-right') {
     return `
       <div class="giant-logo-seam-bridge half-right">
         ${GIANT_NUVERO_LOGO_SVG}
-      </div>
-      <div class="seam-pixel-marker left">
-        <span>◀ CONNECT</span>
       </div>
     `;
   }
