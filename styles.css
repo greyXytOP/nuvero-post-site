@@ -2649,11 +2649,12 @@ body {
   display: inline-block;
   background: var(--nuvero-red);
   color: #ffffff !important;
-  padding: 2px 14px;
+  padding: 4px 24px;
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(193, 18, 31, 0.35);
-  transform: rotate(-1deg);
+  white-space: nowrap;
   margin: 0 4px;
+  box-sizing: border-box;
 }
 
 .cover-sub-lead {
@@ -5558,10 +5559,17 @@ body {
 .text-3x-headline .pixel-highlight {
   color: #ffffff;
   background: var(--nuvero-red);
-  padding: 0 16px;
-  box-shadow: 6px 6px 0 #000;
+  padding: 4px 30px 8px 30px;
+  box-shadow: 6px 6px 0 #000000;
   display: inline-block;
-  transform: rotate(-1deg);
+  white-space: nowrap;
+  vertical-align: baseline;
+  line-height: 1.05;
+  box-sizing: border-box;
+}
+
+.insta-slide.ratio-1-1 .text-3x-headline .pixel-highlight {
+  padding: 2px 24px 6px 24px;
 }
 
 /* Massive Tripled Number Metrics (110px - 140px) */

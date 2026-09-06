@@ -2728,11 +2728,20 @@ async function captureSlideCleanPNG(slideElement, targetWidth, targetHeight) {
   clone.style.height = targetHeight + 'px';
   clone.style.margin = '0';
 
+  // Normalize highlight badges to prevent canvas rotation text drift and guarantee full coverage
+  clone.querySelectorAll('.pixel-highlight, .highlight-pill').forEach(el => {
+    el.style.transform = 'none';
+    el.style.display = 'inline-block';
+    el.style.whiteSpace = 'nowrap';
+    el.style.padding = '4px 30px 8px 30px';
+    el.style.boxSizing = 'border-box';
+  });
+
   staging.appendChild(clone);
   document.body.appendChild(staging);
 
   // Allow DOM styles to settle
-  await new Promise(r => setTimeout(r, 120));
+  await new Promise(r => setTimeout(r, 160));
 
   let dataUrl = null;
 
@@ -2767,7 +2776,16 @@ async function captureSlideCleanPNG(slideElement, targetWidth, targetHeight) {
       useCORS: true,
       allowTaint: true,
       backgroundColor: null,
-      logging: false
+      logging: false,
+      onclone: (clonedDoc) => {
+        clonedDoc.querySelectorAll('.pixel-highlight, .highlight-pill').forEach(el => {
+          el.style.transform = 'none';
+          el.style.display = 'inline-block';
+          el.style.whiteSpace = 'nowrap';
+          el.style.padding = '4px 30px 8px 30px';
+          el.style.boxSizing = 'border-box';
+        });
+      }
     });
     dataUrl = canvas.toDataURL('image/png');
   }
