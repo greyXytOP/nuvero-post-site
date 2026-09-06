@@ -133,7 +133,7 @@ Build the infrastructure underneath at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[SYSTEM STATS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">LIVE RUNTIME</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">LIVE RUNTIME</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
@@ -142,7 +142,7 @@ Build the infrastructure underneath at nuvero.space.
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">RETURNED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.bot} 6 / 6</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--slide-panel-text, var(--nuvero-blue));">${PIXEL_ICONS.bot} 6 / 6</div>
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">AUTONOMOUS</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
@@ -191,7 +191,7 @@ Build the infrastructure underneath at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">WEEKLY TEAM CAPACITY DRAIN</span>
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px;">78% DRAINED</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">78% DRAINED</span>
               </div>
 
               <div class="pixel-meter-bar">
@@ -207,7 +207,7 @@ Build the infrastructure underneath at nuvero.space.
                 <div class="pixel-meter-cell"></div>
               </div>
 
-              <div style="display: flex; justify-content: space-between; font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">
+              <div style="display: flex; justify-content: space-between; font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">
                 <span>1,638 HOURS WASTED ANNUALLY</span>
                 <span style="color: var(--nuvero-red);">= 0.8 FTE HEADCOUNT</span>
               </div>
@@ -391,24 +391,24 @@ Build the infrastructure underneath at nuvero.space.
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">AUDIT HUMAN HANDOFFS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Find every copy-paste loop between tabs</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">AUDIT HUMAN HANDOFFS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Find every copy-paste loop between tabs</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">WIRE INBOUND WEBHOOKS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Connect software directly to autonomous runtime</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">WIRE INBOUND WEBHOOKS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Connect software directly to autonomous runtime</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 34px; color: var(--nuvero-red);">03</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">MEASURE IN HOURS RETURNED</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Real software runs silently in the background</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">MEASURE IN HOURS RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Real software runs silently in the background</div>
                 </div>
               </div>
             </div>
@@ -493,21 +493,21 @@ Turn your inbound flow into infrastructure at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[INBOUND TELEMETRY]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">SPEED TO LEAD</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">SPEED TO LEAD</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
                   <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">${PIXEL_ICONS.clock} 3.8h</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">MANUAL RELAY</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">MANUAL RELAY</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">${PIXEL_ICONS.zap} 8.6s</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">NUVERO SPEED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--slide-panel-text, var(--nuvero-blue));">${PIXEL_ICONS.zap} 8.6s</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">NUVERO SPEED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
                   <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">+391%</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">CONVERSION</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">CONVERSION</div>
                 </div>
               </div>
             </div>
@@ -750,16 +750,16 @@ Turn your inbound flow into infrastructure at nuvero.space.
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">TIER 01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">RAW LLMS // COMMODITY</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">OpenAI, Anthropic, Gemini: available to everyone</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">RAW LLMS // COMMODITY</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">OpenAI, Anthropic, Gemini: available to everyone</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">TIER 02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--slide-panel-text, var(--nuvero-blue));">TIER 02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">STATE MACHINES // LOGIC</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Deterministic retry queues, validation, schemas</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">STATE MACHINES // LOGIC</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Deterministic retry queues, validation, schemas</div>
                 </div>
               </div>
 
@@ -839,21 +839,21 @@ Turn your tool sprawl into infrastructure at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[STACK METRICS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">TOIL MEASUREMENT</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">TOIL MEASUREMENT</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
                   <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-red);">40%</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">WEEK WASTED</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">WEEK WASTED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">6 APPS</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">DISCONNECTED</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--slide-panel-text, var(--nuvero-blue));">6 APPS</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">DISCONNECTED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
                   <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: #10B981;">&lt;200ms</div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">DIRECT SYNC</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue)); margin-top: 4px;">DIRECT SYNC</div>
                 </div>
               </div>
             </div>
@@ -1023,16 +1023,16 @@ Turn your tool sprawl into infrastructure at nuvero.space.
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">DIRECT API CHANNELS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Replace human copy-paste with deterministic webhooks</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">DIRECT API CHANNELS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Replace human copy-paste with deterministic webhooks</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--slide-panel-text, var(--nuvero-blue));">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">SINGLE TRUTH LAYER</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">One event updates CRM, Slack, and accounting simultaneously</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">SINGLE TRUTH LAYER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">One event updates CRM, Slack, and accounting simultaneously</div>
                 </div>
               </div>
 
@@ -1121,7 +1121,7 @@ See deployed systems at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[PRODUCTION BENCHMARKS]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">VERIFIED DATA</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">VERIFIED DATA</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
@@ -1130,7 +1130,7 @@ See deployed systems at nuvero.space.
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">FIRST CONTACT</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">15 MIN</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--slide-panel-text, var(--nuvero-blue));">15 MIN</div>
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">REPORTS READY</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
@@ -1360,16 +1360,16 @@ See deployed systems at nuvero.space.
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">MEASURE IN TIME RETURNED</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">The only ROI metric that never lies in board meetings</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">MEASURE IN TIME RETURNED</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">The only ROI metric that never lies in board meetings</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--slide-panel-text, var(--nuvero-blue));">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">DIRECT ON YOUR STACK</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Runs inside your tools, not a locked proprietary garden</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">DIRECT ON YOUR STACK</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Runs inside your tools, not a locked proprietary garden</div>
                 </div>
               </div>
 
@@ -1455,7 +1455,7 @@ Commission your system at nuvero.space.
             <div class="pixel-panel-box">
               <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 8px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-red);">[COMMISSIONED TELEMETRY]</span>
-                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--nuvero-blue);">LAST 30 DAYS</span>
+                <span style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">LAST 30 DAYS</span>
               </div>
 
               <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
@@ -1464,7 +1464,7 @@ Commission your system at nuvero.space.
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">CALLS HANDLED</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
-                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--nuvero-blue);">0.8s</div>
+                  <div style="font-family: var(--font-display); font-size: 52px; font-weight: 900; color: var(--slide-panel-text, var(--nuvero-blue));">0.8s</div>
                   <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; margin-top: 4px;">FIRST RESPONSE</div>
                 </div>
                 <div style="text-align: center; padding: 10px 4px; background: rgba(0,48,73,0.04); border: 2px solid #000; box-shadow: 2px 2px 0 #000;">
@@ -1577,16 +1577,16 @@ Commission your system at nuvero.space.
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
                 <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-red);">01</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">COMMISSION ONCE, RUN FOREVER</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Engineered directly into your existing software stack</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">COMMISSION ONCE, RUN FOREVER</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Engineered directly into your existing software stack</div>
                 </div>
               </div>
 
               <div style="display: flex; align-items: center; gap: 14px; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px;">
-                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--nuvero-blue);">02</span>
+                <span style="font-family: 'Press Start 2P', monospace; font-size: 32px; color: var(--slide-panel-text, var(--nuvero-blue));">02</span>
                 <div>
-                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--nuvero-blue);">AUDITED PRODUCTION NUMBERS</div>
-                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: #666; margin-top: 2px;">Clear accountability with live latency and resolution telemetry</div>
+                  <div style="font-family: 'Press Start 2P', monospace; font-size: 30px; color: var(--slide-panel-text, var(--nuvero-blue));">AUDITED PRODUCTION NUMBERS</div>
+                  <div style="font-family: 'Silkscreen', monospace; font-size: 30px; color: var(--slide-panel-subtext, #666); margin-top: 2px;">Clear accountability with live latency and resolution telemetry</div>
                 </div>
               </div>
 

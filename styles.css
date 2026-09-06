@@ -23,6 +23,13 @@
   --whatsapp-dark-green: #075E54;
   --whatsapp-bubble: #DCF8C6;
 
+  /* Slide Panel & Stage Theming Tokens */
+  --slide-panel-text: var(--nuvero-blue);
+  --slide-panel-subtext: #666666;
+  --slide-panel-border: rgba(0, 48, 73, 0.15);
+  --slide-card-bg: rgba(0, 48, 73, 0.04);
+  --slide-card-border: #000000;
+
   /* App Shell Colors */
   --studio-bg: #0b0f14;
   --studio-surface: #141b22;
@@ -537,6 +544,19 @@ body {
   background-color: var(--nuvero-blue);
   color: var(--nuvero-tan);
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(253, 240, 213, 0.2);
+  --slide-panel-text: var(--nuvero-tan);
+  --slide-panel-subtext: rgba(253, 240, 213, 0.85);
+  --slide-panel-border: rgba(253, 240, 213, 0.2);
+  --slide-card-bg: rgba(253, 240, 213, 0.06);
+  --slide-card-border: rgba(253, 240, 213, 0.35);
+}
+
+.insta-slide.theme-tan {
+  --slide-panel-text: var(--nuvero-blue);
+  --slide-panel-subtext: #666666;
+  --slide-panel-border: rgba(0, 48, 73, 0.15);
+  --slide-card-bg: rgba(0, 48, 73, 0.04);
+  --slide-card-border: #000000;
 }
 
 .insta-slide::before {
@@ -5606,6 +5626,40 @@ body {
   background: #001f30;
   border-color: var(--nuvero-tan);
   box-shadow: 6px 6px 0px var(--nuvero-red);
+  color: var(--nuvero-tan);
+}
+
+/* Force dark mode contrast on all text elements that would otherwise be blue-on-blue */
+.insta-slide.theme-dark .pixel-panel-box [style*="color: var(--nuvero-blue)"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color:var(--nuvero-blue)"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color: #003049"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color:#003049"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color: var(--nuvero-blue-muted)"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color: var(--nuvero-blue-subtle)"],
+.insta-slide.theme-dark .text-3x-stage [style*="color: var(--nuvero-blue)"],
+.insta-slide.theme-dark .text-3x-stage [style*="color:var(--nuvero-blue)"],
+.insta-slide.theme-dark .text-3x-stage [style*="color: #003049"],
+.insta-slide.theme-dark .text-3x-stage [style*="color:#003049"],
+.insta-slide.theme-dark .text-3x-stage [style*="color: var(--nuvero-blue-muted)"],
+.insta-slide.theme-dark .text-3x-stage [style*="color: var(--nuvero-blue-subtle)"] {
+  color: var(--nuvero-tan) !important;
+}
+
+.insta-slide.theme-dark .pixel-panel-box [style*="color: #666"],
+.insta-slide.theme-dark .pixel-panel-box [style*="color:#666"],
+.insta-slide.theme-dark .text-3x-stage [style*="color: #666"],
+.insta-slide.theme-dark .text-3x-stage [style*="color:#666"] {
+  color: rgba(253, 240, 213, 0.85) !important;
+}
+
+.insta-slide.theme-dark .pixel-panel-box [style*="border-bottom: 2px solid rgba(0,0,0,0.1)"] {
+  border-bottom-color: rgba(253, 240, 213, 0.2) !important;
+}
+
+.insta-slide.theme-dark .pixel-panel-box [style*="background: rgba(0,48,73,0.04)"] {
+  background: rgba(253, 240, 213, 0.06) !important;
+  border-color: rgba(253, 240, 213, 0.3) !important;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6) !important;
 }
 
 /* 8-bit Segmented Health / Drain Bar */
